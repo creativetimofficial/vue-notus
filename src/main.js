@@ -9,16 +9,10 @@ const routes = {
   "/dashboard": Dashboard,
 };
 
+const router = new VueRouter({
+  routes
+})
+
 new Vue({
-  data: {
-    currentRoute: window.location.pathname,
-  },
-  computed: {
-    ViewComponent() {
-      return routes[this.currentRoute] || Dashboard;
-    },
-  },
-  render(h) {
-    return h(this.ViewComponent);
-  },
+  router
 }).$mount("#app");
