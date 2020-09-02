@@ -56,7 +56,7 @@
   </div>
 </template>
 <script>
-import Popper from "popper.js";
+import { createPopper } from '@popperjs/core';
 
 export default {
   data() {
@@ -71,7 +71,7 @@ export default {
         this.dropdownPopoverShow = false;
       } else {
         this.dropdownPopoverShow = true;
-        new Popper(this.$refs.btnDropdownRef, this.$refs.popoverDropdownRef, {
+        createPopper(this.$refs.btnDropdownRef, this.$refs.popoverDropdownRef, {
           placement: "bottom-end"
         });
       }
