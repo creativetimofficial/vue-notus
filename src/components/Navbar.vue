@@ -29,9 +29,7 @@
         </div>
       </form>
       <!-- User -->
-      <ul
-        class="flex-col md:flex-row list-none items-center hidden md:flex"
-      >
+      <ul class="flex-col md:flex-row list-none items-center hidden md:flex">
         <user-dropdown-component></user-dropdown-component>
       </ul>
     </div>
@@ -43,7 +41,7 @@
 import UserDropdownComponent from "./UserDropdown.vue";
 export default {
   components: {
-    UserDropdownComponent
-  }
+    UserDropdownComponent,
+  },
 };
 </script>

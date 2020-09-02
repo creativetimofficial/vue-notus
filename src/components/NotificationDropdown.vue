@@ -13,9 +13,9 @@
       class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1"
       v-bind:class="{
         hidden: !dropdownPopoverShow,
-        block: dropdownPopoverShow
+        block: dropdownPopoverShow,
       }"
-      style="min-width:12rem"
+      style="min-width: 12rem;"
     >
       <a
         href="#pablo"
@@ -46,26 +46,26 @@
   </div>
 </template>
 <script>
-import { createPopper } from '@popperjs/core';
+import { createPopper } from "@popperjs/core";
 
 export default {
   data() {
     return {
-      dropdownPopoverShow: false
+      dropdownPopoverShow: false,
     };
   },
   methods: {
-    toggleDropdown: function(event) {
+    toggleDropdown: function (event) {
       event.preventDefault();
       if (this.dropdownPopoverShow) {
         this.dropdownPopoverShow = false;
       } else {
         this.dropdownPopoverShow = true;
         createPopper(this.$refs.btnDropdownRef, this.$refs.popoverDropdownRef, {
-          placement: "bottom-end"
+          placement: "bottom-end",
         });
       }
-    }
-  }
+    },
+  },
 };
 </script>

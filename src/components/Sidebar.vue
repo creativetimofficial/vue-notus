@@ -64,7 +64,7 @@
             <input
               type="text"
               placeholder="Search"
-              class="px-3 py-2 h-12 border border-solid  border-gray-600 placeholder-gray-400 text-gray-700 bg-white rounded text-base leading-snug shadow-none outline-none focus:outline-none w-full font-normal"
+              class="px-3 py-2 h-12 border border-solid border-gray-600 placeholder-gray-400 text-gray-700 bg-white rounded text-base leading-snug shadow-none outline-none focus:outline-none w-full font-normal"
             />
           </div>
         </form>
@@ -74,8 +74,7 @@
             <a
               class="text-pink-500 hover:text-pink-600 text-xs uppercase py-3 font-bold block"
               href="#/dashboard"
-              ><i class="fas fa-tv opacity-75 mr-2 text-sm"></i>
-              Dashboard</a
+              ><i class="fas fa-tv opacity-75 mr-2 text-sm"></i> Dashboard</a
             >
           </li>
           <li class="items-center">
@@ -106,9 +105,7 @@
             <a
               class="text-gray-400 text-xs uppercase py-3 font-bold block"
               href="#pablo"
-              ><i
-                class="fas fa-clipboard-list text-gray-400 mr-2 text-sm"
-              ></i>
+              ><i class="fas fa-clipboard-list text-gray-400 mr-2 text-sm"></i>
               Register (soon)</a
             >
           </li>
@@ -116,8 +113,8 @@
             <a
               class="text-gray-400 text-xs uppercase py-3 font-bold block"
               href="#pablo"
-              ><i class="fas fa-tools text-gray-400 mr-2 text-sm"></i>
-              Settings (soon)</a
+              ><i class="fas fa-tools text-gray-400 mr-2 text-sm"></i> Settings
+              (soon)</a
             >
           </li>
         </ul>
@@ -130,16 +127,12 @@
           Documentation
         </h6>
         <!-- Navigation -->
-        <ul
-          class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4"
-        >
+        <ul class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
           <li class="inline-flex">
             <a
               class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
               href="#/documentation/styles"
-              ><i
-                class="fas fa-paint-brush mr-2 text-gray-500 text-base"
-              ></i>
+              ><i class="fas fa-paint-brush mr-2 text-gray-500 text-base"></i>
               Styles</a
             >
           </li>
@@ -147,8 +140,8 @@
             <a
               class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
               href="#/documentation/alerts"
-              ><i class="fab fa-css3-alt mr-2 text-gray-500 text-base"></i>
-              CSS Components</a
+              ><i class="fab fa-css3-alt mr-2 text-gray-500 text-base"></i> CSS
+              Components</a
             >
           </li>
           <li class="inline-flex">
@@ -161,7 +154,7 @@
           </li>
           <li class="inline-flex">
             <a
-              class="text-gray-800 hover:text-gray-600  text-sm block mb-4 no-underline font-semibold"
+              class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
               href="#/documentation/react/alerts"
               ><i class="fab fa-react mr-2 text-gray-500 text-base"></i>
               React</a
@@ -169,7 +162,7 @@
           </li>
           <li class="inline-flex">
             <a
-              class="text-gray-800 hover:text-gray-600  text-sm block mb-4 no-underline font-semibold"
+              class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
               href="#/documentation/angular/alerts"
               ><i class="fab fa-angular mr-2 text-gray-500 text-base"></i>
               Angular</a
@@ -177,7 +170,7 @@
           </li>
           <li class="inline-flex">
             <a
-              class="text-gray-800 hover:text-gray-600  text-sm block mb-4 no-underline font-semibold"
+              class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
               href="#/documentation/javascript/alerts"
               ><i class="fab fa-js-square mr-2 text-gray-500 text-base"></i>
               Javascript</a
@@ -194,17 +187,17 @@ import UserDropdownComponent from "./UserDropdown.vue";
 export default {
   data() {
     return {
-      collapseShow: "hidden"
+      collapseShow: "hidden",
     };
   },
   methods: {
-    toggleCollapseShow: function(classes) {
+    toggleCollapseShow: function (classes) {
       this.collapseShow = classes;
-    }
+    },
   },
   components: {
     NotificationDropdownComponent,
-    UserDropdownComponent
-  }
+    UserDropdownComponent,
+  },
 };
 </script>
