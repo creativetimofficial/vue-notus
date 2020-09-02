@@ -13,9 +13,12 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.14.0",
     "@popperjs/core": "2.4.4",
+    "@tailwindcss/custom-forms": "0.2.1",
     "chart.js": "2.9.3",
     "core-js": "3.6.5",
-    "vue": "2.6.12"
+    "tailwindcss": "1.7.6",
+    "vue": "2.6.12",
+    "vue-router": "3.4.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "4.5.4",
