@@ -1,31 +1,35 @@
-import React from "react";
-
-// components
-
-import CardLineChart from "components/Cards/CardLineChart.js";
-import CardBarChart from "components/Cards/CardBarChart.js";
-import CardPageVisits from "components/Cards/CardPageVisits.js";
-import CardSocialTraffic from "components/Cards/CardSocialTraffic.js";
-
-export default function Dashboard() {
-  return (
-    <>
-      <div className="flex flex-wrap">
-        <div className="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
-          <CardLineChart />
-        </div>
-        <div className="w-full xl:w-4/12 px-4">
-          <CardBarChart />
-        </div>
+<template>
+  <div>
+    <div class="flex flex-wrap">
+      <div class="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
+        <card-line-chart />
       </div>
-      <div className="flex flex-wrap mt-4">
-        <div className="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
-          <CardPageVisits />
-        </div>
-        <div className="w-full xl:w-4/12 px-4">
-          <CardSocialTraffic />
-        </div>
+      <div class="w-full xl:w-4/12 px-4">
+        <card-bar-chart />
       </div>
-    </>
-  );
-}
+    </div>
+    <div class="flex flex-wrap mt-4">
+      <div class="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
+        <card-page-visits />
+      </div>
+      <div class="w-full xl:w-4/12 px-4">
+        <card-social-traffic />
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+import CardLineChart from "@/components/Cards/CardLineChart.vue";
+import CardBarChart from "@/components/Cards/CardBarChart.vue";
+import CardPageVisits from "@/components/Cards/CardPageVisits.vue";
+import CardSocialTraffic from "@/components/Cards/CardSocialTraffic.vue";
+export default {
+  name: "dashboard-page",
+  components: {
+    CardLineChart,
+    CardBarChart,
+    CardPageVisits,
+    CardSocialTraffic,
+  },
+};
+</script>
