@@ -1,10 +1,4 @@
-import React from "react";
-
-// components
-
-export default function CardSettings() {
-  return (
-    <>
+<template>
       <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-200 border-0">
         <div class="rounded-t bg-white mb-0 px-6 py-6">
           <div class="text-center flex justify-between">
@@ -191,6 +185,4 @@ export default function CardSettings() {
           </form>
         </div>
       </div>
-    </>
-  );
-}
+    </template>
