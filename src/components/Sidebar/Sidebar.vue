@@ -83,7 +83,7 @@
           <li class="items-center">
             <router-link
               class="text-xs uppercase py-3 font-bold block text-gray-800 hover:text-gray-600"
-              active-class="text-blue-500 hover:text-blue-600"
+              active-class="text-green-500 hover:text-green-600"
               to="/admin/dashboard"
             >
               <i class="fas fa-tv opacity-75 mr-2 text-sm"></i>
@@ -94,7 +94,7 @@
           <li class="items-center">
             <router-link
               class="text-xs uppercase py-3 font-bold block text-gray-800 hover:text-gray-600"
-              active-class="text-blue-500 hover:text-blue-600"
+              active-class="text-green-500 hover:text-green-600"
               to="/admin/settings"
             >
               <i class="fas fa-tools text-gray-400 mr-2 text-sm"></i>
@@ -105,7 +105,7 @@
           <li class="items-center">
             <router-link
               class="text-xs uppercase py-3 font-bold block text-gray-800 hover:text-gray-600"
-              active-class="text-blue-500 hover:text-blue-600"
+              active-class="text-green-500 hover:text-green-600"
               to="/admin/tables"
             >
               <i class="fas fa-table text-gray-400 mr-2 text-sm"></i>
@@ -116,7 +116,7 @@
           <li class="items-center">
             <router-link
               class="text-xs uppercase py-3 font-bold block text-gray-800 hover:text-gray-600"
-              active-class="text-blue-500 hover:text-blue-600"
+              active-class="text-green-500 hover:text-green-600"
               to="/admin/maps"
             >
               <i class="fas fa-map-marked text-gray-400 mr-2 text-sm"></i>

@@ -28,7 +28,7 @@
               <a
                 href="https://www.creative-tim.com/learning-lab/tailwind/overview/webapp-nextjs"
                 target="_blank"
-                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blue-500 active:bg-blue-600 uppercase text-sm shadow hover:shadow-lg"
+                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-green-500 active:bg-green-600 uppercase text-sm shadow hover:shadow-lg"
                 style="transition: all 0.15s ease;"
               >
                 Get started
@@ -79,7 +79,7 @@
             class="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-32"
           >
             <div
-              class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blue-600"
+              class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-green-600"
             >
               <img
                 alt="..."
@@ -96,7 +96,7 @@
                 >
                   <polygon
                     points="-30,95 583,95 583,65"
-                    class="text-blue-600 fill-current"
+                    class="text-green-600 fill-current"
                   ></polygon>
                 </svg>
                 <h4 class="text-xl font-bold text-white">
@@ -751,7 +751,7 @@
               <a
                 href="https://www.creative-tim.com/learning-lab/tailwind/overflow/webapp-nextjs"
                 target="_blank"
-                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-2 bg-blue-500 active:bg-blue-600 uppercase text-sm shadow hover:shadow-lg"
+                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-2 bg-green-500 active:bg-green-600 uppercase text-sm shadow hover:shadow-lg"
                 style="transition: all 0.15s ease;"
               >
                 Get started

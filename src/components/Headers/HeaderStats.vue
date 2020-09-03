@@ -1,6 +1,6 @@
 <template>
   <!-- Header -->
-  <div class="relative bg-blue-600 md:pt-32 pb-32 pt-12">
+  <div class="relative bg-green-600 md:pt-32 pb-32 pt-12">
     <div class="px-4 md:px-10 mx-auto w-full">
       <div>
         <!-- Card stats -->
@@ -50,7 +50,7 @@
               statPercentColor="text-green-500"
               statDescripiron="Since last month"
               statIconName="fas fa-percent"
-              statIconColor="bg-blue-500"
+              statIconColor="bg-green-500"
             />
           </div>
         </div>

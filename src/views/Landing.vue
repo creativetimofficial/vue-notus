@@ -146,7 +146,7 @@
 
             <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
               <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blue-600"
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-green-600"
               >
                 <img
                   alt="..."
@@ -163,7 +163,7 @@
                   >
                     <polygon
                       points="-30,95 583,95 583,65"
-                      class="text-blue-600 fill-current"
+                      class="text-green-600 fill-current"
                     ></polygon>
                   </svg>
                   <h4 class="text-xl font-bold text-white">
@@ -214,7 +214,7 @@
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
               <div class="md:pr-12">
                 <div
-                  class="text-blue-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-blue-300"
+                  class="text-green-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-green-300"
                 >
                   <i class="fas fa-rocket text-xl"></i>
                 </div>
@@ -229,7 +229,7 @@
                     <div class="flex items-center">
                       <div>
                         <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200 mr-3"
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200 mr-3"
                         >
                           <i class="fas fa-fingerprint"></i>
                         </span>
@@ -245,7 +245,7 @@
                     <div class="flex items-center">
                       <div>
                         <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200 mr-3"
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200 mr-3"
                         >
                           <i class="fab fa-html5"></i>
                         </span>
@@ -261,7 +261,7 @@
                     <div class="flex items-center">
                       <div>
                         <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200 mr-3"
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200 mr-3"
                         >
                           <i class="far fa-paper-plane"></i>
                         </span>

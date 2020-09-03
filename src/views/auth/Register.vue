@@ -91,7 +91,7 @@
                   />
                   <span class="ml-2 text-sm font-semibold text-gray-700">
                     I agree with the
-                    <a href="javascript:void(0)" class="text-blue-500">
+                    <a href="javascript:void(0)" class="text-green-500">
                       Privacy Policy
                     </a>
                   </span>

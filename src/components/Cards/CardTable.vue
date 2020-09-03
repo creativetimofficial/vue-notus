@@ -1,7 +1,7 @@
 <template>
   <div
     class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded"
-    :class="[color === 'light' ? 'bg-white' : 'bg-blue-900 text-white']"
+    :class="[color === 'light' ? 'bg-white' : 'bg-green-900 text-white']"
   >
     <div class="rounded-t mb-0 px-4 py-3 border-0">
       <div class="flex flex-wrap items-center">
@@ -25,7 +25,7 @@
               :class="[
                 color === 'light'
                   ? 'bg-gray-100 text-gray-600 border-gray-200'
-                  : 'bg-blue-800 text-blue-300 border-blue-700',
+                  : 'bg-green-800 text-green-300 border-green-700',
               ]"
             >
               Project
@@ -35,7 +35,7 @@
               :class="[
                 color === 'light'
                   ? 'bg-gray-100 text-gray-600 border-gray-200'
-                  : 'bg-blue-800 text-blue-300 border-blue-700',
+                  : 'bg-green-800 text-green-300 border-green-700',
               ]"
             >
               Budget
@@ -45,7 +45,7 @@
               :class="[
                 color === 'light'
                   ? 'bg-gray-100 text-gray-600 border-gray-200'
-                  : 'bg-blue-800 text-blue-300 border-blue-700',
+                  : 'bg-green-800 text-green-300 border-green-700',
               ]"
             >
               Status
@@ -55,7 +55,7 @@
               :class="[
                 color === 'light'
                   ? 'bg-gray-100 text-gray-600 border-gray-200'
-                  : 'bg-blue-800 text-blue-300 border-blue-700',
+                  : 'bg-green-800 text-green-300 border-green-700',
               ]"
             >
               Users
@@ -65,7 +65,7 @@
               :class="[
                 color === 'light'
                   ? 'bg-gray-100 text-gray-600 border-gray-200'
-                  : 'bg-blue-800 text-blue-300 border-blue-700',
+                  : 'bg-green-800 text-green-300 border-green-700',
               ]"
             >
               Completion
@@ -75,7 +75,7 @@
               :class="[
                 color === 'light'
                   ? 'bg-gray-100 text-gray-600 border-gray-200'
-                  : 'bg-blue-800 text-blue-300 border-blue-700',
+                  : 'bg-green-800 text-green-300 border-green-700',
               ]"
             ></th>
           </tr>
