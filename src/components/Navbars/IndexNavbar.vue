@@ -21,7 +21,7 @@
           type="button"
           v-on:click="setNavbarOpen"
         >
-          <i class="text-white fas fa-bars"></i>
+          <i class="fas fa-bars"></i>
         </button>
       </div>
       <div
