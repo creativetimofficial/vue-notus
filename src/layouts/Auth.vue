@@ -1,4 +1,5 @@
 <template>
+  <div>
   <navbar />
   <main>
     <section class="absolute w-full h-full">
@@ -10,6 +11,7 @@
       <FooterSmall absolute />
     </section>
   </main>
+</div>
 </template>
 <script>
 import Navbar from "@/components/Navbars/AuthNavbar.vue";
