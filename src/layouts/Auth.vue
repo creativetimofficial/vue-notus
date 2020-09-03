@@ -1,38 +1,26 @@
-import React from "react";
-import { Switch, Route } from "react-router-dom";
-
-// components
-
+<template>
+  <navbar />
+  <main>
+    <section class="absolute w-full h-full">
+      <div
+        class="absolute top-0 w-full h-full bg-gray-900"
+        :style="`background-image: url('${registerBg2}'), background-size: 100%, background-repeat: no-repeat`"
+      ></div>
+      <router-view />
+      <FooterSmall absolute />
+    </section>
+  </main>
+</template>
+<script>
 import Navbar from "@/components/Navbars/AuthNavbar.vue";
 import FooterSmall from "@/components/Footers/FooterSmall.vue";
 
-// views
+import registerBg2 from "assets/img/register_bg_2.png";
 
-import Login from "@/views/auth/Login.vue";
-import Register from "@/views/auth/Register.vue";
-
-export default function Auth() {
-  return (
-    <>
-      <Navbar transparent />
-      <main>
-        <section class="absolute w-full h-full">
-          <div
-            class="absolute top-0 w-full h-full bg-gray-900"
-            style={{
-              backgroundImage:
-                "url(" + require("assets/img/register_bg_2.png") + ")",
-              backgroundSize: "100%",
-              backgroundRepeat: "no-repeat",
-            }}
-          ></div>
-          <Switch>
-            <Route path="/auth/login" component={Login} />
-            <Route path="/auth/register" component={Register} />
-          </Switch>
-          <FooterSmall absolute />
-        </section>
-      </main>
-    </>
-  );
-}
+export default {
+  components: {
+    Navbar,
+    FooterSmall,
+  },
+};
+</script>
