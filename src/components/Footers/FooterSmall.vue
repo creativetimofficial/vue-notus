@@ -66,7 +66,7 @@ export default {
     return {
       date: new Date().getFullYear()
     }
-  }
+  },
   props: {
     absolute: {
       type: Boolean,
