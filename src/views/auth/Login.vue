@@ -113,7 +113,10 @@ import google from "assets/img/google.svg";
 
 export default {
   data() {
-    github, google;
+    return {
+      github,
+      google,
+    };
   },
 };
 </script>
