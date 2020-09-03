@@ -82,45 +82,97 @@
         <ul class="md:flex-col md:min-w-full flex flex-col list-none">
           <li class="items-center">
             <router-link
-              class="text-xs uppercase py-3 font-bold block text-gray-800 hover:text-gray-600"
-              active-class="text-green-500 hover:text-green-600"
               to="/admin/dashboard"
+              v-slot="{ href, route, navigate, isActive }"
             >
-              <i class="fas fa-tv opacity-75 mr-2 text-sm"></i>
-              Dashboard
+              <a
+                :href="href"
+                @click="navigate"
+                class="text-xs uppercase py-3 font-bold block"
+                :class="[
+                  isActive
+                    ? 'text-green-500 hover:text-green-600'
+                    : 'text-gray-800 hover:text-gray-600',
+                ]"
+              >
+                <i
+                  class="fas fa-tv mr-2 text-sm"
+                  :class="[isActive ? 'opacity-75' : 'text-gray-400']"
+                ></i>
+                Dashboard
+              </a>
             </router-link>
           </li>
 
           <li class="items-center">
             <router-link
-              class="text-xs uppercase py-3 font-bold block text-gray-800 hover:text-gray-600"
-              active-class="text-green-500 hover:text-green-600"
               to="/admin/settings"
+              v-slot="{ href, route, navigate, isActive }"
             >
-              <i class="fas fa-tools text-gray-400 mr-2 text-sm"></i>
-              Settings
+              <a
+                :href="href"
+                @click="navigate"
+                class="text-xs uppercase py-3 font-bold block"
+                :class="[
+                  isActive
+                    ? 'text-green-500 hover:text-green-600'
+                    : 'text-gray-800 hover:text-gray-600',
+                ]"
+              >
+                <i
+                  class="fas fa-tools mr-2 text-sm"
+                  :class="[isActive ? 'opacity-75' : 'text-gray-400']"
+                ></i>
+                Settings
+              </a>
             </router-link>
           </li>
 
           <li class="items-center">
             <router-link
-              class="text-xs uppercase py-3 font-bold block text-gray-800 hover:text-gray-600"
-              active-class="text-green-500 hover:text-green-600"
               to="/admin/tables"
+              v-slot="{ href, route, navigate, isActive }"
             >
-              <i class="fas fa-table text-gray-400 mr-2 text-sm"></i>
-              Tables
+              <a
+                :href="href"
+                @click="navigate"
+                class="text-xs uppercase py-3 font-bold block"
+                :class="[
+                  isActive
+                    ? 'text-green-500 hover:text-green-600'
+                    : 'text-gray-800 hover:text-gray-600',
+                ]"
+              >
+                <i
+                  class="fas fa-table mr-2 text-sm"
+                  :class="[isActive ? 'opacity-75' : 'text-gray-400']"
+                ></i>
+                Tables
+              </a>
             </router-link>
           </li>
 
           <li class="items-center">
             <router-link
-              class="text-xs uppercase py-3 font-bold block text-gray-800 hover:text-gray-600"
-              active-class="text-green-500 hover:text-green-600"
               to="/admin/maps"
+              v-slot="{ href, route, navigate, isActive }"
             >
-              <i class="fas fa-map-marked text-gray-400 mr-2 text-sm"></i>
-              Maps
+              <a
+                :href="href"
+                @click="navigate"
+                class="text-xs uppercase py-3 font-bold block"
+                :class="[
+                  isActive
+                    ? 'text-green-500 hover:text-green-600'
+                    : 'text-gray-800 hover:text-gray-600',
+                ]"
+              >
+                <i
+                  class="fas fa-map-marked mr-2 text-sm"
+                  :class="[isActive ? 'opacity-75' : 'text-gray-400']"
+                ></i>
+                Maps
+              </a>
             </router-link>
           </li>
         </ul>
@@ -141,7 +193,7 @@
               class="text-gray-800 hover:text-gray-600 text-xs uppercase py-3 font-bold block"
               to="/auth/login"
             >
-              <i class="fas fa-fingerprint text-gray-500 mr-2 text-sm"></i>
+              <i class="fas fa-fingerprint text-gray-400 mr-2 text-sm"></i>
               Login
             </router-link>
           </li>
@@ -173,7 +225,7 @@
               class="text-gray-800 hover:text-gray-600 text-xs uppercase py-3 font-bold block"
               to="/landing"
             >
-              <i class="fas fa-newspaper text-gray-500 mr-2 text-sm"></i>
+              <i class="fas fa-newspaper text-gray-400 mr-2 text-sm"></i>
               Landing Page
             </router-link>
           </li>
@@ -183,7 +235,7 @@
               class="text-gray-800 hover:text-gray-600 text-xs uppercase py-3 font-bold block"
               to="/profile"
             >
-              <i class="fas fa-user-circle text-gray-500 mr-2 text-sm"></i>
+              <i class="fas fa-user-circle text-gray-400 mr-2 text-sm"></i>
               Profile Page
             </router-link>
           </li>
@@ -204,7 +256,7 @@
               class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
               to="/"
             >
-              <i class="fas fa-paint-brush mr-2 text-gray-500 text-base"></i>
+              <i class="fas fa-paint-brush mr-2 text-gray-400 text-base"></i>
               Styles
             </router-link>
           </li>
@@ -214,7 +266,7 @@
               class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
               to="/"
             >
-              <i class="fab fa-css3-alt mr-2 text-gray-500 text-base"></i>
+              <i class="fab fa-css3-alt mr-2 text-gray-400 text-base"></i>
               CSS Components
             </router-link>
           </li>
@@ -224,7 +276,7 @@
               class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
               to="/"
             >
-              <i class="fab fa-vuejs mr-2 text-gray-500 text-base"></i>
+              <i class="fab fa-vuejs mr-2 text-gray-400 text-base"></i>
               VueJS
             </router-link>
           </li>
@@ -234,7 +286,7 @@
               class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
               to="/"
             >
-              <i class="fab fa-react mr-2 text-gray-500 text-base"></i>
+              <i class="fab fa-react mr-2 text-gray-400 text-base"></i>
               React
             </router-link>
           </li>
@@ -244,7 +296,7 @@
               class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
               to="/"
             >
-              <i class="fab fa-angular mr-2 text-gray-500 text-base"></i>
+              <i class="fab fa-angular mr-2 text-gray-400 text-base"></i>
               Angular
             </router-link>
           </li>
@@ -254,7 +306,7 @@
               class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
               to="/"
             >
-              <i class="fab fa-js-square mr-2 text-gray-500 text-base"></i>
+              <i class="fab fa-js-square mr-2 text-gray-400 text-base"></i>
               Javascript
             </router-link>
           </li>
