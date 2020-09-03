@@ -5,7 +5,7 @@
       <section class="absolute w-full h-full">
         <div
           class="absolute top-0 w-full h-full bg-gray-900"
-          :style="`background-image: url('${registerBg2}'), background-size: 100%, background-repeat: no-repeat`"
+          :style="`background-image: url('${registerBg2}'); background-size: 100%; background-repeat: no-repeat`"
         ></div>
         <router-view />
         <footer-small absolute />
