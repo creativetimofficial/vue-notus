@@ -43,8 +43,8 @@ export default {
           datasets: [
             {
               label: new Date().getFullYear(),
-              backgroundColor: "#4c51bf",
-              borderColor: "#4c51bf",
+              backgroundColor: "#9ae6b4",
+              borderColor: "#9ae6b4",
               data: [65, 78, 66, 44, 56, 67, 75],
               fill: false,
             },

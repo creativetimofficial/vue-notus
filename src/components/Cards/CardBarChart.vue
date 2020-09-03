@@ -50,8 +50,8 @@ export default {
             {
               label: new Date().getFullYear() - 1,
               fill: false,
-              backgroundColor: "#4c51bf",
-              borderColor: "#4c51bf",
+              backgroundColor: "#38a169",
+              borderColor: "#38a169",
               data: [27, 68, 86, 74, 10, 4, 87],
               barThickness: 8,
             },
