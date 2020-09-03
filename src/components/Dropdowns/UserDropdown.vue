@@ -1,89 +1,85 @@
-import React from "react";
+<template>
+  <div>
+    <a
+      class="text-gray-600 block"
+      href="#pablo"
+      ref="btnDropdownRef"
+      v-on:click="toggleDropdown($event)"
+    >
+      <div class="items-center flex">
+        <span
+          class="w-12 h-12 text-sm text-white bg-gray-300 inline-flex items-center justify-center rounded-full"
+        >
+          <img
+            alt="..."
+            class="w-full rounded-full align-middle border-none shadow-lg"
+            :src="image"
+          />
+        </span>
+      </div>
+    </a>
+    <div
+      ref="popoverDropdownRef"
+      class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg"
+      v-bind:class="{
+        hidden: !dropdownPopoverShow,
+        block: dropdownPopoverShow,
+      }"
+      style="min-width: 12rem;"
+    >
+      <a
+        href="javascript:void(0);"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+      >
+        Action
+      </a>
+      <a
+        href="javascript:void(0);"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+      >
+        Another action
+      </a>
+      <a
+        href="javascript:void(0);"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+      >
+        Something else here
+      </a>
+      <div class="h-0 my-2 border border-solid border-gray-200" />
+      <a
+        href="javascript:void(0);"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+      >
+        Seprated link
+      </a>
+    </div>
+  </div>
+</template>
+
+<script>
 import { createPopper } from "@popperjs/core";
 
-const UserDropdown = () => {
-  // dropdown props
-  const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
-  const btnDropdownRef = React.createRef();
-  const popoverDropdownRef = React.createRef();
-  const openDropdownPopover = () => {
-    createPopper(btnDropdownRef.current, popoverDropdownRef.current, {
-      placement: "bottom-end",
-    });
-    setDropdownPopoverShow(true);
-  };
-  const closeDropdownPopover = () => {
-    setDropdownPopoverShow(false);
-  };
-  return (
-    <>
-      <a
-        className="text-gray-600 block"
-        href="#pablo"
-        ref={btnDropdownRef}
-        onClick={(e) => {
-          e.preventDefault();
-          dropdownPopoverShow ? closeDropdownPopover() : openDropdownPopover();
-        }}
-      >
-        <div className="items-center flex">
-          <span className="w-12 h-12 text-sm text-white bg-gray-300 inline-flex items-center justify-center rounded-full">
-            <img
-              alt="..."
-              className="w-full rounded-full align-middle border-none shadow-lg"
-              src={require("assets/img/team-1-800x800.jpg")}
-            />
-          </span>
-        </div>
-      </a>
-      <div
-        ref={popoverDropdownRef}
-        className={
-          (dropdownPopoverShow ? "block " : "hidden ") +
-          "bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1"
-        }
-        style={{ minWidth: "12rem" }}
-      >
-        <a
-          href="#pablo"
-          className={
-            "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
-          }
-          onClick={(e) => e.preventDefault()}
-        >
-          Action
-        </a>
-        <a
-          href="#pablo"
-          className={
-            "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
-          }
-          onClick={(e) => e.preventDefault()}
-        >
-          Another action
-        </a>
-        <a
-          href="#pablo"
-          className={
-            "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
-          }
-          onClick={(e) => e.preventDefault()}
-        >
-          Something else here
-        </a>
-        <div className="h-0 my-2 border border-solid border-gray-200" />
-        <a
-          href="#pablo"
-          className={
-            "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
-          }
-          onClick={(e) => e.preventDefault()}
-        >
-          Seprated link
-        </a>
-      </div>
-    </>
-  );
-};
+import image from "@/assets/img/team-1-800x800.jpg";
 
-export default UserDropdown;
+export default {
+  data() {
+    return {
+      dropdownPopoverShow: false,
+      image: image,
+    };
+  },
+  methods: {
+    toggleDropdown: function (event) {
+      event.preventDefault();
+      if (this.dropdownPopoverShow) {
+        this.dropdownPopoverShow = false;
+      } else {
+        this.dropdownPopoverShow = true;
+        createPopper(this.$refs.btnDropdownRef, this.$refs.popoverDropdownRef, {
+          placement: "bottom-end",
+        });
+      }
+    },
+  },
+};
+</script>
