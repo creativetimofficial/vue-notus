@@ -1,7 +1,7 @@
 <template>
   <div>
     <a
-      class="hover:text-gray-600 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+      class="hover:text-gray-600 text-gray-800 px-3 py-2 flex items-center text-xs uppercase font-bold"
       href="#pablo"
       ref="btnDropdownRef"
       v-on:click="toggleDropdown($event)"

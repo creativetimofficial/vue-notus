@@ -25,14 +25,14 @@
         </button>
       </div>
       <div
-        class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none"
-        :class="[navbarOpen ? 'block rounded shadow-lg' : 'hidden']"
+        class="lg:flex flex-grow items-center"
+        :class="[navbarOpen ? 'block' : 'hidden']"
         id="example-navbar-warning"
       >
         <ul class="flex flex-col lg:flex-row list-none mr-auto">
           <li class="flex items-center">
             <a
-              class="hover:text-gray-600 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              class="hover:text-gray-600 text-gray-800 px-3 py-2 flex items-center text-xs uppercase font-bold"
               href="https://www.creative-tim.com/learning-lab/tailwind/overview/webapp-nextjs"
             >
               <i
@@ -48,7 +48,7 @@
           </li>
           <li class="flex items-center">
             <a
-              class="hover:text-gray-600 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              class="hover:text-gray-600 text-gray-800 px-3 py-2 flex items-center text-xs uppercase font-bold"
               href="#pablo"
             >
               <i class="text-gray-500 fab fa-facebook text-lg leading-lg" />
@@ -58,7 +58,7 @@
 
           <li class="flex items-center">
             <a
-              class="hover:text-gray-600 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              class="hover:text-gray-600 text-gray-800 px-3 py-2 flex items-center text-xs uppercase font-bold"
               href="#pablo"
             >
               <i class="text-gray-500 fab fa-twitter text-lg leading-lg" />
@@ -68,7 +68,7 @@
 
           <li class="flex items-center">
             <a
-              class="hover:text-gray-600 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              class="hover:text-gray-600 text-gray-800 px-3 py-2 flex items-center text-xs uppercase font-bold"
               href="#pablo"
             >
               <i class="text-gray-500 fab fa-github text-lg leading-lg" />
