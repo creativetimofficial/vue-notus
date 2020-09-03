@@ -770,12 +770,12 @@
         </div>
       </div>
     </section>
-    <footer />
+    <footer-component />
   </div>
 </template>
 <script>
 import IndexNavbar from "@/components/Navbars/IndexNavbar.vue";
-import Footer from "@/components/Footers/Footer.vue";
+import FooterComponent from "@/components/Footers/Footer.vue";
 
 import illHeader3 from "@/assets/img/ill_header_3.png";
 import componentBtn from "@/assets/img/component-btn.png"
@@ -807,7 +807,7 @@ export default {
   },
   components: {
     IndexNavbar,
-    Footer
+    FooterComponent
   }
 }
 </script>
