@@ -1,148 +1,111 @@
-import React from "react";
-import { Link } from "react-router-dom";
+<template>
+  <div>
+    <a
+      class="hover:text-gray-600 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+      href="#pablo"
+      ref="btnDropdownRef"
+      v-on:click="toggleDropdown($event)"
+    >
+      Demo Pages
+    </a>
+    <div
+      ref="popoverDropdownRef"
+      class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg"
+      v-bind:class="{
+        hidden: !dropdownPopoverShow,
+        block: dropdownPopoverShow,
+      }"
+      style="min-width: 12rem;"
+    >
+      <span
+        class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-no-wrap bg-transparent text-gray-500"
+      >
+        Admin Layout
+      </span>
+      <router-link
+        to="/admin/dashboard"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+      >
+        Dashboard
+      </router-link>
+      <router-link
+        to="/admin/settings"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+      >
+        Settings
+      </router-link>
+      <router-link
+        to="/admin/tables"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+      >
+        Tables
+      </router-link>
+      <router-link
+        to="/admin/maps"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+      >
+        Maps
+      </router-link>
+      <div class="h-0 mx-4 my-2 border border-solid border-gray-200" />
+      <span
+        class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-no-wrap bg-transparent text-gray-500"
+      >
+        Auth Layout
+      </span>
+      <router-link
+        to="/auth/login"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+      >
+        Login
+      </router-link>
+      <router-link
+        to="/auth/register"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+      >
+        Register
+      </router-link>
+      <div class="h-0 mx-4 my-2 border border-solid border-gray-200" />
+      <span
+        class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-no-wrap bg-transparent text-gray-500"
+      >
+        No Layout
+      </span>
+      <router-link
+        to="/landing"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+      >
+        Lading
+      </router-link>
+      <router-link
+        to="/profile"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+      >
+        Profile
+      </router-link>
+    </div>
+  </div>
+</template>
+<script>
 import { createPopper } from "@popperjs/core";
 
-const IndexDropdown = () => {
-  // dropdown props
-  const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
-  const btnDropdownRef = React.createRef();
-  const popoverDropdownRef = React.createRef();
-  const openDropdownPopover = () => {
-    createPopper(btnDropdownRef.current, popoverDropdownRef.current, {
-      placement: "bottom-end",
-    });
-    setDropdownPopoverShow(true);
-  };
-  const closeDropdownPopover = () => {
-    setDropdownPopoverShow(false);
-  };
-  return (
-    <>
-      <a
-        class="hover:text-gray-600 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-        href="#pablo"
-        ref={btnDropdownRef}
-        onClick={(e) => {
-          e.preventDefault();
-          dropdownPopoverShow ? closeDropdownPopover() : openDropdownPopover();
-        }}
-      >
-        Demo Pages
-      </a>
-      <div
-        ref={popoverDropdownRef}
-        className={
-          (dropdownPopoverShow ? "block " : "hidden ") +
-          "bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg"
-        }
-        style={{ minWidth: "12rem" }}
-      >
-        <span
-          className={
-            "text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-no-wrap bg-transparent text-gray-500"
-          }
-        >
-          Admin Layout
-        </span>
-        <Link to="/admin/dashboard">
-          <a
-            href="#pablo"
-            className={
-              "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
-            }
-          >
-            Dashboard
-          </a>
-        </Link>
-        <Link to="/admin/settings">
-          <a
-            href="#pablo"
-            className={
-              "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
-            }
-          >
-            Settings
-          </a>
-        </Link>
-        <Link to="/admin/tables">
-          <a
-            href="#pablo"
-            className={
-              "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
-            }
-          >
-            Tables
-          </a>
-        </Link>
-        <Link to="/admin/maps">
-          <a
-            href="#pablo"
-            className={
-              "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
-            }
-          >
-            Maps
-          </a>
-        </Link>
-        <div class="h-0 mx-4 my-2 border border-solid border-gray-200" />
-        <span
-          className={
-            "text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-no-wrap bg-transparent text-gray-500"
-          }
-        >
-          Auth Layout
-        </span>
-        <Link to="/auth/login">
-          <a
-            href="#pablo"
-            className={
-              "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
-            }
-          >
-            Login
-          </a>
-        </Link>
-        <Link to="/auth/register">
-          <a
-            href="#pablo"
-            className={
-              "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
-            }
-          >
-            Register
-          </a>
-        </Link>
-        <div class="h-0 mx-4 my-2 border border-solid border-gray-200" />
-        <span
-          className={
-            "text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-no-wrap bg-transparent text-gray-500"
-          }
-        >
-          No Layout
-        </span>
-        <Link to="/landing">
-          <a
-            href="#pablo"
-            className={
-              "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
-            }
-          >
-            Lading
-          </a>
-        </Link>
-        <Link to="/profile">
-          <a
-            href="#pablo"
-            className={
-              "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
-            }
-          >
-            Profile
-          </a>
-        </Link>
-      </div>
-    </>
-  );
+export default {
+  data() {
+    return {
+      dropdownPopoverShow: false,
+    };
+  },
+  methods: {
+    toggleDropdown: function (event) {
+      event.preventDefault();
+      if (this.dropdownPopoverShow) {
+        this.dropdownPopoverShow = false;
+      } else {
+        this.dropdownPopoverShow = true;
+        createPopper(this.$refs.btnDropdownRef, this.$refs.popoverDropdownRef, {
+          placement: "bottom-end",
+        });
+      }
+    },
+  },
 };
-
-export default IndexDropdown;
+</script>
