@@ -8,7 +8,7 @@
           :style="`background-image: url('${registerBg2}'), background-size: 100%, background-repeat: no-repeat`"
         ></div>
         <router-view />
-        <FooterSmall absolute />
+        <footer-small absolute />
       </section>
     </main>
   </div>
