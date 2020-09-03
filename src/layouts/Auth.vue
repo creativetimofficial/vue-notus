@@ -3,22 +3,22 @@ import { Switch, Route } from "react-router-dom";
 
 // components
 
-import Navbar from "components/Navbars/AuthNavbar.js";
-import FooterSmall from "components/Footers/FooterSmall.js";
+import Navbar from "@/components/Navbars/AuthNavbar.vue";
+import FooterSmall from "@/components/Footers/FooterSmall.vue";
 
 // views
 
-import Login from "views/auth/Login.js";
-import Register from "views/auth/Register.js";
+import Login from "@/views/auth/Login.vue";
+import Register from "@/views/auth/Register.vue";
 
 export default function Auth() {
   return (
     <>
       <Navbar transparent />
       <main>
-        <section className="absolute w-full h-full">
+        <section class="absolute w-full h-full">
           <div
-            className="absolute top-0 w-full h-full bg-gray-900"
+            class="absolute top-0 w-full h-full bg-gray-900"
             style={{
               backgroundImage:
                 "url(" + require("assets/img/register_bg_2.png") + ")",

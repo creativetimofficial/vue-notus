@@ -19,7 +19,7 @@ const NotificationDropdown = () => {
   return (
     <>
       <a
-        className="text-gray-600 block py-1 px-3"
+        class="text-gray-600 block py-1 px-3"
         href="#pablo"
         ref={btnDropdownRef}
         onClick={(e) => {
@@ -27,7 +27,7 @@ const NotificationDropdown = () => {
           dropdownPopoverShow ? closeDropdownPopover() : openDropdownPopover();
         }}
       >
-        <i className="fas fa-bell"></i>
+        <i class="fas fa-bell"></i>
       </a>
       <div
         ref={popoverDropdownRef}
@@ -64,7 +64,7 @@ const NotificationDropdown = () => {
         >
           Something else here
         </a>
-        <div className="h-0 my-2 border border-solid border-gray-200" />
+        <div class="h-0 my-2 border border-solid border-gray-200" />
         <a
           href="#pablo"
           className={
