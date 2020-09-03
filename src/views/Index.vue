@@ -47,7 +47,7 @@
 
       <img
         class="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12"
-        :src="illHeader3"
+        :src="patternVue"
         alt="..."
         style="max-height: 860px;"
       />
@@ -777,7 +777,7 @@
 import IndexNavbar from "@/components/Navbars/IndexNavbar.vue";
 import FooterComponent from "@/components/Footers/Footer.vue";
 
-import illHeader3 from "@/assets/img/ill_header_3.png";
+import patternVue from "@/assets/img/pattern_vue.png";
 import componentBtn from "@/assets/img/component-btn.png";
 import componentProfileCard from "@/assets/img/component-profile-card.png";
 import componentInfoCard from "@/assets/img/component-info-card.png";
@@ -792,7 +792,7 @@ import landing from "@/assets/img/landing.jpg";
 export default {
   data() {
     return {
-      illHeader3,
+      patternVue,
       componentBtn,
       componentProfileCard,
       componentInfoCard,
