@@ -40,7 +40,7 @@ export default function Navbar(props) {
                   class="hover:text-gray-600 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="https://www.creative-tim.com/learning-lab/tailwind/overview/webapp-nextjs"
                 >
-                  <i class="text-gray-500 far fa-file-alt text-lg leading-lg mr-2" />{" "}
+                  <i class="text-gray-500 far fa-file-alt text-lg leading-lg mr-2" />
                   Docs
                 </a>
               </li>

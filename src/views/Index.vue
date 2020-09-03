@@ -21,7 +21,7 @@ export default function Index() {
               </h2>
               <p class="mt-4 text-lg leading-relaxed text-gray-600">
                 Tailwind Webapp NextJS is Free and Open Source. It does not
-                change or add any CSS to the already one from{" "}
+                change or add any CSS to the already one from
                 <a
                   href="https://tailwindcss.com/?ref=creativetim"
                   class="text-gray-700"
@@ -230,7 +230,7 @@ export default function Index() {
                 class="font-bold text-gray-800 hover:text-gray-600"
                 style={{ transition: "all .15s ease" }}
               >
-                View All{" "}
+                View All
                 <i class="fa fa-angle-double-right ml-1 leading-relaxed"></i>
               </a>
             </div>
@@ -439,7 +439,7 @@ export default function Index() {
                 class="font-bold text-gray-800 hover:text-gray-600"
                 style={{ transition: "all .15s ease" }}
               >
-                View all{" "}
+                View all
                 <i class="fa fa-angle-double-right ml-1 leading-relaxed"></i>
               </a>
             </div>
@@ -610,14 +610,14 @@ export default function Index() {
                 Open Source
               </h3>
               <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-500">
-                Since{" "}
+                Since
                 <a
                   href="https://tailwindcss.com/"
                   class="text-gray-400"
                   target="_blank"
                 >
                   TailwindCSS
-                </a>{" "}
+                </a>
                 is an open source project we wanted to continue this movement
                 too. You can give this version a try to feel the design and also
                 test the quality of the code!

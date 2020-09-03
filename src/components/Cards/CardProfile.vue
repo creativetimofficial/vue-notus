@@ -52,7 +52,7 @@
         <div
           class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase"
         >
-          <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>{" "}
+          <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>
           Los Angeles, California
         </div>
         <div class="mb-2 text-gray-700 mt-10">

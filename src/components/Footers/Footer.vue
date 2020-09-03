@@ -144,7 +144,7 @@ export default function Footer() {
           <div class="flex flex-wrap items-center md:justify-between justify-center">
             <div class="w-full md:w-4/12 px-4 mx-auto text-center">
               <div class="text-sm text-gray-600 font-semibold py-1">
-                Copyright © {new Date().getFullYear()} Tailwind Webapp React by{" "}
+                Copyright © {new Date().getFullYear()} Tailwind Webapp React by
                 <a
                   href="https://www.creative-tim.com"
                   class="text-gray-600 hover:text-gray-900"

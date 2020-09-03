@@ -100,7 +100,7 @@ export default function Register() {
                         style={{ transition: "all .15s ease" }}
                       />
                       <span class="ml-2 text-sm font-semibold text-gray-700">
-                        I agree with the{" "}
+                        I agree with the
                         <a
                           href="#pablo"
                           class="text-blue-500"
