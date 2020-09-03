@@ -1501,12 +1501,6 @@ video {
   background-color: rgba(56, 161, 105, var(--bg-opacity));
 }
 
-.active\:bg-blue-600:active {
-  --bg-opacity: 1;
-  background-color: #3182ce;
-  background-color: rgba(49, 130, 206, var(--bg-opacity));
-}
-
 .active\:bg-indigo-600:active {
   --bg-opacity: 1;
   background-color: #5a67d8;
@@ -2961,12 +2955,6 @@ video {
   --text-opacity: 1;
   color: #63b3ed;
   color: rgba(99, 179, 237, var(--text-opacity));
-}
-
-.text-blue-500 {
-  --text-opacity: 1;
-  color: #4299e1;
-  color: rgba(66, 153, 225, var(--text-opacity));
 }
 
 .text-blue-600 {
