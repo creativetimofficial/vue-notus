@@ -4,7 +4,14 @@ module.exports = {
   },
   purge: {
     enabled: true,
-    content: ["./**/*.html", "./*.html", "./**/*.js", "./*.js"],
+    content: [
+      "./**/*.html",
+      "./*.html",
+      "./**/*.js",
+      "./*.js",
+      "./**/*.vue",
+      "./*.vue",
+    ],
     options: {
       whitelist: [],
     },
