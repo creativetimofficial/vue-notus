@@ -1,17 +1,17 @@
 <template>
   <div>
-  <navbar />
-  <main>
-    <section class="absolute w-full h-full">
-      <div
-        class="absolute top-0 w-full h-full bg-gray-900"
-        :style="`background-image: url('${registerBg2}'), background-size: 100%, background-repeat: no-repeat`"
-      ></div>
-      <router-view />
-      <FooterSmall absolute />
-    </section>
-  </main>
-</div>
+    <navbar />
+    <main>
+      <section class="absolute w-full h-full">
+        <div
+          class="absolute top-0 w-full h-full bg-gray-900"
+          :style="`background-image: url('${registerBg2}'), background-size: 100%, background-repeat: no-repeat`"
+        ></div>
+        <router-view />
+        <FooterSmall absolute />
+      </section>
+    </main>
+  </div>
 </template>
 <script>
 import Navbar from "@/components/Navbars/AuthNavbar.vue";
@@ -22,8 +22,8 @@ import registerBg2 from "@/assets/img/register_bg_2.png";
 export default {
   data() {
     return {
-      registerBg2
-    }
+      registerBg2,
+    };
   },
   components: {
     Navbar,
