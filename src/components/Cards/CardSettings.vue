@@ -31,7 +31,7 @@
               <input
                 type="text"
                 class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                defaultValue="lucky.jesse"
+                value="lucky.jesse"
                 style="transition: all 0.15s ease;"
               />
             </div>
@@ -47,7 +47,7 @@
               <input
                 type="email"
                 class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                defaultValue="jesse@example.com"
+                value="jesse@example.com"
                 style="transition: all 0.15s ease;"
               />
             </div>
@@ -63,7 +63,7 @@
               <input
                 type="text"
                 class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                defaultValue="Lucky"
+                value="Lucky"
                 style="transition: all 0.15s ease;"
               />
             </div>
@@ -79,7 +79,7 @@
               <input
                 type="text"
                 class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                defaultValue="Jesse"
+                value="Jesse"
                 style="transition: all 0.15s ease;"
               />
             </div>
@@ -103,7 +103,7 @@
               <input
                 type="text"
                 class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                defaultValue="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
+                value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
                 style="transition: all 0.15s ease;"
               />
             </div>
@@ -119,7 +119,7 @@
               <input
                 type="email"
                 class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                defaultValue="New York"
+                value="New York"
                 style="transition: all 0.15s ease;"
               />
             </div>
@@ -135,7 +135,7 @@
               <input
                 type="text"
                 class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                defaultValue="United States"
+                value="United States"
                 style="transition: all 0.15s ease;"
               />
             </div>
@@ -151,7 +151,7 @@
               <input
                 type="text"
                 class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                defaultValue="Postal Code"
+                value="Postal Code"
                 style="transition: all 0.15s ease;"
               />
             </div>
