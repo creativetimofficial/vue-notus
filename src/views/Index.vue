@@ -12,7 +12,7 @@
               A beautiful extension for TailwindCSS.
             </h2>
             <p class="mt-4 text-lg leading-relaxed text-gray-600">
-              Tailwind Webapp NextJS is Free and Open Source. It does not change
+              Tailwind Webapp VueJS is Free and Open Source. It does not change
               or add any CSS to the already one from
               <a
                 href="https://tailwindcss.com/?ref=creativetim"
@@ -26,7 +26,7 @@
             </p>
             <div class="mt-12">
               <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/overview/webapp-nextjs"
+                href="https://www.creative-tim.com/learning-lab/tailwind/overview/webapp-vuejs"
                 target="_blank"
                 class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-green-500 active:bg-green-600 uppercase text-sm shadow hover:shadow-lg"
                 style="transition: all 0.15s ease;"
@@ -34,7 +34,7 @@
                 Get started
               </a>
               <a
-                href="https://github.com/creativetimofficial/tailwind-webapp-nextjs"
+                href="https://github.com/creativetimofficial/tailwind-webapp-vuejs"
                 class="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-gray-800 active:bg-gray-700 uppercase text-sm shadow hover:shadow-lg"
                 target="_blank"
               >
@@ -174,7 +174,7 @@
                     </h6>
                     <p class="mb-4 text-gray-600">
                       Built by developers for developers. You will love how easy
-                      is to to work with Tailwind Webapp NextJS.
+                      is to to work with Tailwind Webapp VueJS.
                     </p>
                   </div>
                 </div>
@@ -245,7 +245,7 @@
               </span>
             </div>
             <a
-              href="https://www.creative-tim.com/learning-lab/tailwind/alerts/webapp-nextjs"
+              href="https://www.creative-tim.com/learning-lab/tailwind/alerts/webapp-vuejs"
               target="_blank"
               class="font-bold text-gray-800 hover:text-gray-600"
               style="transition: all 0.15s ease;"
@@ -367,7 +367,7 @@
                   </div>
                 </a>
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/alerts/webapp-vue"
+                  href="https://www.creative-tim.com/learning-lab/tailwind/alerts/webapp-vuejs"
                   target="_blank"
                 >
                   <div
@@ -476,7 +476,7 @@
               </span>
             </div>
             <a
-              href="https://www.creative-tim.com/learning-lab/tailwind/alerts/webapp-nextjs"
+              href="https://www.creative-tim.com/learning-lab/tailwind/alerts/webapp-vuejs"
               target="_blank"
               class="font-bold text-gray-800 hover:text-gray-600"
               style="transition: all 0.15s ease;"
@@ -577,7 +577,7 @@
         <div class="w-full md:w-6/12 px-12 md:px-4">
           <h2 class="font-semibold text-4xl">Beautiful Example Pages</h2>
           <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-600">
-            Tailwind Webapp NextJS is a completly new product built using our
+            Tailwind Webapp VueJS is a completly new product built using our
             past experience in web templates. Take the examples we made for you
             and start playing with them.
           </p>
@@ -683,7 +683,7 @@
               Star!
             </p>
             <a
-              href="https://github.com/creativetimofficial/tailwind-webapp-nextjs"
+              href="https://github.com/creativetimofficial/tailwind-webapp-vuejs"
               target="_blank"
               class="github-star mt-4 inline-block text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-gray-800 active:bg-gray-700 uppercase text-sm shadow hover:shadow-lg"
             >
@@ -749,7 +749,7 @@
             </p>
             <div class="sm:block flex flex-col mt-10">
               <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/overflow/webapp-nextjs"
+                href="https://www.creative-tim.com/learning-lab/tailwind/overflow/webapp-vuejs"
                 target="_blank"
                 class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-2 bg-green-500 active:bg-green-600 uppercase text-sm shadow hover:shadow-lg"
                 style="transition: all 0.15s ease;"
@@ -757,7 +757,7 @@
                 Get started
               </a>
               <a
-                href="https://github.com/creativetimofficial/tailwind-webapp-nextjs"
+                href="https://github.com/creativetimofficial/tailwind-webapp-vuejs"
                 target="_blank"
                 class="github-star sm:ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-gray-800 active:bg-gray-700 uppercase text-sm shadow hover:shadow-lg"
               >
