@@ -804,7 +804,7 @@ export default {
       profile,
       landing
     }
-  }
+  },
   components: {
     IndexNavbar,
     Footer
