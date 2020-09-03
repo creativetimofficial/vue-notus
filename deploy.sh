@@ -4,6 +4,11 @@
 set -e
 
 # build
+rm -rf node_modules/
+rm -rf package-lock.json
+rm -rf dist/
+npm install
+npm run build:tailwind
 npm run build
 
 # navigate into the build output directory
@@ -20,6 +25,7 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:creativetimofficial/tailwind-webapp-vuejs.git feature/v1.0.0-live:gh-pages
+git push -f https://github.com/creativetimofficial/tailwind-webapp-vuejs.git master:gh-pages
+
 
 cd -
