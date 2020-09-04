@@ -3,8 +3,7 @@
     <navbar />
     <main>
       <div
-        class="relative pt-16 pb-32 flex content-center items-center justify-center"
-        style="min-height: 75vh;"
+        class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75"
       >
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover"
@@ -34,8 +33,8 @@
           </div>
         </div>
         <div
-          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
-          style="height: 70px; transform: translateZ(0);"
+          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
+          style="transform: translateZ(0);"
         >
           <svg
             class="absolute bottom-0 overflow-hidden"
@@ -158,8 +157,7 @@
                     preserveAspectRatio="none"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 583 95"
-                    class="absolute left-0 w-full block"
-                    style="height: 95px; top: -94px;"
+                    class="absolute left-0 w-full block h-95-px -top-94-px"
                   >
                     <polygon
                       points="-30,95 583,95 583,65"
@@ -183,8 +181,8 @@
 
       <section class="relative py-20">
         <div
-          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-          style="height: 80px; transform: translateZ(0);"
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
+          style="transform: translateZ(0);"
         >
           <svg
             class="absolute bottom-0 overflow-hidden"
@@ -296,8 +294,7 @@
                 <img
                   alt="..."
                   :src="team1"
-                  class="shadow-lg rounded-full max-w-full mx-auto"
-                  style="max-width: 120px;"
+                  class="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
                 <div class="pt-6 text-center">
                   <h5 class="text-xl font-bold">Ryan Tompson</h5>
@@ -332,8 +329,7 @@
                 <img
                   alt="..."
                   :src="team2"
-                  class="shadow-lg rounded-full max-w-full mx-auto"
-                  style="max-width: 120px;"
+                  class="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
                 <div class="pt-6 text-center">
                   <h5 class="text-xl font-bold">Romina Hadid</h5>
@@ -362,8 +358,7 @@
                 <img
                   alt="..."
                   :src="team3"
-                  class="shadow-lg rounded-full max-w-full mx-auto"
-                  style="max-width: 120px;"
+                  class="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
                 <div class="pt-6 text-center">
                   <h5 class="text-xl font-bold">Alexa Smith</h5>
@@ -398,8 +393,7 @@
                 <img
                   alt="..."
                   :src="team4"
-                  class="shadow-lg rounded-full max-w-full mx-auto"
-                  style="max-width: 120px;"
+                  class="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
                 <div class="pt-6 text-center">
                   <h5 class="text-xl font-bold">Jenna Kardi</h5>
@@ -441,8 +435,8 @@
 
       <section class="pb-20 relative block bg-gray-900">
         <div
-          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-          style="height: 80px; transform: translateZ(0);"
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
+          style="transform: translateZ(0);"
         >
           <svg
             class="absolute bottom-0 overflow-hidden"
@@ -542,9 +536,8 @@
                     </label>
                     <input
                       type="text"
-                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
                       placeholder="Full Name"
-                      style="transition: all 0.15s ease;"
                     />
                   </div>
 
@@ -557,9 +550,8 @@
                     </label>
                     <input
                       type="email"
-                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
                       placeholder="Email"
-                      style="transition: all 0.15s ease;"
                     />
                   </div>
 
@@ -579,9 +571,8 @@
                   </div>
                   <div class="text-center mt-6">
                     <button
-                      class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                      class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                       type="button"
-                      style="transition: all 0.15s ease;"
                     >
                       Send Message
                     </button>

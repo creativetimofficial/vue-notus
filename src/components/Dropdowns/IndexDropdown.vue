@@ -10,12 +10,11 @@
     </a>
     <div
       ref="popoverDropdownRef"
-      class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg"
+      class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48"
       v-bind:class="{
         hidden: !dropdownPopoverShow,
         block: dropdownPopoverShow,
       }"
-      style="min-width: 12rem;"
     >
       <span
         class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-no-wrap bg-transparent text-gray-500"

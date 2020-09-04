@@ -9,8 +9,7 @@
     </a>
     <div
       ref="popoverDropdownRef"
-      class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1"
-      style="min-width: 12rem;"
+      class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48"
       v-bind:class="{
         hidden: !dropdownPopoverShow,
         block: dropdownPopoverShow,
