@@ -1,10 +1,9 @@
 <template>
   <div
     id="map-canvas"
-    class="relative w-full rounded"
+    class="relative w-full rounded h-600-px"
     data-lat="40.748817"
     data-lng="-73.985428"
-    style="height: 600px;"
   ></div>
 </template>
 <script>

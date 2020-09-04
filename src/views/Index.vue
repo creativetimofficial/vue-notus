@@ -2,8 +2,7 @@
   <div>
     <index-navbar />
     <section
-      class="header relative pt-16 items-center flex h-screen"
-      style="max-height: 860px;"
+      class="header relative pt-16 items-center flex h-screen max-h-860-px"
     >
       <div class="container mx-auto items-center flex flex-wrap">
         <div class="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
@@ -28,14 +27,13 @@
               <a
                 href="https://www.creative-tim.com/learning-lab/tailwind/overview/webapp-vuejs"
                 target="_blank"
-                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-green-500 active:bg-green-600 uppercase text-sm shadow hover:shadow-lg"
-                style="transition: all 0.15s ease;"
+                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-green-500 active:bg-green-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
               >
                 Get started
               </a>
               <a
                 href="https://github.com/creativetimofficial/tailwind-webapp-vuejs"
-                class="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-gray-800 active:bg-gray-700 uppercase text-sm shadow hover:shadow-lg"
+                class="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-gray-800 active:bg-gray-700 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
                 target="_blank"
               >
                 Github Star
@@ -46,17 +44,16 @@
       </div>
 
       <img
-        class="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12"
+        class="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860-px"
         :src="patternVue"
         alt="..."
-        style="max-height: 860px;"
       />
     </section>
 
     <section class="mt-40 pb-40 relative bg-gray-200">
       <div
-        class="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute"
-        style="height: 80px; transform: translateZ(0);"
+        class="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
+        style="transform: translateZ(0);"
       >
         <svg
           class="absolute bottom-0 overflow-hidden"
@@ -91,8 +88,7 @@
                   preserveAspectRatio="none"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 583 95"
-                  class="absolute left-0 w-full block"
-                  style="height: 95px; top: -94px;"
+                  class="absolute left-0 w-full block h-95-px -top-94-px"
                 >
                   <polygon
                     points="-30,95 583,95 583,65"
@@ -247,8 +243,7 @@
             <a
               href="https://www.creative-tim.com/learning-lab/tailwind/alerts/webapp-vuejs"
               target="_blank"
-              class="font-bold text-gray-800 hover:text-gray-600"
-              style="transition: all 0.15s ease;"
+              class="font-bold text-gray-800 hover:text-gray-600 ease-linear transition-all duration-150"
             >
               View All
               <i class="fa fa-angle-double-right ml-1 leading-relaxed"></i>
@@ -262,38 +257,32 @@
               <img
                 alt="..."
                 :src="componentBtn"
-                class="w-full align-middle rounded absolute shadow-lg"
-                style="max-width: 100px; left: 145px; top: -29px; z-index: 3;"
+                class="w-full align-middle rounded absolute shadow-lg max-w-100-px left-145-px -top-29-px z-3"
               />
               <img
                 alt="..."
                 :src="componentProfileCard"
-                class="w-full align-middle rounded-lg absolute shadow-lg"
-                style="max-width: 210px; left: 260px; top: -160px;"
+                class="w-full align-middle rounded-lg absolute shadow-lg max-w-210-px left-260-px -top-160-px"
               />
               <img
                 alt="..."
                 :src="componentInfoCard"
-                class="w-full align-middle rounded-lg absolute shadow-lg"
-                style="max-width: 180px; left: 40px; top: -225px; z-index: 2;"
+                class="w-full align-middle rounded-lg absolute shadow-lg max-w-180-px left-40-px -top-225-px z-2"
               />
               <img
                 alt="..."
                 :src="componentInfo2"
-                class="w-full align-middle rounded-lg absolute shadow-2xl"
-                style="max-width: 200px; left: -50px; top: 25px;"
+                class="w-full align-middle rounded-lg absolute shadow-2xl max-w-200-px -left-50-px top-25-px"
               />
               <img
                 alt="..."
                 :src="componentMenu"
-                class="w-full align-middle rounded absolute shadow-lg"
-                style="max-width: 580px; left: -20px; top: 210px;"
+                class="w-full align-middle rounded absolute shadow-lg max-w-580-px -left-20-px top-210-px"
               />
               <img
                 alt="..."
                 :src="componentBtnPink"
-                class="w-full align-middle rounded absolute shadow-xl"
-                style="max-width: 120px; left: 195px; top: 95px;"
+                class="w-full align-middle rounded absolute shadow-xl max-w-120-px left-195-px top-95-px"
               />
             </div>
           </div>
@@ -478,8 +467,7 @@
             <a
               href="https://www.creative-tim.com/learning-lab/tailwind/alerts/webapp-vuejs"
               target="_blank"
-              class="font-bold text-gray-800 hover:text-gray-600"
-              style="transition: all 0.15s ease;"
+              class="font-bold text-gray-800 hover:text-gray-600 ease-linear transition-all duration-150"
             >
               View all
               <i class="fa fa-angle-double-right ml-1 leading-relaxed"></i>
@@ -596,8 +584,7 @@
                 </h5>
                 <router-link to="/auth/login">
                   <div
-                    class="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg"
-                    style="transition: all 0.15s ease;"
+                    class="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150"
                   >
                     <img
                       alt="..."
@@ -614,8 +601,7 @@
                 </h5>
                 <router-link to="/profile">
                   <div
-                    class="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg"
-                    style="transition: all 0.15s ease;"
+                    class="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150"
                   >
                     <img
                       alt="..."
@@ -632,8 +618,7 @@
                 </h5>
                 <router-link to="/landing">
                   <div
-                    class="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg"
-                    style="transition: all 0.15s ease;"
+                    class="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150"
                   >
                     <img
                       alt="..."
@@ -685,7 +670,7 @@
             <a
               href="https://github.com/creativetimofficial/tailwind-webapp-vuejs"
               target="_blank"
-              class="github-star mt-4 inline-block text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-gray-800 active:bg-gray-700 uppercase text-sm shadow hover:shadow-lg"
+              class="github-star mt-4 inline-block text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-gray-800 active:bg-gray-700 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
             >
               Github Star
             </a>
@@ -693,15 +678,7 @@
 
           <div class="w-full md:w-4/12 px-4 mr-auto ml-auto mt-32 relative">
             <i
-              class="fab fa-github text-gray-800"
-              style="
-                font-size: 55em;
-                position: absolute;
-                top: -150px;
-                right: -100%;
-                left: auto;
-                opacity: 0.8;
-              "
+              class="fab fa-github text-gray-800 text-55 absolute -top-150-px -right-100 left-auto opacity-80"
             ></i>
           </div>
         </div>
@@ -710,8 +687,8 @@
 
     <section class="pb-16 bg-gray-300 relative pt-32">
       <div
-        class="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute"
-        style="height: 80px; transform: translateZ(0);"
+        class="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
+        style="transform: translateZ(0);"
       >
         <svg
           class="absolute bottom-0 overflow-hidden"
@@ -751,15 +728,14 @@
               <a
                 href="https://www.creative-tim.com/learning-lab/tailwind/overflow/webapp-vuejs"
                 target="_blank"
-                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-2 bg-green-500 active:bg-green-600 uppercase text-sm shadow hover:shadow-lg"
-                style="transition: all 0.15s ease;"
+                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-2 bg-green-500 active:bg-green-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
               >
                 Get started
               </a>
               <a
                 href="https://github.com/creativetimofficial/tailwind-webapp-vuejs"
                 target="_blank"
-                class="github-star sm:ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-gray-800 active:bg-gray-700 uppercase text-sm shadow hover:shadow-lg"
+                class="github-star sm:ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-gray-800 active:bg-gray-700 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
               >
                 <i class="fab fa-github text-lg mr-1"></i>
                 <span>Help With a Star</span>

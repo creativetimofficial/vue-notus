@@ -2,7 +2,7 @@
   <div>
     <navbar />
     <main class="profile-page">
-      <section class="relative block" style="height: 500px;">
+      <section class="relative block h-500-px">
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover"
           style="
@@ -15,8 +15,8 @@
           ></span>
         </div>
         <div
-          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
-          style="height: 70px; transform: translateZ(0);"
+          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
+          style="transform: translateZ(0);"
         >
           <svg
             class="absolute bottom-0 overflow-hidden"
@@ -48,8 +48,7 @@
                     <img
                       alt="..."
                       :src="team2"
-                      class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
-                      style="max-width: 150px;"
+                      class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 mx-w-150-px"
                     />
                   </div>
                 </div>
@@ -58,9 +57,8 @@
                 >
                   <div class="py-6 px-3 mt-32 sm:mt-0">
                     <button
-                      class="bg-green-500 active:bg-green-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1"
+                      class="bg-green-500 active:bg-green-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
                       type="button"
-                      style="transition: all 0.15s ease;"
                     >
                       Connect
                     </button>

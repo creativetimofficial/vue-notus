@@ -4,8 +4,8 @@
     <main>
       <section class="absolute w-full h-full">
         <div
-          class="absolute top-0 w-full h-full bg-gray-900"
-          :style="`background-image: url('${registerBg2}'); background-size: 100%; background-repeat: no-repeat`"
+          class="absolute top-0 w-full h-full bg-gray-900 bg-no-repeat bg-full"
+          :style="`background-image: url('${registerBg2}');`"
         ></div>
         <router-view />
         <footer-small absolute />

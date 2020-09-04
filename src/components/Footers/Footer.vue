@@ -1,8 +1,8 @@
 <template>
   <footer class="relative bg-gray-300 pt-8 pb-6">
     <div
-      class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-      style="height:80px; transform:translateZ(0)"
+      class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
+      style="transform: translateZ(0);"
     >
       <svg
         class="absolute bottom-0 overflow-hidden"

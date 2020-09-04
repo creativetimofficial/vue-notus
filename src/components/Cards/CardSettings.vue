@@ -6,9 +6,8 @@
       <div class="text-center flex justify-between">
         <h6 class="text-gray-800 text-xl font-bold">My account</h6>
         <button
-          class="bg-green-500 text-white active:bg-green-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1"
+          class="bg-green-500 text-white active:bg-green-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
           type="button"
-          style="transition: all 0.15s ease;"
         >
           Settings
         </button>
@@ -30,9 +29,8 @@
               </label>
               <input
                 type="text"
-                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
                 value="lucky.jesse"
-                style="transition: all 0.15s ease;"
               />
             </div>
           </div>
@@ -46,9 +44,8 @@
               </label>
               <input
                 type="email"
-                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
                 value="jesse@example.com"
-                style="transition: all 0.15s ease;"
               />
             </div>
           </div>
@@ -62,9 +59,8 @@
               </label>
               <input
                 type="text"
-                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
                 value="Lucky"
-                style="transition: all 0.15s ease;"
               />
             </div>
           </div>
@@ -78,9 +74,8 @@
               </label>
               <input
                 type="text"
-                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
                 value="Jesse"
-                style="transition: all 0.15s ease;"
               />
             </div>
           </div>
@@ -102,9 +97,8 @@
               </label>
               <input
                 type="text"
-                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
                 value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
-                style="transition: all 0.15s ease;"
               />
             </div>
           </div>
@@ -118,9 +112,8 @@
               </label>
               <input
                 type="email"
-                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
                 value="New York"
-                style="transition: all 0.15s ease;"
               />
             </div>
           </div>
@@ -134,9 +127,8 @@
               </label>
               <input
                 type="text"
-                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
                 value="United States"
-                style="transition: all 0.15s ease;"
               />
             </div>
           </div>
@@ -150,9 +142,8 @@
               </label>
               <input
                 type="text"
-                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
                 value="Postal Code"
-                style="transition: all 0.15s ease;"
               />
             </div>
           </div>
@@ -174,9 +165,8 @@
               </label>
               <textarea
                 type="text"
-                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
                 rows="4"
-                style="transition: all 0.15s ease;"
               >
                     A beautiful Dashboard for React & Tailwindcss. It is Free
                     and Open Source.
