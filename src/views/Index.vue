@@ -50,7 +50,7 @@
       />
     </section>
 
-    <section class="mt-40 pb-40 relative bg-gray-200">
+    <section class="mt-48 md:mt-40 pb-40 relative bg-gray-200">
       <div
         class="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
         style="transform: translateZ(0);"
