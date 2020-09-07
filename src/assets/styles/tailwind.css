@@ -2659,6 +2659,11 @@ video {
   padding-bottom: 6rem;
 }
 
+.py-40 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
 .pt-0 {
   padding-top: 0;
 }
@@ -4272,6 +4277,10 @@ video {
     margin-bottom: 1rem;
   }
 
+  .md\:mt-40 {
+    margin-top: 10rem;
+  }
+
   .md\:mt-64 {
     margin-top: 16rem;
   }
@@ -4349,6 +4358,10 @@ video {
   .md\:shadow-none {
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 
   .md\:w-64 {
