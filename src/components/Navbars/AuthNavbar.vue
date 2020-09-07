@@ -47,7 +47,8 @@
           <li class="flex items-center">
             <a
               class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-              href="#pablo"
+              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdemos.creative-tim.com%2Ftailwind-webapp-vuejs%2F%23%2F"
+              target="_blank"
             >
               <i
                 class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg"
@@ -59,7 +60,8 @@
           <li class="flex items-center">
             <a
               class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-              href="#pablo"
+              href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdemos.creative-tim.com%2Ftailwind-webapp-vuejs%2F%23%2F&text=Start%20your%20development%20with%20a%20Free%20Tailwindcss%20and%20VueJS%20Admin%20and%20Presentation%20Starter%20Kit%20Template.%20Let%20Tailwind%20Webapp%20VueJS%20amaze%20you%20with%20its%20cool%20features%20and%20build%20tools%20and%20get%20your%20project%20to%20a%20whole%20new%20level.%20"
+              target="_blank"
             >
               <i
                 class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg"
@@ -71,7 +73,8 @@
           <li class="flex items-center">
             <a
               class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-              href="#pablo"
+              href="https://github.com/creativetimofficial/tailwind-webapp-vuejs"
+              target="_blank"
             >
               <i
                 class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg"
