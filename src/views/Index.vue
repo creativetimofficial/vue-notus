@@ -293,8 +293,7 @@
             <div class="justify-center flex flex-wrap relative">
               <div class="my-4 w-full lg:w-6/12 px-4 lg:mt-32">
                 <a
-                  ?ref="twv-indexhref"
-                  ="https://www.creative-tim.com/learning-lab/tailwind/alerts/webapp"
+                  href="https://www.creative-tim.com/learning-lab/tailwind/alerts/webapp?ref=twv-index"
                   target="_blank"
                 >
                   <div
