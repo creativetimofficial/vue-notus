@@ -31,7 +31,7 @@
           <li class="flex items-center">
             <a
               class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-              href="https://www.creative-tim.com/learning-lab/tailwind/overview/webapp-vuejs"
+              href="https://www.creative-tim.com/learning-lab/tailwind/overview/webapp-vuejs?ref=twv-auth-navbar"
             >
               <i
                 class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"
@@ -73,7 +73,7 @@
           <li class="flex items-center">
             <a
               class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-              href="https://github.com/creativetimofficial/tailwind-webapp-vuejs"
+              href="https://github.com/creativetimofficial/tailwind-webapp-vuejs?ref=twv-auth-navbar"
               target="_blank"
             >
               <i
