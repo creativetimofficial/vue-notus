@@ -129,7 +129,72 @@ This is the project structure that you will get upon the download:
 ```
 tailwind-webapp-vuejs
 .
-
+├── CHANGELOG.md
+├── ISSUE_TEMPLATE.md
+├── LICENSE.md
+├── README.md
+├── babel.config.js
+├── package.json
+├── public
+│   ├── favicon.ico
+│   └── index.html
+├── src
+│   ├── App.vue
+│   ├── assets
+│   │   ├── img
+│   │   │   ├── github.svg
+│   │   │   └── google.svg
+│   │   └── styles
+│   │       ├── index.css
+│   │       └── tailwind.css
+│   ├── components
+│   │   ├── Cards
+│   │   │   ├── CardBarChart.vue
+│   │   │   ├── CardLineChart.vue
+│   │   │   ├── CardPageVisits.vue
+│   │   │   ├── CardProfile.vue
+│   │   │   ├── CardSettings.vue
+│   │   │   ├── CardSocialTraffic.vue
+│   │   │   ├── CardStats.vue
+│   │   │   └── CardTable.vue
+│   │   ├── Dropdowns
+│   │   │   ├── IndexDropdown.vue
+│   │   │   ├── NotificationDropdown.vue
+│   │   │   ├── PagesDropdown.vue
+│   │   │   ├── TableDropdown.vue
+│   │   │   └── UserDropdown.vue
+│   │   ├── Footers
+│   │   │   ├── Footer.vue
+│   │   │   ├── FooterAdmin.vue
+│   │   │   └── FooterSmall.vue
+│   │   ├── Headers
+│   │   │   └── HeaderStats.vue
+│   │   ├── Maps
+│   │   │   └── MapExample.vue
+│   │   ├── Navbars
+│   │   │   ├── AdminNavbar.vue
+│   │   │   ├── AuthNavbar.vue
+│   │   │   └── IndexNavbar.vue
+│   │   └── Sidebar
+│   │       └── Sidebar.vue
+│   ├── layouts
+│   │   ├── Admin.vue
+│   │   └── Auth.vue
+│   ├── main.js
+│   └── views
+│       ├── Index.vue
+│       ├── Landing.vue
+│       ├── Profile.vue
+│       ├── admin
+│       │   ├── Dashboard.vue
+│       │   ├── Maps.vue
+│       │   ├── Settings.vue
+│       │   └── Tables.vue
+│       └── auth
+│           ├── Login.vue
+│           └── Register.vue
+├── tailwind.config.js
+└── vue.config.js
 ```
 
 ## Browser Support
