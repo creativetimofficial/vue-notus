@@ -1,9 +1,9 @@
 {
-  "name": "tailwind-webapp-vuejs",
+  "name": "vue-tailwind-webapp",
   "homepage": "https://demos.creative-tim.com/tailwind-webapp-react/",
   "version": "1.0.0",
-  "description": "Tailwind Webapp VueJS - A free Tailwind and VueJS webapp template by Creative Tim.",
-  "repository": "https://github.com/creativetimofficial/tailwind-webapp-vuejs",
+  "description": "Vue Tailwind WebApp - A free Tailwind and VueJS webapp template by Creative Tim.",
+  "repository": "https://github.com/creativetimofficial/vue-tailwind-webapp",
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",

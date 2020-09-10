@@ -11,7 +11,7 @@
               A beautiful extension for TailwindCSS.
             </h2>
             <p class="mt-4 text-lg leading-relaxed text-gray-600">
-              Tailwind Webapp VueJS is Free and Open Source. It does not change
+              Vue Tailwind WebApp is Free and Open Source. It does not change
               or add any CSS to the already one from
               <a
                 href="https://tailwindcss.com/?ref=creativetim"
@@ -25,14 +25,14 @@
             </p>
             <div class="mt-12">
               <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/overview/webapp-vuejs?ref=twv-index"
+                href="https://www.creative-tim.com/learning-lab/tailwind/overview/webapp-vuejs?ref=vtw-index"
                 target="_blank"
                 class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-green-500 active:bg-green-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
               >
                 Get started
               </a>
               <a
-                href="https://github.com/creativetimofficial/tailwind-webapp-vuejs?ref=twv-index"
+                href="https://github.com/creativetimofficial/vue-tailwind-webapp?ref=vtw-index"
                 class="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-gray-800 active:bg-gray-700 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
                 target="_blank"
               >
@@ -121,7 +121,7 @@
                       CSS Components
                     </h6>
                     <p class="mb-4 text-gray-600">
-                      Tailwind Webapp comes with a huge number of Fully Coded
+                      Tailwind WebApp comes with a huge number of Fully Coded
                       CSS components.
                     </p>
                   </div>
@@ -170,7 +170,7 @@
                     </h6>
                     <p class="mb-4 text-gray-600">
                       Built by developers for developers. You will love how easy
-                      is to to work with Tailwind Webapp VueJS.
+                      is to to work with Vue Tailwind WebApp.
                     </p>
                   </div>
                 </div>
@@ -241,7 +241,7 @@
               </span>
             </div>
             <a
-              href="https://www.creative-tim.com/learning-lab/tailwind/alerts/webapp-vuejs?ref=twv-index"
+              href="https://www.creative-tim.com/learning-lab/tailwind/alerts/webapp-vuejs?ref=vtw-index"
               target="_blank"
               class="font-bold text-gray-800 hover:text-gray-600 ease-linear transition-all duration-150"
             >
@@ -293,7 +293,7 @@
             <div class="justify-center flex flex-wrap relative">
               <div class="my-4 w-full lg:w-6/12 px-4 lg:mt-32">
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/alerts/webapp?ref=twv-index"
+                  href="https://www.creative-tim.com/learning-lab/tailwind/alerts/webapp-js?ref=vtw-index"
                   target="_blank"
                 >
                   <div
@@ -314,7 +314,7 @@
                   </div>
                 </a>
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/alerts/webapp-angular?ref=twv-index"
+                  href="https://www.creative-tim.com/learning-lab/tailwind/alerts/webapp-angular?ref=vtw-index"
                   target="_blank"
                 >
                   <div
@@ -337,7 +337,7 @@
               </div>
               <div class="my-4 w-full lg:w-6/12 px-4">
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/alerts/webapp-react?ref=twv-index"
+                  href="https://www.creative-tim.com/learning-lab/tailwind/alerts/webapp-react?ref=vtw-index"
                   target="_blank"
                 >
                   <div class="bg-blue-500 shadow-lg rounded-lg text-center p-8">
@@ -356,7 +356,7 @@
                   </div>
                 </a>
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/alerts/webapp-vuejs?ref=twv-index"
+                  href="https://www.creative-tim.com/learning-lab/tailwind/alerts/webapp-vuejs?ref=vtw-index"
                   target="_blank"
                 >
                   <div
@@ -377,7 +377,7 @@
                   </div>
                 </a>
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/alerts/webapp-nextjs?ref=twv-index"
+                  href="https://www.creative-tim.com/learning-lab/tailwind/alerts/webapp-nextjs?ref=vtw-index"
                   target="_blank"
                 >
                   <div
@@ -465,7 +465,7 @@
               </span>
             </div>
             <a
-              href="https://www.creative-tim.com/learning-lab/tailwind/alerts/webapp-vuejs?ref=twv-index"
+              href="https://www.creative-tim.com/learning-lab/tailwind/alerts/webapp-vuejs?ref=vtw-index"
               target="_blank"
               class="font-bold text-gray-800 hover:text-gray-600 ease-linear transition-all duration-150"
             >
@@ -565,7 +565,7 @@
         <div class="w-full md:w-6/12 px-12 md:px-4">
           <h2 class="font-semibold text-4xl">Beautiful Example Pages</h2>
           <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-600">
-            Tailwind Webapp VueJS is a completly new product built using our
+            Vue Tailwind WebApp is a completly new product built using our
             past experience in web templates. Take the examples we made for you
             and start playing with them.
           </p>
@@ -668,7 +668,7 @@
               Star!
             </p>
             <a
-              href="https://github.com/creativetimofficial/tailwind-webapp-vuejs?ref=twv-index"
+              href="https://github.com/creativetimofficial/vue-tailwind-webapp?ref=vtw-index"
               target="_blank"
               class="github-star mt-4 inline-block text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-gray-800 active:bg-gray-700 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
             >
@@ -726,14 +726,14 @@
             </p>
             <div class="sm:block flex flex-col mt-10">
               <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/overflow/webapp-vuejs?ref=twv-index"
+                href="https://www.creative-tim.com/learning-lab/tailwind/overflow/webapp-vuejs?ref=vtw-index"
                 target="_blank"
                 class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-2 bg-green-500 active:bg-green-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
               >
                 Get started
               </a>
               <a
-                href="https://github.com/creativetimofficial/tailwind-webapp-vuejs?ref=twv-index"
+                href="https://github.com/creativetimofficial/vue-tailwind-webapp?ref=vtw-index"
                 target="_blank"
                 class="github-star sm:ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-gray-800 active:bg-gray-700 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
               >
