@@ -2,5 +2,5 @@
 module.exports = {
   runtimeCompiler: true,
   publicPath:
-    process.env.NODE_ENV === "production" ? "/tailwind-webapp-vuejs/" : "/",
+    process.env.NODE_ENV === "production" ? "/vue-tailwind-webapp/" : "/",
 };
