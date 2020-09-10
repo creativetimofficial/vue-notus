@@ -15,7 +15,7 @@ npm run build
 cd dist
 
 # if you are deploying to a custom domain
-echo 'https://demos.creative-tim.com/tailwind-webapp-vuejs' > CNAME
+echo 'https://demos.creative-tim.com/vue-tailwind-webapp' > CNAME
 
 git init
 git add -A
