@@ -286,8 +286,28 @@
               class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
               to="/"
             >
+              <i class="fas fa-link mr-2 text-gray-400 text-base"></i>
+              Svelte
+            </router-link>
+          </li>
+
+          <li class="inline-flex">
+            <router-link
+              class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
+              to="/"
+            >
               <i class="fab fa-react mr-2 text-gray-400 text-base"></i>
               React
+            </router-link>
+          </li>
+
+          <li class="inline-flex">
+            <router-link
+              class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
+              to="/"
+            >
+              <i class="fab fa-react mr-2 text-gray-400 text-base"></i>
+              NextJS
             </router-link>
           </li>
 
