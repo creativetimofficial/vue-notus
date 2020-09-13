@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build && gulp licenses",
     "lint": "vue-cli-service lint",
     "build:tailwind": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm run serve"
@@ -18,6 +18,8 @@
     "@tailwindcss/custom-forms": "0.2.1",
     "chart.js": "2.9.3",
     "core-js": "3.6.5",
+    "gulp": "4.0.2",
+    "gulp-append-prepend": "1.0.8",
     "tailwindcss": "1.7.6",
     "vue": "2.6.12",
     "vue-router": "3.4.3"
