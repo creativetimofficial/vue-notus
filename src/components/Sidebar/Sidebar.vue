@@ -252,84 +252,93 @@
         <!-- Navigation -->
         <ul class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
           <li class="inline-flex">
-            <router-link
+            <a
+              href="https://www.creative-tim.com/learning-lab/tailwind/vue/colors/webapp"
+              target="_blank"
               class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
-              to="/"
             >
               <i class="fas fa-paint-brush mr-2 text-gray-400 text-base"></i>
               Styles
-            </router-link>
+            </a>
           </li>
 
           <li class="inline-flex">
-            <router-link
+            <a
+              href="https://www.creative-tim.com/learning-lab/tailwind/vue/alerts/webapp"
+              target="_blank"
               class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
-              to="/"
             >
               <i class="fab fa-css3-alt mr-2 text-gray-400 text-base"></i>
               CSS Components
-            </router-link>
+            </a>
           </li>
 
           <li class="inline-flex">
-            <router-link
+            <a
+              href="https://www.creative-tim.com/learning-lab/tailwind/angular/overview/webapp"
+              target="_blank"
               class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
-              to="/"
-            >
-              <i class="fab fa-vuejs mr-2 text-gray-400 text-base"></i>
-              VueJS
-            </router-link>
-          </li>
-
-          <li class="inline-flex">
-            <router-link
-              class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
-              to="/"
-            >
-              <i class="fas fa-link mr-2 text-gray-400 text-base"></i>
-              Svelte
-            </router-link>
-          </li>
-
-          <li class="inline-flex">
-            <router-link
-              class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
-              to="/"
-            >
-              <i class="fab fa-react mr-2 text-gray-400 text-base"></i>
-              React
-            </router-link>
-          </li>
-
-          <li class="inline-flex">
-            <router-link
-              class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
-              to="/"
-            >
-              <i class="fab fa-react mr-2 text-gray-400 text-base"></i>
-              NextJS
-            </router-link>
-          </li>
-
-          <li class="inline-flex">
-            <router-link
-              class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
-              to="/"
             >
               <i class="fab fa-angular mr-2 text-gray-400 text-base"></i>
               Angular
-            </router-link>
+            </a>
           </li>
 
           <li class="inline-flex">
-            <router-link
+            <a
+              href="https://www.creative-tim.com/learning-lab/tailwind/js/overview/webapp"
+              target="_blank"
               class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
-              to="/"
             >
               <i class="fab fa-js-square mr-2 text-gray-400 text-base"></i>
               Javascript
-            </router-link>
+            </a>
           </li>
+
+          <li class="inline-flex">
+            <a
+              href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/overview/webapp"
+              target="_blank"
+              class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
+            >
+              <i class="fab fa-react mr-2 text-gray-400 text-base"></i>
+              NextJS
+            </a>
+          </li>
+
+          <li class="inline-flex">
+            <a
+              href="https://www.creative-tim.com/learning-lab/tailwind/react/overview/webapp"
+              target="_blank"
+              class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
+            >
+              <i class="fab fa-react mr-2 text-gray-400 text-base"></i>
+              React
+            </a>
+          </li>
+
+          <li class="inline-flex">
+            <a
+              href="https://www.creative-tim.com/learning-lab/tailwind/svelte/overview/webapp"
+              target="_blank"
+              class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
+            >
+              <i class="fas fa-link mr-2 text-gray-400 text-base"></i>
+              Svelte
+            </a>
+          </li>
+
+          <li class="inline-flex">
+            <a
+              href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/webapp"
+              target="_blank"
+              class="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
+            >
+              <i class="fab fa-vuejs mr-2 text-gray-400 text-base"></i>
+              VueJS
+            </a>
+          </li>
+
         </ul>
       </div>
     </div>

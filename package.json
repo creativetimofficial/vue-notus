@@ -2,7 +2,7 @@
   "name": "vue-tailwind-webapp",
   "homepage": "https://demos.creative-tim.com/vue-tailwind-webapp/",
   "version": "1.0.0",
-  "description": "Vue Tailwind WebApp - A free Tailwind and VueJS webapp template by Creative Tim.",
+  "description": "Vue Tailwind WebApp - A free Tailwind and VueJS WebApp template by Creative Tim.",
   "repository": "https://github.com/creativetimofficial/vue-tailwind-webapp",
   "license": "MIT",
   "scripts": {
@@ -14,13 +14,13 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.14.0",
-    "@popperjs/core": "2.4.4",
+    "@popperjs/core": "2.5.1",
     "@tailwindcss/custom-forms": "0.2.1",
     "chart.js": "2.9.3",
     "core-js": "3.6.5",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.8",
-    "tailwindcss": "1.8.8",
+    "tailwindcss": "1.8.10",
     "vue": "2.6.12",
     "vue-router": "3.4.3"
   },
