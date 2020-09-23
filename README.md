@@ -38,16 +38,16 @@ to quickly set up the basic structure for your web project.
 Here are all the page from the project:
 - [Presentation](https://demos.creative-tim.com/vue-tailwind-webapp/?ref=vtw-github-readme)
 - Admin Samples
-  - [Dashboard](https://demos.creative-tim.com/vue-tailwind-webapp/pages/admin/dashboard.html?ref=vtw-github-readme)
-  - [Settings](https://demos.creative-tim.com/vue-tailwind-webapp/pages/admin/settings.html?ref=vtw-github-readme)
-  - [Tables](https://demos.creative-tim.com/vue-tailwind-webapp/pages/admin/tables.html?ref=vtw-github-readme)
-  - [Maps](https://demos.creative-tim.com/vue-tailwind-webapp/pages/admin/maps.html?ref=vtw-github-readme)
+  - [Dashboard](https://demos.creative-tim.com/vue-tailwind-webapp/admin/dashboard?ref=vtw-github-readme)
+  - [Settings](https://demos.creative-tim.com/vue-tailwind-webapp/admin/settings?ref=vtw-github-readme)
+  - [Tables](https://demos.creative-tim.com/vue-tailwind-webapp/admin/tables?ref=vtw-github-readme)
+  - [Maps](https://demos.creative-tim.com/vue-tailwind-webapp/admin/maps?ref=vtw-github-readme)
 - Authentication Samples
-  - [Login](https://demos.creative-tim.com/vue-tailwind-webapp/pages/auth/login.html?ref=vtw-github-readme)
-  - [Register](https://demos.creative-tim.com/vue-tailwind-webapp/pages/auth/register.html?ref=vtw-github-readme)
+  - [Login](https://demos.creative-tim.com/vue-tailwind-webapp/auth/login?ref=vtw-github-readme)
+  - [Register](https://demos.creative-tim.com/vue-tailwind-webapp/auth/register?ref=vtw-github-readme)
 - Presentation Samples
-  - [Landing](https://demos.creative-tim.com/vue-tailwind-webapp/pages/landing.html?ref=vtw-github-readme)
-  - [Profile](https://demos.creative-tim.com/vue-tailwind-webapp/pages/profile.html?ref=vtw-github-readme)
+  - [Landing](https://demos.creative-tim.com/vue-tailwind-webapp/landing?ref=vtw-github-readme)
+  - [Profile](https://demos.creative-tim.com/vue-tailwind-webapp/profile?ref=vtw-github-readme)
 
 
 ### Fully Coded Components
