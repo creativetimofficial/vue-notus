@@ -1,53 +1,41 @@
 <template>
   <div>
     <a
-      class="text-gray-600 block"
-      href="#pablo"
-      v-on:click="toggleDropdown($event)"
+      class="text-gray-600 block py-1 px-3"
       ref="btnDropdownRef"
+      v-on:click="toggleDropdown($event)"
     >
-      <div class="items-center flex">
-        <span
-          class="w-12 h-12 text-sm text-white bg-gray-300 inline-flex items-center justify-center rounded-full"
-        >
-          <img
-            alt="..."
-            class="w-full rounded-full align-middle border-none shadow-lg"
-            src="../assets/img/team-1-800x800.jpg"
-          />
-        </span>
-      </div>
+      <i class="fas fa-bell"></i>
     </a>
     <div
       ref="popoverDropdownRef"
-      class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1"
+      class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48"
       v-bind:class="{
         hidden: !dropdownPopoverShow,
-        block: dropdownPopoverShow
+        block: dropdownPopoverShow,
       }"
-      style="min-width: 12rem"
     >
       <a
-        href="#pablo"
+        href="javascript:void(0);"
         class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
       >
         Action
       </a>
       <a
-        href="#pablo"
+        href="javascript:void(0);"
         class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
       >
         Another action
       </a>
       <a
-        href="#pablo"
+        href="javascript:void(0);"
         class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
       >
         Something else here
       </a>
       <div class="h-0 my-2 border border-solid border-gray-200" />
       <a
-        href="#pablo"
+        href="javascript:void(0);"
         class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
       >
         Seprated link
@@ -56,26 +44,26 @@
   </div>
 </template>
 <script>
-import Popper from "popper.js";
+import { createPopper } from "@popperjs/core";
 
 export default {
   data() {
     return {
-      dropdownPopoverShow: false
+      dropdownPopoverShow: false,
     };
   },
   methods: {
-    toggleDropdown: function(event) {
+    toggleDropdown: function (event) {
       event.preventDefault();
       if (this.dropdownPopoverShow) {
         this.dropdownPopoverShow = false;
       } else {
         this.dropdownPopoverShow = true;
-        new Popper(this.$refs.btnDropdownRef, this.$refs.popoverDropdownRef, {
-          placement: "bottom-end"
+        createPopper(this.$refs.btnDropdownRef, this.$refs.popoverDropdownRef, {
+          placement: "bottom-start",
         });
       }
-    }
-  }
+    },
+  },
 };
 </script>

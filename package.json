@@ -1,23 +1,33 @@
 {
-  "name": "vuejs-landing-page",
-  "version": "0.1.0",
-  "private": true,
+  "name": "vue-tailwind-webapp",
+  "homepage": "https://demos.creative-tim.com/vue-tailwind-webapp/",
+  "version": "1.0.0",
+  "description": "Vue Tailwind WebApp - A free Tailwind and VueJS WebApp template by Creative Tim.",
+  "repository": "https://github.com/creativetimofficial/vue-tailwind-webapp",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build && gulp licenses",
+    "lint": "vue-cli-service lint",
+    "build:tailwind": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm run serve"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.14.0",
-    "@popperjs/core": "2.4.4",
+    "@popperjs/core": "2.5.1",
+    "@tailwindcss/custom-forms": "0.2.1",
     "chart.js": "2.9.3",
     "core-js": "3.6.5",
-    "vue": "2.6.12"
+    "gulp": "4.0.2",
+    "gulp-append-prepend": "1.0.8",
+    "tailwindcss": "1.8.10",
+    "vue": "2.6.12",
+    "vue-router": "3.4.3"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "4.5.4",
-    "@vue/cli-plugin-eslint": "4.5.4",
-    "@vue/cli-service": "4.5.4",
+    "@vue/cli-plugin-babel": "4.5.6",
+    "@vue/cli-plugin-eslint": "4.5.6",
+    "@vue/cli-service": "4.5.6",
     "babel-eslint": "10.1.0",
     "eslint": "6.8.0",
     "eslint-plugin-vue": "6.2.2",

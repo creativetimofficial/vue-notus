@@ -9,9 +9,10 @@
       <!-- Brand -->
       <a
         class="text-white text-sm uppercase hidden lg:inline-block font-semibold"
-        href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/dashboard"
-        >Dashboard</a
+        href="javascript:void(0)"
       >
+        Dashboard
+      </a>
       <!-- Form -->
       <form
         class="md:flex hidden flex-row flex-wrap items-center lg:ml-auto mr-3"
@@ -19,8 +20,9 @@
         <div class="relative flex w-full flex-wrap items-stretch">
           <span
             class="z-10 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3"
-            ><i class="fas fa-search"></i
-          ></span>
+          >
+            <i class="fas fa-search"></i>
+          </span>
           <input
             type="text"
             placeholder="Search here..."
@@ -29,21 +31,20 @@
         </div>
       </form>
       <!-- User -->
-      <ul
-        class="flex-col md:flex-row list-none items-center hidden md:flex"
-      >
-        <user-dropdown-component></user-dropdown-component>
+      <ul class="flex-col md:flex-row list-none items-center hidden md:flex">
+        <user-dropdown />
       </ul>
     </div>
   </nav>
-
   <!-- End Navbar -->
 </template>
+
 <script>
-import UserDropdownComponent from "./UserDropdown.vue";
+import UserDropdown from "@/components/Dropdowns/UserDropdown.vue";
+
 export default {
   components: {
-    UserDropdownComponent
-  }
+    UserDropdown,
+  },
 };
 </script>
