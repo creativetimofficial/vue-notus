@@ -1,9 +1,9 @@
 {
-  "name": "vue-tailwind-webapp",
-  "homepage": "https://demos.creative-tim.com/vue-tailwind-webapp/",
+  "name": "vue-notus",
+  "homepage": "https://demos.creative-tim.com/vue-notus/",
   "version": "1.0.0",
-  "description": "Vue Tailwind WebApp - A free Tailwind and VueJS WebApp template by Creative Tim.",
-  "repository": "https://github.com/creativetimofficial/vue-tailwind-webapp",
+  "description": "Vue Notus - A free Tailwind CSS and VueJS UI Kit and Admin by Creative Tim.",
+  "repository": "https://github.com/creativetimofficial/vue-notus",
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
