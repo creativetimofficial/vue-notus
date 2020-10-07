@@ -338,7 +338,6 @@
               VueJS
             </a>
           </li>
-
         </ul>
       </div>
     </div>
