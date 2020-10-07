@@ -65,7 +65,7 @@
                 <li>
                   <a
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://www.creative-tim.com/presentation?ref=vtw-footer"
+                    href="https://www.creative-tim.com/presentation?ref=vn-footer"
                   >
                     About Us
                   </a>
@@ -73,7 +73,7 @@
                 <li>
                   <a
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://blog.creative-tim.com?ref=vtw-footer"
+                    href="https://blog.creative-tim.com?ref=vn-footer"
                   >
                     Blog
                   </a>
@@ -81,7 +81,7 @@
                 <li>
                   <a
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://www.github.com/creativetimofficial?ref=vtw-footer"
+                    href="https://www.github.com/creativetimofficial?ref=vn-footer"
                   >
                     Github
                   </a>
@@ -89,7 +89,7 @@
                 <li>
                   <a
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://www.creative-tim.com/bootstrap-themes/free?ref=vtw-footer"
+                    href="https://www.creative-tim.com/bootstrap-themes/free?ref=vn-footer"
                   >
                     Free Products
                   </a>
@@ -106,7 +106,7 @@
                 <li>
                   <a
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://github.com/creativetimofficial/vue-tailwind-webapp/blob/master/LICENSE.md?ref=vtw-footer"
+                    href="https://github.com/creativetimofficial/vue-notus/blob/master/LICENSE.md?ref=vn-footer"
                   >
                     MIT License
                   </a>
@@ -114,7 +114,7 @@
                 <li>
                   <a
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://creative-tim.com/terms?ref=vtw-footer"
+                    href="https://creative-tim.com/terms?ref=vn-footer"
                   >
                     Terms & Conditions
                   </a>
@@ -122,7 +122,7 @@
                 <li>
                   <a
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://creative-tim.com/privacy?ref=vtw-footer"
+                    href="https://creative-tim.com/privacy?ref=vn-footer"
                   >
                     Privacy Policy
                   </a>
@@ -130,7 +130,7 @@
                 <li>
                   <a
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://creative-tim.com/contact-us?ref=vtw-footer"
+                    href="https://creative-tim.com/contact-us?ref=vn-footer"
                   >
                     Contact Us
                   </a>
@@ -146,9 +146,9 @@
       >
         <div class="w-full md:w-4/12 px-4 mx-auto text-center">
           <div class="text-sm text-gray-600 font-semibold py-1">
-            Copyright © {{ date }} Vue Tailwind WebApp by
+            Copyright © {{ date }} Vue Notus by
             <a
-              href="https://www.creative-tim.com?ref=vtw-footer"
+              href="https://www.creative-tim.com?ref=vn-footer"
               class="text-gray-600 hover:text-gray-900"
             >
               Creative Tim
