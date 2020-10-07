@@ -11,8 +11,8 @@
               A beautiful extension for Tailwind CSS.
             </h2>
             <p class="mt-4 text-lg leading-relaxed text-gray-600">
-              Vue Tailwind WebApp is Free and Open Source. It does not change
-              or add any CSS to the already one from
+              Vue Notus is Free and Open Source. It does not change or add any
+              CSS to the already one from
               <a
                 href="https://tailwindcss.com/?ref=creativetim"
                 class="text-gray-700"
@@ -25,14 +25,14 @@
             </p>
             <div class="mt-12">
               <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/webapp?ref=vtw-index"
+                href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus?ref=vn-index"
                 target="_blank"
                 class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-green-500 active:bg-green-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
               >
                 Get started
               </a>
               <a
-                href="https://github.com/creativetimofficial/vue-tailwind-webapp?ref=vtw-index"
+                href="https://github.com/creativetimofficial/vue-notus?ref=vn-index"
                 class="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-gray-800 active:bg-gray-700 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
                 target="_blank"
               >
@@ -121,8 +121,8 @@
                       CSS Components
                     </h6>
                     <p class="mb-4 text-gray-600">
-                      Tailwind WebApp comes with a huge number of Fully Coded
-                      CSS components.
+                      Vue Notus comes with a huge number of Fully Coded CSS
+                      components.
                     </p>
                   </div>
                 </div>
@@ -170,7 +170,7 @@
                     </h6>
                     <p class="mb-4 text-gray-600">
                       Built by developers for developers. You will love how easy
-                      is to to work with Vue Tailwind WebApp.
+                      is to to work with Vue Notus.
                     </p>
                   </div>
                 </div>
@@ -241,7 +241,7 @@
               </span>
             </div>
             <a
-              href="https://www.creative-tim.com/learning-lab/tailwind/vue/alerts/webapp?ref=vtw-index"
+              href="https://www.creative-tim.com/learning-lab/tailwind/vue/alerts/notus?ref=vn-index"
               target="_blank"
               class="font-bold text-gray-800 hover:text-gray-600 ease-linear transition-all duration-150"
             >
@@ -293,12 +293,10 @@
             <div class="justify-center flex flex-wrap relative">
               <div class="my-4 w-full lg:w-6/12 px-4">
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/svelte/alerts/webapp?ref=vtw-index"
+                  href="https://www.creative-tim.com/learning-lab/tailwind/svelte/alerts/notus?ref=vn-index"
                   target="_blank"
                 >
-                  <div
-                    class="bg-red-600 shadow-lg rounded-lg text-center p-8"
-                  >
+                  <div class="bg-red-600 shadow-lg rounded-lg text-center p-8">
                     <img
                       alt="..."
                       class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
@@ -310,10 +308,12 @@
                   </div>
                 </a>
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/react/alerts/webapp?ref=vtw-index"
+                  href="https://www.creative-tim.com/learning-lab/tailwind/react/alerts/notus?ref=vn-index"
                   target="_blank"
                 >
-                  <div class="bg-blue-500 shadow-lg rounded-lg text-center p-8 mt-8">
+                  <div
+                    class="bg-blue-500 shadow-lg rounded-lg text-center p-8 mt-8"
+                  >
                     <img
                       alt="..."
                       class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
@@ -325,7 +325,7 @@
                   </div>
                 </a>
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/alerts/webapp?ref=vtw-index"
+                  href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/alerts/notus?ref=vn-index"
                   target="_blank"
                 >
                   <div
@@ -344,10 +344,12 @@
               </div>
               <div class="my-4 w-full lg:w-6/12 px-4 lg:mt-16">
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/js/alerts/webapp?ref=vtw-index"
+                  href="https://www.creative-tim.com/learning-lab/tailwind/js/alerts/notus?ref=vn-index"
                   target="_blank"
                 >
-                  <div class="bg-yellow-500 shadow-lg rounded-lg text-center p-8">
+                  <div
+                    class="bg-yellow-500 shadow-lg rounded-lg text-center p-8"
+                  >
                     <img
                       alt="..."
                       class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
@@ -359,10 +361,12 @@
                   </div>
                 </a>
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/angular/alerts/webapp?ref=vtw-index"
+                  href="https://www.creative-tim.com/learning-lab/tailwind/angular/alerts/notus?ref=vn-index"
                   target="_blank"
                 >
-                  <div class="bg-red-700 shadow-lg rounded-lg text-center p-8 mt-8">
+                  <div
+                    class="bg-red-700 shadow-lg rounded-lg text-center p-8 mt-8"
+                  >
                     <img
                       alt="..."
                       class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
@@ -374,7 +378,7 @@
                   </div>
                 </a>
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/vue/alerts/webapp?ref=vtw-index"
+                  href="https://www.creative-tim.com/learning-lab/tailwind/vue/alerts/notus?ref=vn-index"
                   target="_blank"
                 >
                   <div
@@ -459,7 +463,7 @@
               </span>
             </div>
             <a
-              href="https://www.creative-tim.com/learning-lab/tailwind/vue/alerts/webapp?ref=vtw-index"
+              href="https://www.creative-tim.com/learning-lab/tailwind/vue/alerts/notus?ref=vn-index"
               target="_blank"
               class="font-bold text-gray-800 hover:text-gray-600 ease-linear transition-all duration-150"
             >
@@ -559,9 +563,9 @@
         <div class="w-full md:w-6/12 px-12 md:px-4">
           <h2 class="font-semibold text-4xl">Beautiful Example Pages</h2>
           <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-600">
-            Vue Tailwind WebApp is a completly new product built using our
-            past experience in web templates. Take the examples we made for you
-            and start playing with them.
+            Vue Notus is a completly new product built using our past experience
+            in web templates. Take the examples we made for you and start
+            playing with them.
           </p>
         </div>
       </div>
@@ -662,7 +666,7 @@
               Star!
             </p>
             <a
-              href="https://github.com/creativetimofficial/vue-tailwind-webapp?ref=vtw-index"
+              href="https://github.com/creativetimofficial/vue-notus?ref=vn-index"
               target="_blank"
               class="github-star mt-4 inline-block text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-gray-800 active:bg-gray-700 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
             >
@@ -720,14 +724,14 @@
             </p>
             <div class="sm:block flex flex-col mt-10">
               <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/webapp?ref=vtw-index"
+                href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus?ref=vn-index"
                 target="_blank"
                 class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-2 bg-green-500 active:bg-green-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
               >
                 Get started
               </a>
               <a
-                href="https://github.com/creativetimofficial/vue-tailwind-webapp?ref=vtw-index"
+                href="https://github.com/creativetimofficial/vue-notus?ref=vn-index"
                 target="_blank"
                 class="github-star sm:ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-gray-800 active:bg-gray-700 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
               >

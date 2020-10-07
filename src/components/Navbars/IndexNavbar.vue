@@ -13,7 +13,7 @@
             class="text-gray-800 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase"
             href="#pablo"
           >
-            Vue Tailwind WebApp
+            Vue Notus
           </a>
         </router-link>
         <button
@@ -33,7 +33,7 @@
           <li class="flex items-center">
             <a
               class="hover:text-gray-600 text-gray-800 px-3 py-2 flex items-center text-xs uppercase font-bold"
-              href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/webapp?ref=vtw-index-navbar"
+              href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus?ref=vn-index-navbar"
             >
               <i
                 class="text-gray-500 far fa-file-alt text-lg leading-lg mr-2"
@@ -49,7 +49,7 @@
           <li class="flex items-center">
             <a
               class="hover:text-gray-600 text-gray-800 px-3 py-2 flex items-center text-xs uppercase font-bold"
-              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdemos.creative-tim.com%2Fvue-tailwind-webapp%2F%23%2F"
+              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdemos.creative-tim.com%2Fvue-notus%2F%23%2F"
               target="_blank"
             >
               <i class="text-gray-500 fab fa-facebook text-lg leading-lg" />
@@ -60,7 +60,7 @@
           <li class="flex items-center">
             <a
               class="hover:text-gray-600 text-gray-800 px-3 py-2 flex items-center text-xs uppercase font-bold"
-              href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdemos.creative-tim.com%2Fvue-tailwind-webapp%2F%23%2F&text=Start%20your%20development%20with%20a%20Free%20Tailwind%20CSS%20and%20VueJS%20UI%20Kit%20and%20Admin.%20Let%20Vue%20Tailwind%20WebApp%20amaze%20you%20with%20its%20cool%20features%20and%20build%20tools%20and%20get%20your%20project%20to%20a%20whole%20new%20level.%20"
+              href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdemos.creative-tim.com%2Fvue-notus%2F%23%2F&text=Start%20your%20development%20with%20a%20Free%20Tailwind%20CSS%20and%20VueJS%20UI%20Kit%20and%20Admin.%20Let%20Vue%20Notus%20amaze%20you%20with%20its%20cool%20features%20and%20build%20tools%20and%20get%20your%20project%20to%20a%20whole%20new%20level.%20"
               target="_blank"
             >
               <i class="text-gray-500 fab fa-twitter text-lg leading-lg" />
@@ -71,7 +71,7 @@
           <li class="flex items-center">
             <a
               class="hover:text-gray-600 text-gray-800 px-3 py-2 flex items-center text-xs uppercase font-bold"
-              href="https://github.com/creativetimofficial/vue-tailwind-webapp?ref=vtw-index-navbar"
+              href="https://github.com/creativetimofficial/vue-notus?ref=vn-index-navbar"
               target="_blank"
             >
               <i class="text-gray-500 fab fa-github text-lg leading-lg" />
