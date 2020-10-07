@@ -11,8 +11,8 @@
               A beautiful extension for Tailwind CSS.
             </h2>
             <p class="mt-4 text-lg leading-relaxed text-gray-600">
-              Vue Notus is Free and Open Source. It does not change
-              or add any CSS to the already one from
+              Vue Notus is Free and Open Source. It does not change or add any
+              CSS to the already one from
               <a
                 href="https://tailwindcss.com/?ref=creativetim"
                 class="text-gray-700"
@@ -121,8 +121,8 @@
                       CSS Components
                     </h6>
                     <p class="mb-4 text-gray-600">
-                      Vue Notus comes with a huge number of Fully Coded
-                      CSS components.
+                      Vue Notus comes with a huge number of Fully Coded CSS
+                      components.
                     </p>
                   </div>
                 </div>
@@ -296,9 +296,7 @@
                   href="https://www.creative-tim.com/learning-lab/tailwind/svelte/alerts/notus?ref=vn-index"
                   target="_blank"
                 >
-                  <div
-                    class="bg-red-600 shadow-lg rounded-lg text-center p-8"
-                  >
+                  <div class="bg-red-600 shadow-lg rounded-lg text-center p-8">
                     <img
                       alt="..."
                       class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
@@ -313,7 +311,9 @@
                   href="https://www.creative-tim.com/learning-lab/tailwind/react/alerts/notus?ref=vn-index"
                   target="_blank"
                 >
-                  <div class="bg-blue-500 shadow-lg rounded-lg text-center p-8 mt-8">
+                  <div
+                    class="bg-blue-500 shadow-lg rounded-lg text-center p-8 mt-8"
+                  >
                     <img
                       alt="..."
                       class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
@@ -347,7 +347,9 @@
                   href="https://www.creative-tim.com/learning-lab/tailwind/js/alerts/notus?ref=vn-index"
                   target="_blank"
                 >
-                  <div class="bg-yellow-500 shadow-lg rounded-lg text-center p-8">
+                  <div
+                    class="bg-yellow-500 shadow-lg rounded-lg text-center p-8"
+                  >
                     <img
                       alt="..."
                       class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
@@ -362,7 +364,9 @@
                   href="https://www.creative-tim.com/learning-lab/tailwind/angular/alerts/notus?ref=vn-index"
                   target="_blank"
                 >
-                  <div class="bg-red-700 shadow-lg rounded-lg text-center p-8 mt-8">
+                  <div
+                    class="bg-red-700 shadow-lg rounded-lg text-center p-8 mt-8"
+                  >
                     <img
                       alt="..."
                       class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
@@ -559,9 +563,9 @@
         <div class="w-full md:w-6/12 px-12 md:px-4">
           <h2 class="font-semibold text-4xl">Beautiful Example Pages</h2>
           <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-600">
-            Vue Notus is a completly new product built using our
-            past experience in web templates. Take the examples we made for you
-            and start playing with them.
+            Vue Notus is a completly new product built using our past experience
+            in web templates. Take the examples we made for you and start
+            playing with them.
           </p>
         </div>
       </div>
