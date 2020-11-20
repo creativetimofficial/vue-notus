@@ -73,7 +73,7 @@
         to="/landing"
         class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
       >
-        Lading
+        Landing
       </router-link>
       <router-link
         to="/profile"
