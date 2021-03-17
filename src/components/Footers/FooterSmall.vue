@@ -49,7 +49,7 @@
             </li>
             <li>
               <a
-                href="https://github.com/creativetimofficial/vue-notus/blob/master/LICENSE.md?ref=vn-footer-small"
+                href="https://github.com/creativetimofficial/vue-notus/blob/main/LICENSE.md?ref=vn-footer-small"
                 class="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
               >
                 MIT License
