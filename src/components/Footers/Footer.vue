@@ -106,7 +106,7 @@
                 <li>
                   <a
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://github.com/creativetimofficial/vue-notus/blob/master/LICENSE.md?ref=vn-footer"
+                    href="https://github.com/creativetimofficial/vue-notus/blob/main/LICENSE.md?ref=vn-footer"
                   >
                     MIT License
                   </a>
