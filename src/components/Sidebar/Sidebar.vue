@@ -91,7 +91,7 @@
                 class="text-xs uppercase py-3 font-bold block"
                 :class="[
                   isActive
-                    ? 'text-green-500 hover:text-green-600'
+                    ? 'text-emerald-500 hover:text-emerald-600'
                     : 'text-coolGray-700 hover:text-coolGray-500',
                 ]"
               >
@@ -115,7 +115,7 @@
                 class="text-xs uppercase py-3 font-bold block"
                 :class="[
                   isActive
-                    ? 'text-green-500 hover:text-green-600'
+                    ? 'text-emerald-500 hover:text-emerald-600'
                     : 'text-coolGray-700 hover:text-coolGray-500',
                 ]"
               >
@@ -139,7 +139,7 @@
                 class="text-xs uppercase py-3 font-bold block"
                 :class="[
                   isActive
-                    ? 'text-green-500 hover:text-green-600'
+                    ? 'text-emerald-500 hover:text-emerald-600'
                     : 'text-coolGray-700 hover:text-coolGray-500',
                 ]"
               >
@@ -160,7 +160,7 @@
                 class="text-xs uppercase py-3 font-bold block"
                 :class="[
                   isActive
-                    ? 'text-green-500 hover:text-green-600'
+                    ? 'text-emerald-500 hover:text-emerald-600'
                     : 'text-coolGray-700 hover:text-coolGray-500',
                 ]"
               >

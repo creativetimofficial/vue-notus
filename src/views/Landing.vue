@@ -81,7 +81,7 @@
               >
                 <div class="px-4 py-5 flex-auto">
                   <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-lightBlue-400"
                   >
                     <i class="fas fa-retweet"></i>
                   </div>
@@ -100,7 +100,7 @@
               >
                 <div class="px-4 py-5 flex-auto">
                   <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400"
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400"
                   >
                     <i class="fas fa-fingerprint"></i>
                   </div>
@@ -145,7 +145,7 @@
 
             <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
               <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-green-600"
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-emerald-600"
               >
                 <img
                   alt="..."
@@ -161,7 +161,7 @@
                   >
                     <polygon
                       points="-30,95 583,95 583,65"
-                      class="text-green-600 fill-current"
+                      class="text-emerald-600 fill-current"
                     ></polygon>
                   </svg>
                   <h4 class="text-xl font-bold text-white">
@@ -212,7 +212,7 @@
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
               <div class="md:pr-12">
                 <div
-                  class="text-green-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-green-300"
+                  class="text-emerald-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-emerald-300"
                 >
                   <i class="fas fa-rocket text-xl"></i>
                 </div>
@@ -227,7 +227,7 @@
                     <div class="flex items-center">
                       <div>
                         <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200 mr-3"
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 bg-emerald-200 mr-3"
                         >
                           <i class="fas fa-fingerprint"></i>
                         </span>
@@ -243,7 +243,7 @@
                     <div class="flex items-center">
                       <div>
                         <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200 mr-3"
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 bg-emerald-200 mr-3"
                         >
                           <i class="fab fa-html5"></i>
                         </span>
@@ -259,7 +259,7 @@
                     <div class="flex items-center">
                       <div>
                         <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200 mr-3"
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 bg-emerald-200 mr-3"
                         >
                           <i class="far fa-paper-plane"></i>
                         </span>
@@ -305,13 +305,13 @@
                   </p>
                   <div class="mt-6">
                     <button
-                      class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                       type="button"
                     >
                       <i class="fab fa-twitter"></i>
                     </button>
                     <button
-                      class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      class="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                       type="button"
                     >
                       <i class="fab fa-facebook-f"></i>
@@ -348,7 +348,7 @@
                       <i class="fab fa-google"></i>
                     </button>
                     <button
-                      class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      class="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                       type="button"
                     >
                       <i class="fab fa-facebook-f"></i>
@@ -379,7 +379,7 @@
                       <i class="fab fa-google"></i>
                     </button>
                     <button
-                      class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                       type="button"
                     >
                       <i class="fab fa-twitter"></i>
@@ -422,7 +422,7 @@
                       <i class="fab fa-google"></i>
                     </button>
                     <button
-                      class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                       type="button"
                     >
                       <i class="fab fa-twitter"></i>

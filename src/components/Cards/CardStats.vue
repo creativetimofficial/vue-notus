@@ -62,7 +62,7 @@ export default {
     // from tailwindcss
     statPercentColor: {
       type: String,
-      default: "text-green-500",
+      default: "text-emerald-500",
     },
     statDescripiron: {
       type: String,

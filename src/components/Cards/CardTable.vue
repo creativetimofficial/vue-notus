@@ -1,7 +1,7 @@
 <template>
   <div
     class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded"
-    :class="[color === 'light' ? 'bg-white' : 'bg-green-900 text-white']"
+    :class="[color === 'light' ? 'bg-white' : 'bg-emerald-900 text-white']"
   >
     <div class="rounded-t mb-0 px-4 py-3 border-0">
       <div class="flex flex-wrap items-center">
@@ -25,7 +25,7 @@
               :class="[
                 color === 'light'
                   ? 'bg-coolGray-50 text-coolGray-500 border-coolGray-100'
-                  : 'bg-green-800 text-green-300 border-green-700',
+                  : 'bg-emerald-800 text-emerald-300 border-emerald-700',
               ]"
             >
               Project
@@ -35,7 +35,7 @@
               :class="[
                 color === 'light'
                   ? 'bg-coolGray-50 text-coolGray-500 border-coolGray-100'
-                  : 'bg-green-800 text-green-300 border-green-700',
+                  : 'bg-emerald-800 text-emerald-300 border-emerald-700',
               ]"
             >
               Budget
@@ -45,7 +45,7 @@
               :class="[
                 color === 'light'
                   ? 'bg-coolGray-50 text-coolGray-500 border-coolGray-100'
-                  : 'bg-green-800 text-green-300 border-green-700',
+                  : 'bg-emerald-800 text-emerald-300 border-emerald-700',
               ]"
             >
               Status
@@ -55,7 +55,7 @@
               :class="[
                 color === 'light'
                   ? 'bg-coolGray-50 text-coolGray-500 border-coolGray-100'
-                  : 'bg-green-800 text-green-300 border-green-700',
+                  : 'bg-emerald-800 text-emerald-300 border-emerald-700',
               ]"
             >
               Users
@@ -65,7 +65,7 @@
               :class="[
                 color === 'light'
                   ? 'bg-coolGray-50 text-coolGray-500 border-coolGray-100'
-                  : 'bg-green-800 text-green-300 border-green-700',
+                  : 'bg-emerald-800 text-emerald-300 border-emerald-700',
               ]"
             >
               Completion
@@ -75,7 +75,7 @@
               :class="[
                 color === 'light'
                   ? 'bg-coolGray-50 text-coolGray-500 border-coolGray-100'
-                  : 'bg-green-800 text-green-300 border-green-700',
+                  : 'bg-emerald-800 text-emerald-300 border-emerald-700',
               ]"
             ></th>
           </tr>
@@ -184,7 +184,7 @@
             <td
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
             >
-              <i class="fas fa-circle text-green-500 mr-2"></i>
+              <i class="fas fa-circle text-emerald-500 mr-2"></i>
               completed
             </td>
             <td
@@ -220,11 +220,11 @@
                 <span class="mr-2">100%</span>
                 <div class="relative w-full">
                   <div
-                    class="overflow-hidden h-2 text-xs flex rounded bg-green-200"
+                    class="overflow-hidden h-2 text-xs flex rounded bg-emerald-200"
                   >
                     <div
                       style="width: 100%;"
-                      class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-500"
+                      class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-emerald-500"
                     ></div>
                   </div>
                 </div>
@@ -416,7 +416,7 @@
             <td
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
             >
-              <i class="fas fa-circle text-green-500 mr-2"></i>
+              <i class="fas fa-circle text-emerald-500 mr-2"></i>
               completed
             </td>
             <td
@@ -452,11 +452,11 @@
                 <span class="mr-2">100%</span>
                 <div class="relative w-full">
                   <div
-                    class="overflow-hidden h-2 text-xs flex rounded bg-green-200"
+                    class="overflow-hidden h-2 text-xs flex rounded bg-emerald-200"
                   >
                     <div
                       style="width: 100%;"
-                      class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-500"
+                      class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-emerald-500"
                     ></div>
                   </div>
                 </div>

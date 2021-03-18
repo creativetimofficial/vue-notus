@@ -57,7 +57,7 @@
                 >
                   <div class="py-6 px-3 mt-32 sm:mt-0">
                     <button
-                      class="bg-green-500 active:bg-green-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
+                      class="bg-emerald-500 active:bg-emerald-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
                       type="button"
                     >
                       Connect
@@ -132,7 +132,7 @@
                     </p>
                     <a
                       href="javascript:void(0)"
-                      class="font-normal text-green-500"
+                      class="font-normal text-emerald-500"
                     >
                       Show more
                     </a>
