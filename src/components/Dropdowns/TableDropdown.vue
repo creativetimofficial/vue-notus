@@ -1,7 +1,7 @@
 <template>
   <div>
     <a
-      class="text-gray-600 py-1 px-3"
+      class="text-coolGray-500 py-1 px-3"
       href="#pablo"
       ref="btnDropdownRef"
       v-on:click="toggleDropdown($event)"
@@ -18,19 +18,19 @@
     >
       <a
         href="javascript:void(0);"
-        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-coolGray-700"
       >
         Action
       </a>
       <a
         href="javascript:void(0);"
-        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-coolGray-700"
       >
         Another action
       </a>
       <a
         href="javascript:void(0);"
-        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-coolGray-700"
       >
         Something else here
       </a>
