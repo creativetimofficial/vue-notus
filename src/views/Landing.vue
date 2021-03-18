@@ -298,7 +298,9 @@
                 />
                 <div class="pt-6 text-center">
                   <h5 class="text-xl font-bold">Ryan Tompson</h5>
-                  <p class="mt-1 text-sm text-coolGray-400 uppercase font-semibold">
+                  <p
+                    class="mt-1 text-sm text-coolGray-400 uppercase font-semibold"
+                  >
                     Web Developer
                   </p>
                   <div class="mt-6">
@@ -333,7 +335,9 @@
                 />
                 <div class="pt-6 text-center">
                   <h5 class="text-xl font-bold">Romina Hadid</h5>
-                  <p class="mt-1 text-sm text-coolGray-400 uppercase font-semibold">
+                  <p
+                    class="mt-1 text-sm text-coolGray-400 uppercase font-semibold"
+                  >
                     Marketing Specialist
                   </p>
                   <div class="mt-6">
@@ -362,7 +366,9 @@
                 />
                 <div class="pt-6 text-center">
                   <h5 class="text-xl font-bold">Alexa Smith</h5>
-                  <p class="mt-1 text-sm text-coolGray-400 uppercase font-semibold">
+                  <p
+                    class="mt-1 text-sm text-coolGray-400 uppercase font-semibold"
+                  >
                     UI/UX Designer
                   </p>
                   <div class="mt-6">
@@ -397,7 +403,9 @@
                 />
                 <div class="pt-6 text-center">
                   <h5 class="text-xl font-bold">Jenna Kardi</h5>
-                  <p class="mt-1 text-sm text-coolGray-400 uppercase font-semibold">
+                  <p
+                    class="mt-1 text-sm text-coolGray-400 uppercase font-semibold"
+                  >
                     Founder and CEO
                   </p>
                   <div class="mt-6">
