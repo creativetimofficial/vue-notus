@@ -24,27 +24,32 @@
 
 ### Deleted dependencies
 - `@tailwindcss/custom-forms`
+- `babel-eslint` (updated to `@babel/eslint-parser` and `@babel/core`)
 ### Added dependencies
 - `@tailwindcss/forms` (replaces `@tailwindcss/custom-forms`)
 - `autoprefixer`
 - `postcss`
+- `@babel/core` (instead of `babel-eslint`)
+- `@babel/eslint-parser` (instead of `babel-eslint`)
+- `@vue/compiler-sfc`
 ### Updated dependencies
 ```
-@fortawesome/fontawesome-free   5.14.0   →   5.15.3
+@fortawesome/fontawesome-free   5.14.0   →    5.15.3
 @popperjs/core                   2.5.1   →    2.9.1
 chart.js                         2.9.3   →    2.9.4
 core-js                          3.6.5   →    3.9.1
 tailwindcss                     1.8.10   →    2.0.4
 vue                             2.6.12   →    3.0.7
-vue-router                       3.4.3   →    3.5.1
-@vue/cli-plugin-babel            4.5.6   →   4.5.12
-@vue/cli-plugin-eslint           4.5.6   →   4.5.12
-@vue/cli-service                 4.5.6   →   4.5.12
-eslint                           6.8.0   →   7.22.0
+vue-router                       3.4.3   →    4.0.5
+@vue/cli-plugin-babel            4.5.6   →    5.0.0-alpha.7
+@vue/cli-plugin-eslint           4.5.6   →    5.0.0-alpha.7
+@vue/cli-service                 4.5.6   →    5.0.0-alpha.7
+eslint                           6.8.0   →    7.22.0
 eslint-plugin-vue                6.2.2   →    7.7.0
 ```
 ### Warning
 _On a clean install there may be some warnings from request, chokidar, fsevents - they come from node_modules, and they do not affect the product at all._
+_The following warning will show when doing a clean install `npm WARN cache-loader@4.1.0 requires a peer of webpack@^4.0.0 but none is installed. You must install peer dependencies yourself.`, however it does not affect in any way the product._
 
 ## [1.0.0] 2020-09-29
 ### Original Release
