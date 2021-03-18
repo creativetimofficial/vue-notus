@@ -1393,6 +1393,11 @@ select {
   background-color: rgba(228, 228, 231, var(--tw-bg-opacity));
 }
 
+.bg-coolGray-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+}
+
 .bg-coolGray-100 {
   --tw-bg-opacity: 1;
   background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
@@ -1436,6 +1441,11 @@ select {
 .active\:bg-green-600:active {
   --tw-bg-opacity: 1;
   background-color: rgba(22, 163, 74, var(--tw-bg-opacity));
+}
+
+.active\:bg-coolGray-50:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
 }
 
 .active\:bg-coolGray-600:active {
@@ -1504,6 +1514,11 @@ select {
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgba(212, 212, 216, var(--tw-border-opacity));
+}
+
+.border-coolGray-50 {
+  --tw-border-opacity: 1;
+  border-color: rgba(249, 250, 251, var(--tw-border-opacity));
 }
 
 .border-coolGray-100 {
