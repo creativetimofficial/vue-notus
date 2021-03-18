@@ -24,7 +24,7 @@
               class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
               :class="[
                 color === 'light'
-                  ? 'bg-coolGray-new text-coolGray-500 border-coolGray-100'
+                  ? 'bg-coolGray-50 text-coolGray-500 border-coolGray-100'
                   : 'bg-green-800 text-green-300 border-green-700',
               ]"
             >
@@ -34,7 +34,7 @@
               class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
               :class="[
                 color === 'light'
-                  ? 'bg-coolGray-new text-coolGray-500 border-coolGray-100'
+                  ? 'bg-coolGray-50 text-coolGray-500 border-coolGray-100'
                   : 'bg-green-800 text-green-300 border-green-700',
               ]"
             >
@@ -44,7 +44,7 @@
               class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
               :class="[
                 color === 'light'
-                  ? 'bg-coolGray-new text-coolGray-500 border-coolGray-100'
+                  ? 'bg-coolGray-50 text-coolGray-500 border-coolGray-100'
                   : 'bg-green-800 text-green-300 border-green-700',
               ]"
             >
@@ -54,7 +54,7 @@
               class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
               :class="[
                 color === 'light'
-                  ? 'bg-coolGray-new text-coolGray-500 border-coolGray-100'
+                  ? 'bg-coolGray-50 text-coolGray-500 border-coolGray-100'
                   : 'bg-green-800 text-green-300 border-green-700',
               ]"
             >
@@ -64,7 +64,7 @@
               class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
               :class="[
                 color === 'light'
-                  ? 'bg-coolGray-new text-coolGray-500 border-coolGray-100'
+                  ? 'bg-coolGray-50 text-coolGray-500 border-coolGray-100'
                   : 'bg-green-800 text-green-300 border-green-700',
               ]"
             >
@@ -74,7 +74,7 @@
               class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
               :class="[
                 color === 'light'
-                  ? 'bg-coolGray-new text-coolGray-500 border-coolGray-100'
+                  ? 'bg-coolGray-50 text-coolGray-500 border-coolGray-100'
                   : 'bg-green-800 text-green-300 border-green-700',
               ]"
             ></th>
@@ -116,22 +116,22 @@
                 <img
                   :src="team1"
                   alt="..."
-                  class="w-10 h-10 rounded-full border-2 border-coolGray-new shadow"
+                  class="w-10 h-10 rounded-full border-2 border-coolGray-50 shadow"
                 />
                 <img
                   :src="team2"
                   alt="..."
-                  class="w-10 h-10 rounded-full border-2 border-coolGray-new shadow -ml-4"
+                  class="w-10 h-10 rounded-full border-2 border-coolGray-50 shadow -ml-4"
                 />
                 <img
                   :src="team3"
                   alt="..."
-                  class="w-10 h-10 rounded-full border-2 border-coolGray-new shadow -ml-4"
+                  class="w-10 h-10 rounded-full border-2 border-coolGray-50 shadow -ml-4"
                 />
                 <img
                   :src="team4"
                   alt="..."
-                  class="w-10 h-10 rounded-full border-2 border-coolGray-new shadow -ml-4"
+                  class="w-10 h-10 rounded-full border-2 border-coolGray-50 shadow -ml-4"
                 />
               </div>
             </td>
@@ -194,22 +194,22 @@
                 <img
                   :src="team1"
                   alt="..."
-                  class="w-10 h-10 rounded-full border-2 border-coolGray-new shadow"
+                  class="w-10 h-10 rounded-full border-2 border-coolGray-50 shadow"
                 />
                 <img
                   :src="team2"
                   alt="..."
-                  class="w-10 h-10 rounded-full border-2 border-coolGray-new shadow -ml-4"
+                  class="w-10 h-10 rounded-full border-2 border-coolGray-50 shadow -ml-4"
                 />
                 <img
                   :src="team3"
                   alt="..."
-                  class="w-10 h-10 rounded-full border-2 border-coolGray-new shadow -ml-4"
+                  class="w-10 h-10 rounded-full border-2 border-coolGray-50 shadow -ml-4"
                 />
                 <img
                   :src="team4"
                   alt="..."
-                  class="w-10 h-10 rounded-full border-2 border-coolGray-new shadow -ml-4"
+                  class="w-10 h-10 rounded-full border-2 border-coolGray-50 shadow -ml-4"
                 />
               </div>
             </td>
@@ -271,22 +271,22 @@
                 <img
                   :src="team1"
                   alt="..."
-                  class="w-10 h-10 rounded-full border-2 border-coolGray-new shadow"
+                  class="w-10 h-10 rounded-full border-2 border-coolGray-50 shadow"
                 />
                 <img
                   :src="team2"
                   alt="..."
-                  class="w-10 h-10 rounded-full border-2 border-coolGray-new shadow -ml-4"
+                  class="w-10 h-10 rounded-full border-2 border-coolGray-50 shadow -ml-4"
                 />
                 <img
                   :src="team3"
                   alt="..."
-                  class="w-10 h-10 rounded-full border-2 border-coolGray-new shadow -ml-4"
+                  class="w-10 h-10 rounded-full border-2 border-coolGray-50 shadow -ml-4"
                 />
                 <img
                   :src="team4"
                   alt="..."
-                  class="w-10 h-10 rounded-full border-2 border-coolGray-new shadow -ml-4"
+                  class="w-10 h-10 rounded-full border-2 border-coolGray-50 shadow -ml-4"
                 />
               </div>
             </td>
@@ -348,22 +348,22 @@
                 <img
                   :src="team1"
                   alt="..."
-                  class="w-10 h-10 rounded-full border-2 border-coolGray-new shadow"
+                  class="w-10 h-10 rounded-full border-2 border-coolGray-50 shadow"
                 />
                 <img
                   :src="team2"
                   alt="..."
-                  class="w-10 h-10 rounded-full border-2 border-coolGray-new shadow -ml-4"
+                  class="w-10 h-10 rounded-full border-2 border-coolGray-50 shadow -ml-4"
                 />
                 <img
                   :src="team3"
                   alt="..."
-                  class="w-10 h-10 rounded-full border-2 border-coolGray-new shadow -ml-4"
+                  class="w-10 h-10 rounded-full border-2 border-coolGray-50 shadow -ml-4"
                 />
                 <img
                   :src="team4"
                   alt="..."
-                  class="w-10 h-10 rounded-full border-2 border-coolGray-new shadow -ml-4"
+                  class="w-10 h-10 rounded-full border-2 border-coolGray-50 shadow -ml-4"
                 />
               </div>
             </td>
@@ -426,22 +426,22 @@
                 <img
                   :src="team1"
                   alt="..."
-                  class="w-10 h-10 rounded-full border-2 border-coolGray-new shadow"
+                  class="w-10 h-10 rounded-full border-2 border-coolGray-50 shadow"
                 />
                 <img
                   :src="team2"
                   alt="..."
-                  class="w-10 h-10 rounded-full border-2 border-coolGray-new shadow -ml-4"
+                  class="w-10 h-10 rounded-full border-2 border-coolGray-50 shadow -ml-4"
                 />
                 <img
                   :src="team3"
                   alt="..."
-                  class="w-10 h-10 rounded-full border-2 border-coolGray-new shadow -ml-4"
+                  class="w-10 h-10 rounded-full border-2 border-coolGray-50 shadow -ml-4"
                 />
                 <img
                   :src="team4"
                   alt="..."
-                  class="w-10 h-10 rounded-full border-2 border-coolGray-new shadow -ml-4"
+                  class="w-10 h-10 rounded-full border-2 border-coolGray-50 shadow -ml-4"
                 />
               </div>
             </td>
