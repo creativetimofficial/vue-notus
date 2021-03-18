@@ -1,7 +1,9 @@
 <template>
   <footer
     class="pb-6"
-    :class="[absolute ? 'absolute w-full bottom-0 bg-coolGray-800' : 'relative']"
+    :class="[
+      absolute ? 'absolute w-full bottom-0 bg-coolGray-800' : 'relative',
+    ]"
   >
     <div class="container mx-auto px-4">
       <hr class="mb-6 border-b-1 border-coolGray-600" />
