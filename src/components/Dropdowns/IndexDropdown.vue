@@ -1,7 +1,7 @@
 <template>
   <div>
     <a
-      class="hover:text-gray-600 text-gray-800 px-3 py-2 flex items-center text-xs uppercase font-bold"
+      class="hover:text-coolGray-500 text-coolGray-700 px-3 py-2 flex items-center text-xs uppercase font-bold"
       href="#pablo"
       ref="btnDropdownRef"
       v-on:click="toggleDropdown($event)"
@@ -17,67 +17,67 @@
       }"
     >
       <span
-        class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-no-wrap bg-transparent text-gray-500"
+        class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-coolGray-400"
       >
         Admin Layout
       </span>
       <router-link
         to="/admin/dashboard"
-        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-coolGray-700"
       >
         Dashboard
       </router-link>
       <router-link
         to="/admin/settings"
-        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-coolGray-700"
       >
         Settings
       </router-link>
       <router-link
         to="/admin/tables"
-        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-coolGray-700"
       >
         Tables
       </router-link>
       <router-link
         to="/admin/maps"
-        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-coolGray-700"
       >
         Maps
       </router-link>
-      <div class="h-0 mx-4 my-2 border border-solid border-gray-200" />
+      <div class="h-0 mx-4 my-2 border border-solid border-coolGray-100" />
       <span
-        class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-no-wrap bg-transparent text-gray-500"
+        class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-coolGray-400"
       >
         Auth Layout
       </span>
       <router-link
         to="/auth/login"
-        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-coolGray-700"
       >
         Login
       </router-link>
       <router-link
         to="/auth/register"
-        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-coolGray-700"
       >
         Register
       </router-link>
-      <div class="h-0 mx-4 my-2 border border-solid border-gray-200" />
+      <div class="h-0 mx-4 my-2 border border-solid border-coolGray-100" />
       <span
-        class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-no-wrap bg-transparent text-gray-500"
+        class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-coolGray-400"
       >
         No Layout
       </span>
       <router-link
         to="/landing"
-        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-coolGray-700"
       >
         Lading
       </router-link>
       <router-link
         to="/profile"
-        class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-coolGray-700"
       >
         Profile
       </router-link>
