@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
+import { createApp } from "vue";
 import { createWebHistory, createRouter } from "vue-router";
 
 // styles
@@ -94,4 +94,4 @@ const router = createRouter({
   routes,
 });
 
-createApp(App).use(router).mount('#app')
+createApp(App).use(router).mount("#app");
