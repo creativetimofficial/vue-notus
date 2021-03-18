@@ -92,7 +92,9 @@
               />
               <span
                 class="ml-3 font-bold"
-                :class="[color === 'light' ? 'text-coolGray-600' : 'text-white']"
+                :class="[
+                  color === 'light' ? 'text-coolGray-600' : 'text-white',
+                ]"
               >
                 Argon Design System
               </span>
@@ -167,7 +169,9 @@
               />
               <span
                 class="ml-3 font-bold"
-                :class="[color === 'light' ? 'text-coolGray-600' : 'text-white']"
+                :class="[
+                  color === 'light' ? 'text-coolGray-600' : 'text-white',
+                ]"
               >
                 Angular Now UI Kit PRO
               </span>
@@ -243,7 +247,9 @@
               />
               <span
                 class="ml-3 font-bold"
-                :class="[color === 'light' ? 'text-coolGray-600' : 'text-white']"
+                :class="[
+                  color === 'light' ? 'text-coolGray-600' : 'text-white',
+                ]"
               >
                 Black Dashboard Sketch
               </span>
@@ -318,7 +324,9 @@
               />
               <span
                 class="ml-3 font-bold"
-                :class="[color === 'light' ? 'text-coolGray-600' : 'text-white']"
+                :class="[
+                  color === 'light' ? 'text-coolGray-600' : 'text-white',
+                ]"
               >
                 React Material Dashboard
               </span>
@@ -393,7 +401,9 @@
               />
               <span
                 class="ml-3 font-bold"
-                :class="[color === 'light' ? 'text-coolGray-600' : 'text-white']"
+                :class="[
+                  color === 'light' ? 'text-coolGray-600' : 'text-white',
+                ]"
               >
                 React Material Dashboard
               </span>
