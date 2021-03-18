@@ -145,7 +145,7 @@
 
             <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
               <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-emerald-600"
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-emerald-500"
               >
                 <img
                   alt="..."
@@ -161,7 +161,7 @@
                   >
                     <polygon
                       points="-30,95 583,95 583,65"
-                      class="text-emerald-600 fill-current"
+                      class="text-emerald-500 fill-current"
                     ></polygon>
                   </svg>
                   <h4 class="text-xl font-bold text-white">
