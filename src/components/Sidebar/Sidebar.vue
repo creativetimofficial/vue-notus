@@ -153,10 +153,7 @@
           </li>
 
           <li class="items-center">
-            <router-link
-              to="/admin/maps"
-              v-slot="{ href, navigate, isActive }"
-            >
+            <router-link to="/admin/maps" v-slot="{ href, navigate, isActive }">
               <a
                 :href="href"
                 @click="navigate"
@@ -203,7 +200,9 @@
               class="text-coolGray-700 hover:text-coolGray-500 text-xs uppercase py-3 font-bold block"
               to="/auth/register"
             >
-              <i class="fas fa-clipboard-list text-coolGray-300 mr-2 text-sm"></i>
+              <i
+                class="fas fa-clipboard-list text-coolGray-300 mr-2 text-sm"
+              ></i>
               Register
             </router-link>
           </li>
@@ -257,7 +256,9 @@
               target="_blank"
               class="text-coolGray-700 hover:text-coolGray-500 text-sm block mb-4 no-underline font-semibold"
             >
-              <i class="fas fa-paint-brush mr-2 text-coolGray-300 text-base"></i>
+              <i
+                class="fas fa-paint-brush mr-2 text-coolGray-300 text-base"
+              ></i>
               Styles
             </a>
           </li>
