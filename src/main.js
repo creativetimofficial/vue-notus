@@ -1,5 +1,5 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
+import { createApp } from "vue";
+import { createWebHistory, createRouter } from "vue-router";
 
 // styles
 
@@ -86,20 +86,12 @@ const routes = [
     path: "/",
     component: Index,
   },
-  { path: "*", redirect: "/" },
+  { path: "/:pathMatch(.*)*", redirect: "/" },
 ];
 
-// app config
-
-Vue.config.productionTip = false;
-
-Vue.use(VueRouter);
-
-const router = new VueRouter({
+const router = createRouter({
+  history: createWebHistory(),
   routes,
 });
 
-new Vue({
-  router,
-  render: (h) => h(App),
-}).$mount("#app");
+createApp(App).use(router).mount("#app");
