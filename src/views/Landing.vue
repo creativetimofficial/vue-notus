@@ -450,10 +450,10 @@
               >
                 <div class="flex-auto p-5 lg:p-10">
                   <h4 class="text-2xl font-semibold">
-                    Want to work with us?
+                    Contact Us!
                   </h4>
                   <p class="leading-relaxed mt-1 mb-4 text-blueGray-500">
-                    Complete this form and we will get back to you in 24 hours.
+                    Complete this form and we will get back to you.
                   </p>
                   <div class="relative w-full mb-3 mt-8">
                     <label
