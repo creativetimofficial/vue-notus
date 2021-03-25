@@ -1489,10 +1489,6 @@ select {
   background-size: cover;
 }
 
-.bg-full {
-  background-size: 100%;
-}
-
 .border-collapse {
   border-collapse: collapse;
 }
@@ -2133,10 +2129,6 @@ select {
   height: 0.5rem;
 }
 
-.h-5 {
-  height: 1.25rem;
-}
-
 .h-8 {
   height: 2rem;
 }
@@ -2183,10 +2175,6 @@ select {
 
 .h-350-px {
   height: 350px;
-}
-
-.h-500-px {
-  height: 500px;
 }
 
 .h-600-px {
@@ -2300,10 +2288,6 @@ select {
 
 .-m-16 {
   margin: -4rem;
-}
-
-.-m-24 {
-  margin: -6rem;
 }
 
 .my-2 {
@@ -2553,10 +2537,6 @@ select {
 
 .max-w-580-px {
   max-width: 580px;
-}
-
-.min-h-screen {
-  min-height: 100vh;
 }
 
 .min-h-screen-75 {
@@ -2821,11 +2801,6 @@ select {
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
-}
-
-.py-40 {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
 }
 
 .px-0\.5 {
@@ -3594,10 +3569,6 @@ select {
   word-break: break-all;
 }
 
-.w-5 {
-  width: 1.25rem;
-}
-
 .w-8 {
   width: 2rem;
 }
@@ -3851,10 +3822,6 @@ select {
     margin-left: 0.25rem;
   }
 
-  .sm\:mr-2 {
-    margin-right: 0.5rem;
-  }
-
   .sm\:pt-0 {
     padding-top: 0px;
   }
@@ -3940,10 +3907,6 @@ select {
 
   .md\:mt-64 {
     margin-top: 16rem;
-  }
-
-  .md\:ml-64 {
-    margin-left: 16rem;
   }
 
   .md\:max-w-4xl {
@@ -4081,33 +4044,10 @@ select {
             flex-direction: row;
   }
 
-  .lg\:self-center {
-    -ms-flex-item-align: center;
-        align-self: center;
-  }
-
   .lg\:justify-start {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-  }
-
-  .lg\:order-1 {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-
-  .lg\:order-2 {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-
-  .lg\:order-3 {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
   }
 
   .lg\:mb-0 {
@@ -4186,10 +4126,6 @@ select {
     text-align: left;
   }
 
-  .lg\:text-right {
-    text-align: right;
-  }
-
   .lg\:text-white {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -4239,16 +4175,8 @@ select {
     width: 25%;
   }
 
-  .xl\:w-4\/12 {
-    width: 33.333333%;
-  }
-
   .xl\:w-6\/12 {
     width: 50%;
-  }
-
-  .xl\:w-8\/12 {
-    width: 66.666667%;
   }
 }
 

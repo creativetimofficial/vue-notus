@@ -21,12 +21,10 @@
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div class="pr-12">
                 <h1 class="text-white font-semibold text-5xl">
-                  Your story starts with us.
+                  Digital Barn Ltd.
                 </h1>
                 <p class="mt-4 text-lg text-blueGray-200">
-                  This is a simple example of a Landing Page you can build using
-                  Vue Notus. It features multiple CSS components based on the
-                  Tailwind CSS design system.
+                  Specialising in eCommerce, graphic design, photography and digital creativity. The home of Reelflies.ca & Cartridgestore.ca
                 </p>
               </div>
             </div>
@@ -116,31 +114,30 @@
 
           <div class="flex flex-wrap items-center mt-32">
             <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
-              <div
-                class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white"
-              >
-                <i class="fas fa-user-friends text-xl"></i>
+                <div
+                  class="p-3 text-center inline-flex items-center justify-center max-w-180-px mb-6"
+                >
+                  <img
+                  class="max-w-150-px"
+                  :src="cartridgestoreLogo"
+                  />
               </div>
               <h3 class="text-3xl mb-2 font-semibold leading-normal">
-                Working with us is a pleasure
+                Welcome to the CartridgeStore.ca
               </h3>
               <p
                 class="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600"
               >
-                Don't let your uses guess by attaching tooltips and popoves to
-                any element. Just make sure you enable them first via
-                JavaScript.
+                100% family run and operated toner store, proudly serving our fellow Canadians with the very best toner cartridges since 2003.
               </p>
               <p
                 class="text-lg font-light leading-relaxed mt-0 mb-4 text-blueGray-600"
               >
-                The kit comes with three pre-built pages to help you get started
-                faster. You can change the text and images and you're good to
-                go. Just make sure you enable them first via JavaScript.
+                We are open for business, working round the clock to make sure every order ships same day!
               </p>
-              <router-link to="/" class="font-bold text-blueGray-700 mt-8">
-                Check Vue Notus!
-              </router-link>
+              <a href="https://www.cartridgestore.ca" class="font-bold text-blueGray-700 mt-8">
+                Check us out at Cartridgestore.ca
+              </a>
             </div>
 
             <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
@@ -149,7 +146,7 @@
               >
                 <img
                   alt="..."
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+                  :src="cartridgestore"
                   class="w-full align-middle rounded-t-lg"
                 />
                 <blockquote class="relative p-8 mb-4">
@@ -165,12 +162,10 @@
                     ></polygon>
                   </svg>
                   <h4 class="text-xl font-bold text-white">
-                    Top Notch Services
+                    Top Rated BBB Store
                   </h4>
                   <p class="text-md font-light mt-2 text-white">
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens.
+                     You can buy with complete peace of mind knowing that The Cartridge Store is also one of a few select Laser Printer Toner Stores in Canada to have a trusted BBB rating of A+
                   </p>
                 </blockquote>
               </div>
@@ -206,21 +201,22 @@
               <img
                 alt="..."
                 class="max-w-full rounded-lg shadow-lg"
-                src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                :src="reelflies"
               />
             </div>
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
               <div class="md:pr-12">
                 <div
-                  class="text-emerald-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-emerald-300"
+                  class="p-3 text-center inline-flex items-center justify-center max-w-180-px mb-6"
                 >
-                  <i class="fas fa-rocket text-xl"></i>
+                  <img
+                  class="max-w-150-px"
+                  :src="reelfliesLogo"
+                  />
                 </div>
-                <h3 class="text-3xl font-semibold">A growing company</h3>
+                <h3 class="text-3xl font-semibold">Reelflies Fishing Flies</h3>
                 <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
-                  The extension comes with three pre-built pages to help you get
-                  started faster. You can change the text and images and you're
-                  good to go.
+                  Offering the finest quality hand tied fly fishing flies & Trout flies in Canada. Supplying deadly fishing flies to some of the best known names, celebrities and tiers in North America. 
                 </p>
                 <ul class="list-none mt-6">
                   <li class="py-2">
@@ -229,12 +225,12 @@
                         <span
                           class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 bg-emerald-200 mr-3"
                         >
-                          <i class="fas fa-fingerprint"></i>
+                          <i class="fas fa-fish"></i>
                         </span>
                       </div>
                       <div>
                         <h4 class="text-blueGray-500">
-                          Carefully crafted components
+                          Over 2,100 Fly Patterns
                         </h4>
                       </div>
                     </div>
@@ -245,12 +241,12 @@
                         <span
                           class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 bg-emerald-200 mr-3"
                         >
-                          <i class="fab fa-html5"></i>
+                          <i class="fas fa-truck"></i>
                         </span>
                       </div>
                       <div>
                         <h4 class="text-blueGray-500">
-                          Amazing page examples
+                          Free Shipping (Orders over $60)
                         </h4>
                       </div>
                     </div>
@@ -261,15 +257,19 @@
                         <span
                           class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 bg-emerald-200 mr-3"
                         >
-                          <i class="far fa-paper-plane"></i>
+                          <i class="fas fa-coins"></i>
                         </span>
                       </div>
                       <div>
-                        <h4 class="text-blueGray-500">Dynamic components</h4>
+                        <h4 class="text-blueGray-500">Fly prices as low as $0.50</h4>
                       </div>
                     </div>
                   </li>
                 </ul>
+
+              <a href="https://www.reelflies.ca" class="block font-bold text-blueGray-700 mt-8">
+                Check us out at Reelflies.ca
+              </a>
               </div>
             </div>
           </div>
@@ -280,7 +280,7 @@
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap justify-center text-center mb-24">
             <div class="w-full lg:w-6/12 px-4">
-              <h2 class="text-4xl font-semibold">Here are our heroes</h2>
+              <h2 class="text-4xl font-semibold">Meet the team</h2>
               <p class="text-lg leading-relaxed m-4 text-blueGray-500">
                 According to the National Oceanic and Atmospheric
                 Administration, Ted, Scambos, NSIDClead scentist, puts the
@@ -297,32 +297,12 @@
                   class="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
                 <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Ryan Tompson</h5>
+                  <h5 class="text-xl font-bold">Steve B</h5>
                   <p
                     class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
                   >
-                    Web Developer
+                    Founder and CEO
                   </p>
-                  <div class="mt-6">
-                    <button
-                      class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-twitter"></i>
-                    </button>
-                    <button
-                      class="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-facebook-f"></i>
-                    </button>
-                    <button
-                      class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-dribbble"></i>
-                    </button>
-                  </div>
                 </div>
               </div>
             </div>
@@ -334,26 +314,12 @@
                   class="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
                 <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Romina Hadid</h5>
+                  <h5 class="text-xl font-bold">Hayley B</h5>
                   <p
                     class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
                   >
-                    Marketing Specialist
+                    Sales Manager
                   </p>
-                  <div class="mt-6">
-                    <button
-                      class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-google"></i>
-                    </button>
-                    <button
-                      class="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-facebook-f"></i>
-                    </button>
-                  </div>
                 </div>
               </div>
             </div>
@@ -365,32 +331,12 @@
                   class="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
                 <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Alexa Smith</h5>
+                  <h5 class="text-xl font-bold">Addie ?</h5>
                   <p
                     class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
                   >
-                    UI/UX Designer
+                    Fulfillment Manager
                   </p>
-                  <div class="mt-6">
-                    <button
-                      class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-google"></i>
-                    </button>
-                    <button
-                      class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-twitter"></i>
-                    </button>
-                    <button
-                      class="bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-instagram"></i>
-                    </button>
-                  </div>
                 </div>
               </div>
             </div>
@@ -402,38 +348,12 @@
                   class="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
                 <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Jenna Kardi</h5>
+                  <h5 class="text-xl font-bold">Shaun B</h5>
                   <p
                     class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
                   >
-                    Founder and CEO
+                    Web Manager
                   </p>
-                  <div class="mt-6">
-                    <button
-                      class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-dribbble"></i>
-                    </button>
-                    <button
-                      class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-google"></i>
-                    </button>
-                    <button
-                      class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-twitter"></i>
-                    </button>
-                    <button
-                      class="bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-instagram"></i>
-                    </button>
-                  </div>
                 </div>
               </div>
             </div>
@@ -603,6 +523,10 @@ import team1 from "@/assets/img/team-1-800x800.jpg";
 import team2 from "@/assets/img/team-2-800x800.jpg";
 import team3 from "@/assets/img/team-3-800x800.jpg";
 import team4 from "@/assets/img/team-4-470x470.png";
+import cartridgestore from "@/assets/img/cartridgestore.png";
+import cartridgestoreLogo from "@/assets/img/cartridgestore-logo.png";
+import reelflies from "@/assets/img/reelflies.png";
+import reelfliesLogo from "@/assets/img/reelflies-logo.png";
 
 export default {
   data() {
@@ -611,6 +535,10 @@ export default {
       team2,
       team3,
       team4,
+      cartridgestore,
+      cartridgestoreLogo,
+      reelflies,
+      reelfliesLogo
     };
   },
   components: {
