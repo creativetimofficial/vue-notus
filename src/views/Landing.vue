@@ -403,7 +403,7 @@
                 <i class="fas fa-medal text-xl"></i>
               </div>
               <h6 class="text-xl mt-5 font-semibold text-white">
-                Excelent Services
+                Excellent Services
               </h6>
               <p class="mt-2 mb-4 text-blueGray-400">
                 Some quick example text to build on the card title and make up
