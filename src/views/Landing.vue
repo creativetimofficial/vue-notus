@@ -358,6 +358,76 @@
               </div>
             </div>
           </div>
+          <div class="flex flex-wrap">
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+              <div class="px-6">
+                <img
+                  alt="..."
+                  :src="team1"
+                  class="shadow-lg rounded-full mx-auto max-w-120-px"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold">Jennie B</h5>
+                  <p
+                    class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
+                  >
+                    Founder and CEO
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+              <div class="px-6">
+                <img
+                  alt="..."
+                  :src="team2"
+                  class="shadow-lg rounded-full mx-auto max-w-120-px"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold">Ellie B</h5>
+                  <p
+                    class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
+                  >
+                    Sales Manager
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+              <div class="px-6">
+                <img
+                  alt="..."
+                  :src="team3"
+                  class="shadow-lg rounded-full mx-auto max-w-120-px"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold">Ollie ?</h5>
+                  <p
+                    class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
+                  >
+                    Fulfillment Manager
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+              <div class="px-6">
+                <img
+                  alt="..."
+                  :src="team4"
+                  class="shadow-lg rounded-full mx-auto max-w-120-px"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold">Roo Meister Flex B</h5>
+                  <p
+                    class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
+                  >
+                    Web Manager
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
