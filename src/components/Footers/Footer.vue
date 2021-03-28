@@ -22,11 +22,10 @@
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap text-center lg:text-left">
         <div class="w-full lg:w-6/12 px-4">
-          <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+          <h4 class="text-3xl font-semibold mb-3">Let's keep in touch!</h4>
           <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
             Digital Barn Ltd. <br />
-            138 Allen Street, Tillsonburg,<br />
-            ON, N4G 5W1, Canada <br />
+            93 Broadway St, Tillsonburg, ON<br />
             Toll Free: 1-866-250-4071
           </h5>
         </div>
@@ -42,15 +41,7 @@
                 <li>
                   <a
                     class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                    href="https://www.creative-tim.com/presentation?ref=vn-footer"
-                  >
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                    href="https://blog.creative-tim.com?ref=vn-footer"
+                    href="https://www.reelflies.ca"
                   >
                     Reelflies.ca
                   </a>
@@ -58,7 +49,7 @@
                 <li>
                   <a
                     class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                    href="https://www.github.com/creativetimofficial?ref=vn-footer"
+                    href="https://www.cartridgestore.ca"
                   >
                     Cartridgestore.ca
                   </a>
@@ -66,7 +57,7 @@
                 <li>
                   <a
                     class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                    href="https://www.creative-tim.com/bootstrap-themes/free?ref=vn-footer"
+                    href="mailto:admin@digitalbarn.ca"
                   >
                     Contact Us
                   </a>

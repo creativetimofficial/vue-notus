@@ -21,10 +21,11 @@
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div class="pr-12">
                 <h1 class="text-white font-semibold text-5xl">
-                  1: Digital Barn Ltd.
+                  DIGITAL BARN LTD. (Est. 2003)
                 </h1>
                 <p class="mt-4 text-lg text-blueGray-200">
-                  2: Specialising in eCommerce, graphic design, photography and digital creativity. The home of Reelflies.ca & Cartridgestore.ca
+                  Welcome to the home of ReelFlies.ca and the CartridgeStore.ca (part of DIGITAL BARN LTD.) a family run business with a background in computing, specialising in eCommerce, graphic design, and creative digital photography. 
+                  Combining our skills to produce two of the best known, yet diverse websites in Canada. 
                 </p>
               </div>
             </div>
@@ -62,12 +63,11 @@
                   <div
                     class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
                   >
-                    <i class="fas fa-award"></i>
+                    <i class="fas fa-fish"></i>
                   </div>
-                  <h6 class="text-xl font-semibold">3: Awarded Agency</h6>
+                  <h6 class="text-xl font-semibold"><a href="www.reelflies.ca" target="_blank">www.ReelFlies.ca</a></h6>
                   <p class="mt-2 mb-4 text-blueGray-500">
-                    4: Divide details about your product or agency work into parts.
-                    A paragraph describing a feature will be enough.
+                    Quality Hand Tied Fishing Flies at Affordable Prices!
                   </p>
                 </div>
               </div>
@@ -83,10 +83,9 @@
                   >
                     <i class="fas fa-retweet"></i>
                   </div>
-                  <h6 class="text-xl font-semibold">5: Free Revisions</h6>
+                  <h6 class="text-xl font-semibold">5: NEEDS TITLE</h6>
                   <p class="mt-2 mb-4 text-blueGray-500">
-                    6: Keep you user engaged by providing meaningful information.
-                    Remember that by this time, the user is curious.
+                    Two Great Divisions Under One Roof.
                   </p>
                 </div>
               </div>
@@ -100,19 +99,18 @@
                   <div
                     class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400"
                   >
-                    <i class="fas fa-fingerprint"></i>
+                    <i class="fas fa-print"></i>
                   </div>
-                  <h6 class="text-xl font-semibold">7: Verified Company</h6>
+                  <h6 class="text-xl font-semibold"><a href="www.cartridgestore.ca" target="_blank">www.CartridgeStore.ca</a></h6>
                   <p class="mt-2 mb-4 text-blueGray-500">
-                    8: Write a few lines about each one. A paragraph describing a
-                    feature will be enough. Keep you user engaged!
+                    Premium Branded Ink & Toner Cartridges at Realistic Prices!
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="flex flex-wrap items-center mt-32">
+          <div class="flex flex-wrap items-center mt-16">
             <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
                 <div
                   class="p-3 text-center inline-flex items-center justify-center max-w-180-px mb-6"
@@ -123,20 +121,66 @@
                   />
               </div>
               <h3 class="text-3xl mb-2 font-semibold leading-normal">
-                9: Welcome to the CartridgeStore.ca
+                The CartridgeStore.ca
               </h3>
               <p
                 class="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600"
               >
-                10: 100% family run and operated toner store, proudly serving our fellow Canadians with the very best toner cartridges since 2003.
+                Proudly serving our fellow Canadians with the very best quality printer supplies since 2003.  
+                We are 100% family run and operated, providing some of the very best Ink and Toner Cartridge prices in Canada. 
+                We offer two printer cartridge ranges, our eco brand Toners where we focus on our great value P-Tone and PearlTone brands, and our top of the range Fuzion branded toners. 
+                For those that need the very best, then choose Fuzion Toner and Ink, this is the brand we use. This premium range is just as close as it gets to original OEM, so you can save without compromise! 
               </p>
-              <p
-                class="text-lg font-light leading-relaxed mt-0 mb-4 text-blueGray-600"
-              >
-                11: We are open for business, working round the clock to make sure every order ships same day!
-              </p>
+              <ul class="list-none my-6">
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 bg-emerald-200 mr-3"
+                        >
+                          <i class="fas fa-print"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <h4 class="text-blueGray-500">
+                          Best Prices on Fuzion Toner & Ink
+                        </h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 bg-emerald-200 mr-3"
+                        >
+                          <i class="fas fa-truck"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <h4 class="text-blueGray-500">
+                          Free Shipping (Orders over $49)
+                        </h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-emerald-600 bg-emerald-200 mr-3"
+                        >
+                          <i class="fas fa-check"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <h4 class="text-blueGray-500">Same Day Processing</h4>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               <a href="https://www.cartridgestore.ca" class="font-bold text-blueGray-700 mt-8">
-                12: Check us out at Cartridgestore.ca
+                Check Us Out at www.Cartridgestore.ca
               </a>
             </div>
 
@@ -162,10 +206,10 @@
                     ></polygon>
                   </svg>
                   <h4 class="text-xl font-bold text-white">
-                    13: Top Rated BBB Store
+                    Top Rated BBB Store
                   </h4>
                   <p class="text-md font-light mt-2 text-white">
-                     14: You can buy with complete peace of mind knowing that The Cartridge Store is also one of a few select Laser Printer Toner Stores in Canada to have a trusted BBB rating of A+
+                     You can buy with complete peace of mind knowing that The Cartridge Store is also one of a few select Laser Printer Toner Stores in Canada to have a trusted BBB rating of A+
                   </p>
                 </blockquote>
               </div>
@@ -207,16 +251,18 @@
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
               <div class="md:pr-12">
                 <div
-                  class="p-3 text-center inline-flex items-center justify-center max-w-180-px mb-6"
+                  class="p-3 text-center inline-flex items-center justify-center max-w-180-px my-6"
                 >
                   <img
                   class="max-w-150-px"
                   :src="reelfliesLogo"
                   />
                 </div>
-                <h3 class="text-3xl font-semibold">15: Reelflies Fishing Flies</h3>
+                <h3 class="text-3xl font-semibold">ReelFlies® Fishing Flies</h3>
                 <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
-                  16: Offering the finest quality hand tied fly fishing flies & Trout flies in Canada. Supplying deadly fishing flies to some of the best known names, celebrities and tiers in North America. 
+                  As a family with a passion for fly fishing we established a new online division in 2008, www.ReelFlies.ca. 
+                  From small and humble beginnings we have proudly grown to become the most trusted and popular online resellers of hand made fishing flies in Canada. 
+                  We currently carry over 2,100 different deadly hand crafted fly patterns available for purchase today on our renowned eCommerce website, www.ReelFlies.ca
                 </p>
                 <ul class="list-none mt-6">
                   <li class="py-2">
@@ -230,7 +276,7 @@
                       </div>
                       <div>
                         <h4 class="text-blueGray-500">
-                          17: Over 2,100 Fly Patterns
+                          Choose from Over 2,100 Fly Patterns
                         </h4>
                       </div>
                     </div>
@@ -246,7 +292,7 @@
                       </div>
                       <div>
                         <h4 class="text-blueGray-500">
-                          18: Free Shipping (Orders over $60)
+                          FREE Shipping on fly orders over $60
                         </h4>
                       </div>
                     </div>
@@ -261,14 +307,14 @@
                         </span>
                       </div>
                       <div>
-                        <h4 class="text-blueGray-500">19: Fly prices as low as $0.50</h4>
+                        <h4 class="text-blueGray-500">Fly prices as low as $0.50</h4>
                       </div>
                     </div>
                   </li>
                 </ul>
 
               <a href="https://www.reelflies.ca" class="block font-bold text-blueGray-700 mt-8">
-                20: Check us out at Reelflies.ca
+                Check us out today at www.Reelflies.ca
               </a>
               </div>
             </div>
@@ -279,12 +325,14 @@
       <section class="pt-20 pb-48">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap justify-center text-center mb-24">
-            <div class="w-full lg:w-6/12 px-4">
-              <h2 class="text-4xl font-semibold">21: Meet the team</h2>
+            <div class="w-full lg:w-9/12 px-4">
+              <h2 class="text-4xl font-semibold">Meet the team</h2>
               <p class="text-lg leading-relaxed m-4 text-blueGray-500">
-                22: According to the National Oceanic and Atmospheric
-                Administration, Ted, Scambos, NSIDClead scentist, puts the
-                potentially record maximum.
+                Having two great divisions at Digital Barn Ltd. has been fundamental to our success and growth of our business over the years. 
+                Particularly as we experience the current global pandemic and it’s effect on many small businesses. 
+                The support our valued customers have provided through these challenging times has been incredible, so thank you! 
+                We will continue to proudly serve you with great products and good old fashioned family run service as we head into 2021. 
+                Oh! and yes “Take a dog to work day” is every day at Digital Barn Ltd. they are also part of our family. 
               </p>
             </div>
           </div>
@@ -293,7 +341,7 @@
               <div class="px-6">
                 <img
                   alt="..."
-                  :src="team1"
+                  :src="steveB"
                   class="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
                 <div class="pt-6 text-center">
@@ -310,7 +358,7 @@
               <div class="px-6">
                 <img
                   alt="..."
-                  :src="team2"
+                  :src="hayleyB"
                   class="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
                 <div class="pt-6 text-center">
@@ -318,7 +366,7 @@
                   <p
                     class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
                   >
-                    Sales Manager
+                    Office Manager
                   </p>
                 </div>
               </div>
@@ -327,15 +375,15 @@
               <div class="px-6">
                 <img
                   alt="..."
-                  :src="team3"
+                  :src="jennieB"
                   class="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
                 <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Addie ?</h5>
+                  <h5 class="text-xl font-bold">Jennie B</h5>
                   <p
                     class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
                   >
-                    Fulfillment Manager
+                    Accounts & Receivable
                   </p>
                 </div>
               </div>
@@ -344,7 +392,7 @@
               <div class="px-6">
                 <img
                   alt="..."
-                  :src="team4"
+                  :src="shaunB"
                   class="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
                 <div class="pt-6 text-center">
@@ -358,20 +406,20 @@
               </div>
             </div>
           </div>
-          <div class="flex flex-wrap">
+          <div class="flex flex-wrap mt-6">
             <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
               <div class="px-6">
                 <img
                   alt="..."
-                  :src="team1"
+                  :src="addieA"
                   class="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
                 <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Jennie B</h5>
+                  <h5 class="text-xl font-bold">Addie A</h5>
                   <p
                     class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
                   >
-                    Founder and CEO
+                    Logistics Manager
                   </p>
                 </div>
               </div>
@@ -380,7 +428,7 @@
               <div class="px-6">
                 <img
                   alt="..."
-                  :src="team2"
+                  :src="ellieB"
                   class="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
                 <div class="pt-6 text-center">
@@ -388,7 +436,7 @@
                   <p
                     class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
                   >
-                    Sales Manager
+                    Top Dog
                   </p>
                 </div>
               </div>
@@ -397,15 +445,15 @@
               <div class="px-6">
                 <img
                   alt="..."
-                  :src="team3"
+                  :src="ollieB"
                   class="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
                 <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Ollie ?</h5>
+                  <h5 class="text-xl font-bold">Ollie B</h5>
                   <p
                     class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
                   >
-                    Fulfillment Manager
+                    Second in Charge
                   </p>
                 </div>
               </div>
@@ -414,15 +462,15 @@
               <div class="px-6">
                 <img
                   alt="..."
-                  :src="team4"
+                  :src="roo"
                   class="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
                 <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Roo Meister Flex B</h5>
+                  <h5 class="text-xl font-bold">Roo Meister</h5>
                   <p
                     class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
                   >
-                    Web Manager
+                    Front of Store
                   </p>
                 </div>
               </div>
@@ -452,131 +500,12 @@
           </svg>
         </div>
 
-        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+        <div class="container mx-auto px-4 lg:pt-24 lg:pb-20">
           <div class="flex flex-wrap text-center justify-center">
-            <div class="w-full lg:w-6/12 px-4">
+            <div class="w-full lg:w-9/12 px-4 my-6">
               <h2 class="text-4xl font-semibold text-white">
-                22: Build something
+                Buy online or call Toll Free: 1.866.250.4071 to arrange a curbside pickup at our new location at 93 Broadway St, Tillsonburg, ON.
               </h2>
-              <p class="text-lg leading-relaxed mt-4 mb-4 text-blueGray-400">
-                23: Put the potentially record low maximum sea ice extent tihs year
-                down to low ice. According to the National Oceanic and
-                Atmospheric Administration, Ted, Scambos.
-              </p>
-            </div>
-          </div>
-          <div class="flex flex-wrap mt-12 justify-center">
-            <div class="w-full lg:w-3/12 px-4 text-center">
-              <div
-                class="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
-              >
-                <i class="fas fa-medal text-xl"></i>
-              </div>
-              <h6 class="text-xl mt-5 font-semibold text-white">
-                24: Excellent Services
-              </h6>
-              <p class="mt-2 mb-4 text-blueGray-400">
-                25: Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-            <div class="w-full lg:w-3/12 px-4 text-center">
-              <div
-                class="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
-              >
-                <i class="fas fa-poll text-xl"></i>
-              </div>
-              <h5 class="text-xl mt-5 font-semibold text-white">
-                26: Grow your market
-              </h5>
-              <p class="mt-2 mb-4 text-blueGray-400">
-                27: Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-            <div class="w-full lg:w-3/12 px-4 text-center">
-              <div
-                class="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
-              >
-                <i class="fas fa-lightbulb text-xl"></i>
-              </div>
-              <h5 class="text-xl mt-5 font-semibold text-white">
-                28: Launch time
-              </h5>
-              <p class="mt-2 mb-4 text-blueGray-400">
-                29: Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="relative block py-24 lg:pt-0 bg-blueGray-800">
-        <div class="container mx-auto px-4">
-          <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
-            <div class="w-full lg:w-6/12 px-4">
-              <div
-                class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200"
-              >
-                <div class="flex-auto p-5 lg:p-10">
-                  <h4 class="text-2xl font-semibold">
-                    30: Contact Us!
-                  </h4>
-                  <p class="leading-relaxed mt-1 mb-4 text-blueGray-500">
-                    31: Complete this form and we will get back to you.
-                  </p>
-                  <div class="relative w-full mb-3 mt-8">
-                    <label
-                      class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                      htmlFor="full-name"
-                    >
-                      Full Name
-                    </label>
-                    <input
-                      type="text"
-                      class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                      placeholder="Full Name"
-                    />
-                  </div>
-
-                  <div class="relative w-full mb-3">
-                    <label
-                      class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                      htmlFor="email"
-                    >
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                      placeholder="Email"
-                    />
-                  </div>
-
-                  <div class="relative w-full mb-3">
-                    <label
-                      class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                      htmlFor="message"
-                    >
-                      Message
-                    </label>
-                    <textarea
-                      rows="4"
-                      cols="80"
-                      class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                      placeholder="Type a message..."
-                    />
-                  </div>
-                  <div class="text-center mt-6">
-                    <button
-                      class="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                      type="button"
-                    >
-                      Send Message
-                    </button>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -586,13 +515,17 @@
   </div>
 </template>
 <script>
-import Navbar from "@/components/Navbars/AuthNavbar.vue";
+import Navbar from "@/components/Navbars/Navbar.vue";
 import FooterComponent from "@/components/Footers/Footer.vue";
 
-import team1 from "@/assets/img/team-1-800x800.jpg";
-import team2 from "@/assets/img/team-2-800x800.jpg";
-import team3 from "@/assets/img/team-3-800x800.jpg";
-import team4 from "@/assets/img/team-4-470x470.png";
+import addieA from "@/assets/img/addieA.jpg";
+import hayleyB from "@/assets/img/hayleyB.jpg";
+import ellieB from "@/assets/img/ellieB.jpg";
+import ollieB from "@/assets/img/ollieB.jpg";
+import jennieB from "@/assets/img/jennieB.jpg";
+import steveB from "@/assets/img/steveB.jpg";
+import roo from "@/assets/img/roo.jpg";
+import shaunB from "@/assets/img/roo.jpg";
 import cartridgestore from "@/assets/img/cartridgestore.png";
 import cartridgestoreLogo from "@/assets/img/cartridgestore-logo.png";
 import reelflies from "@/assets/img/reelflies.png";
@@ -601,10 +534,14 @@ import reelfliesLogo from "@/assets/img/reelflies-logo.png";
 export default {
   data() {
     return {
-      team1,
-      team2,
-      team3,
-      team4,
+      addieA,
+      hayleyB,
+      ellieB,
+      ollieB,
+      jennieB,
+      steveB,
+      roo,
+      shaunB,
       cartridgestore,
       cartridgestoreLogo,
       reelflies,

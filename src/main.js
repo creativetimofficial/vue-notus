@@ -12,14 +12,14 @@ import App from "@/App.vue";
 
 // views without layouts
 
-import Landing from "@/views/Landing.vue";
+import Index from "@/views/Index.vue";
 
 // routes
 
 const routes = [
   {
     path: "/",
-    component: Landing,
+    component: Index,
   },
   { path: "/:pathMatch(.*)*", redirect: "/" },
 ];
