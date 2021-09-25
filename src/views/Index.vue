@@ -81,11 +81,11 @@
                   <div
                     class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-lightBlue-400"
                   >
-                    <i class="fas fa-retweet"></i>
+                    <i class="fas fa-camera"></i>
                   </div>
-                  <h6 class="text-xl font-semibold">5: NEEDS TITLE</h6>
+                  <h6 class="text-xl font-semibold">Photography Services</h6>
                   <p class="mt-2 mb-4 text-blueGray-500">
-                    Two Great Divisions Under One Roof.
+                    Three Great Divisions Under One Roof.
                   </p>
                 </div>
               </div>
@@ -524,8 +524,8 @@ import ellieB from "@/assets/img/ellieB.jpg";
 import ollieB from "@/assets/img/ollieB.jpg";
 import jennieB from "@/assets/img/jennieB.jpg";
 import steveB from "@/assets/img/steveB.jpg";
+import shaunB from "@/assets/img/shaunB.jpg";
 import roo from "@/assets/img/roo.jpg";
-import shaunB from "@/assets/img/roo.jpg";
 import cartridgestore from "@/assets/img/cartridgestore.png";
 import cartridgestoreLogo from "@/assets/img/cartridgestore-logo.png";
 import reelflies from "@/assets/img/reelflies.png";
@@ -540,8 +540,8 @@ export default {
       ollieB,
       jennieB,
       steveB,
-      roo,
       shaunB,
+      roo,
       cartridgestore,
       cartridgestoreLogo,
       reelflies,
