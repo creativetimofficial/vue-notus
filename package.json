@@ -6,50 +6,41 @@
   "repository": "https://github.com/creativetimofficial/vue-notus",
   "license": "MIT",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build && gulp licenses",
-    "lint": "vue-cli-service lint",
+    "serve": "vite preview",
+    "build": "vite build && gulp licenses",
     "build:tailwind": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm run serve"
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm run build && npm run serve",
+    "dev": "vite"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "5.15.3",
-    "@popperjs/core": "2.9.1",
-    "@tailwindcss/forms": "0.2.1",
-    "@vue/compiler-sfc": "3.0.7",
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@popperjs/core": "2.11.6",
+    "@tailwindcss/forms": "0.5.3",
     "chart.js": "2.9.4",
-    "core-js": "3.9.1",
-    "gulp": "4.0.2",
-    "gulp-append-prepend": "1.0.8",
-    "tailwindcss": "2.0.4",
-    "vue": "3.0.7",
-    "vue-router": "4.0.5"
+    "gulp": "^4.0.2",
+    "gulp-append-prepend": "1.0.9",
+    "tailwindcss": "^3.2.4",
+    "vue": "3.2.45",
+    "vue-router": "4.1.6"
   },
   "devDependencies": {
-    "@babel/core": "7.13.10",
-    "@babel/eslint-parser": "7.13.10",
-    "@vue/cli-plugin-babel": "5.0.0-alpha.7",
-    "@vue/cli-plugin-eslint": "5.0.0-alpha.7",
-    "@vue/cli-service": "5.0.0-alpha.7",
-    "autoprefixer": "10.2.5",
-    "eslint": "7.22.0",
-    "eslint-plugin-vue": "7.7.0",
-    "postcss": "8.2.8",
-    "vue-template-compiler": "2.6.12"
+    "@vitejs/plugin-vue": "^3.2.0",
+    "autoprefixer": "10.4.13",
+    "eslint": "^8.29.0",
+    "eslint-plugin-vue": "^8.7.1",
+    "postcss": "8.4.19",
+    "vite": "^3.2.4"
   },
   "eslintConfig": {
     "root": true,
     "env": {
-      "node": true
+      "es2021": true
     },
     "extends": [
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "@babel/eslint-parser"
-    }
+    "rules": {}
   },
   "postcss": {
     "plugins": {
