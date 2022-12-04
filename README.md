@@ -25,6 +25,7 @@ If you like bright and fresh colors, you will love this Free Tailwind CSS Templa
 - (If you are on a linux based terminal) Simply run `npm run install:clean`
 - (If not) Run in terminal `npm install`
 - (If not) Run in terminal `npm run build:tailwind` (each time you add a new class, a class that does not exist in `src/assets/styles/tailwind.css`, you will need to run this command)
+- (If not) Run in terminal `npm run build`
 - (If not) Run in terminal `npm run serve`
 - Navigate to https://localhost:8080
 - Check more about [Tailwind CSS](https://tailwindcss.com/?ref=creativetim)
@@ -118,11 +119,12 @@ vue-notus
 ├── ISSUE_TEMPLATE.md
 ├── LICENSE.md
 ├── README.md
-├── babel.config.js
+├── vite.config.js
 ├── package.json
+├── index.html
 ├── public
 │   ├── favicon.ico
-│   └── index.html
+│   └── apple-icon.png
 ├── src
 │   ├── App.vue
 │   ├── assets
