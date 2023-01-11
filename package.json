@@ -17,16 +17,16 @@
     "@popperjs/core": "2.11.6",
     "@tailwindcss/forms": "0.5.3",
     "chart.js": "2.9.4",
-    "core-js": "3.26.1",
+    "core-js": "3.27.1",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.9",
     "@vue/compiler-sfc": "3.2.45",
-    "tailwindcss": "2.2.19",
+    "tailwindcss": "3.2.4",
     "vue": "3.2.45",
     "vue-router": "4.1.6"
   },
   "devDependencies": {
-    "@babel/core": "7.20.5",
+    "@babel/core": "7.20.12",
     "@babel/eslint-parser": "7.19.1",
     "@vue/cli-plugin-babel": "5.0.8",
     "@vue/cli-plugin-eslint": "5.0.8",
@@ -34,7 +34,7 @@
     "autoprefixer": "10.4.13",
     "eslint": "7.32.0",
     "eslint-plugin-vue": "7.20.0",
-    "postcss": "8.4.20",
+    "postcss": "8.4.21",
     "vue-template-compiler": "2.7.14"
   },
   "eslintConfig": {
