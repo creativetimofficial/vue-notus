@@ -1,7 +1,7 @@
 {
   "name": "vue-notus",
   "homepage": "https://demos.creative-tim.com/vue-notus/",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Vue Notus - A free Tailwind CSS and VueJS UI Kit and Admin by Creative Tim.",
   "repository": "https://github.com/creativetimofficial/vue-notus",
   "license": "MIT",
@@ -13,29 +13,29 @@
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm run serve"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "5.15.3",
-    "@popperjs/core": "2.9.1",
-    "@tailwindcss/forms": "0.2.1",
-    "@vue/compiler-sfc": "3.0.7",
+    "@fortawesome/fontawesome-free": "5.15.4",
+    "@popperjs/core": "2.11.6",
+    "@tailwindcss/forms": "0.5.3",
     "chart.js": "2.9.4",
-    "core-js": "3.9.1",
+    "core-js": "3.27.1",
     "gulp": "4.0.2",
-    "gulp-append-prepend": "1.0.8",
-    "tailwindcss": "2.0.4",
-    "vue": "3.0.7",
-    "vue-router": "4.0.5"
+    "gulp-append-prepend": "1.0.9",
+    "@vue/compiler-sfc": "3.2.45",
+    "tailwindcss": "3.2.4",
+    "vue": "3.2.45",
+    "vue-router": "4.1.6"
   },
   "devDependencies": {
-    "@babel/core": "7.13.10",
-    "@babel/eslint-parser": "7.13.10",
-    "@vue/cli-plugin-babel": "5.0.0-alpha.7",
-    "@vue/cli-plugin-eslint": "5.0.0-alpha.7",
-    "@vue/cli-service": "5.0.0-alpha.7",
-    "autoprefixer": "10.2.5",
-    "eslint": "7.22.0",
-    "eslint-plugin-vue": "7.7.0",
-    "postcss": "8.2.8",
-    "vue-template-compiler": "2.6.12"
+    "@babel/core": "7.20.12",
+    "@babel/eslint-parser": "7.19.1",
+    "@vue/cli-plugin-babel": "5.0.8",
+    "@vue/cli-plugin-eslint": "5.0.8",
+    "@vue/cli-service": "5.0.8",
+    "autoprefixer": "10.4.13",
+    "eslint": "7.32.0",
+    "eslint-plugin-vue": "7.20.0",
+    "postcss": "8.4.21",
+    "vue-template-compiler": "2.7.14"
   },
   "eslintConfig": {
     "root": true,
