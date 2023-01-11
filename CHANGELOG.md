@@ -1,6 +1,6 @@
 # Change Log
 
-## [1.2.0] 2021-03-19
+## [1.2.0] 2023-01-11
 
 - Update dependencies and devDependencies
 - Fix installation issue when running `npm i`
