@@ -18,9 +18,12 @@ import Auth from "@/layouts/Auth.vue";
 // views for Admin layout
 
 import Dashboard from "@/views/admin/Dashboard.vue";
+import AddEntry from "@/views/admin/AddEntry.vue";
 import Settings from "@/views/admin/Settings.vue";
-import Tables from "@/views/admin/Tables.vue";
-import Maps from "@/views/admin/Maps.vue";
+import MyEntries from "@/views/admin/MyEntries.vue";
+import ImportEntries from "@/views/admin/ImportEntries.vue";
+import SearchEntries from "@/views/admin/SearchEntries.vue";
+import EntriesResume from "@/views/admin/EntriesResume.vue";
 
 // views for Auth layout
 
@@ -31,7 +34,10 @@ import Register from "@/views/auth/Register.vue";
 
 import Landing from "@/views/Landing.vue";
 import Profile from "@/views/Profile.vue";
-import Index from "@/views/Index.vue";
+// import Index from "@/views/Index.vue";
+
+//vuex store data
+import store from "./store";
 
 // routes
 
@@ -46,16 +52,49 @@ const routes = [
         component: Dashboard,
       },
       {
-        path: "/admin/settings",
+        path: "/admin/add_entry",
+        component: AddEntry,
+      },
+      {
+        path: "/admin/entries/:account_id",
+        component: MyEntries,
+        children: [
+          {
+            path: "/admin/entries/type/:filter_type",
+            component: MyEntries,
+          },
+          {
+            path: "/admin/entries/:account_id/category-:category_id",
+            component: MyEntries,
+          },
+          {
+            path: "/admin/entries/:account_id/label-:label_id",
+            component: MyEntries,
+          }
+        ]
+      },
+      {
+        path: "/admin/import",
+        component: ImportEntries,
+      },
+      {
+        path: "/admin/search",
+        component: SearchEntries,
+      },
+
+      {
+        path: "/see_all/:type",
+        component: EntriesResume,
+      },
+      {
+        path: "/admin/settings/",
         component: Settings,
-      },
-      {
-        path: "/admin/tables",
-        component: Tables,
-      },
-      {
-        path: "/admin/maps",
-        component: Maps,
+        children: [
+          {
+            path: "/admin/settings/:setting_type",
+            component: Settings,
+          }
+        ]
       },
     ],
   },
@@ -84,7 +123,7 @@ const routes = [
   },
   {
     path: "/",
-    component: Index,
+    component: Admin,
   },
   { path: "/:pathMatch(.*)*", redirect: "/" },
 ];
@@ -94,4 +133,7 @@ const router = createRouter({
   routes,
 });
 
-createApp(App).use(router).mount("#app");
+const app = createApp(App);
+app.use(store)
+app.use(router)
+app.mount("#app")

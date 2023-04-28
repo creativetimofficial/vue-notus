@@ -28,6 +28,18 @@
         Dashboard
       </router-link>
       <router-link
+        to="/admin/entries"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+      >
+        My entries
+      </router-link>
+      <router-link
+        to="/admin/add_entry"
+        class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+      >
+        Add new entry
+      </router-link>
+      <router-link
         to="/admin/settings"
         class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
       >

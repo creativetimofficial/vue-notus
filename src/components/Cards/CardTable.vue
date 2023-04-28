@@ -465,7 +465,6 @@
             <td
               class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right"
             >
-              <table-dropdown />
             </td>
           </tr>
         </tbody>
@@ -474,7 +473,6 @@
   </div>
 </template>
 <script>
-import TableDropdown from "@/components/Dropdowns/TableDropdown.vue";
 
 import bootstrap from "@/assets/img/bootstrap.jpg";
 import angular from "@/assets/img/angular.jpg";
@@ -502,7 +500,6 @@ export default {
     };
   },
   components: {
-    TableDropdown,
   },
   props: {
     color: {

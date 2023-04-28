@@ -21,7 +21,7 @@
           </div>
         </div>
       </div>
-      <p class="text-sm text-blueGray-400 mt-4">
+      <p class="text-sm text-blueGray-400 mt-4" v-if="statPercent != ''">
         <span class="mr-2" :class="[statPercentColor]">
           <i
             :class="[
@@ -48,7 +48,7 @@ export default {
       default: "350,897",
     },
     statArrow: {
-      default: "up",
+      default: "",
       validator: function (value) {
         // The value must match one of these strings
         return ["up", "down"].indexOf(value) !== -1;
@@ -56,7 +56,7 @@ export default {
     },
     statPercent: {
       type: String,
-      default: "3.48",
+      default: "",
     },
     // can be any of the text color utilities
     // from tailwindcss
