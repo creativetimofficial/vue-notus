@@ -3,16 +3,12 @@ version: '2.2'
 services:
     femodule:
       ports:
-        - 8080:8080
+        - 80:8080
       build:
         context: .
         dockerfile: Dockerfile
       volumes:
           - ./:/usr/src/app
           - ./.env:/usr/src/app/.env
-      command: "npm run serve"
+      command: "npm run install:clean"
       restart: unless-stopped
-networks: 
-  default: 
-    external: 
-      name: budget-tracker-net
