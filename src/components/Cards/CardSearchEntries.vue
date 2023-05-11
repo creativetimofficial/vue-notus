@@ -204,10 +204,8 @@
 </template>
 
 <script>
-import axios from 'axios'
-// const X_API_KEY = { "X-API-KEY": "7221" };
-const DOMAIN = process.env.VUE_APP_API_PATH_V2 + "/api/";
 import EntriesTable from "@/components/GenericComponents/EntriesTable.vue";
+import ApiService from "../../services/ApiService.vue";
 
 export default {
     components: {
@@ -306,27 +304,14 @@ export default {
         search() {
             let _this = this
             let data = this.action
-            this.post(DOMAIN + "search", data, function (res) {
+
+            ApiService.search(data).then((res) => {
                 _this.$refs.entriestable.ENTRIES_ROUTE = "search/"
-                _this.$refs.entriestable.buildEntriesTable(res.data)
+                _this.$refs.entriestable.buildEntriesTable(res.data.elements)
                 _this.total.incoming = res.data.data.total.incoming
                 _this.total.expenses = res.data.data.total.expenses
                 _this.total.debit = res.data.data.total.debit
                 _this.total.transfer = res.data.data.total.transfer
-            })
-        },
-        get(path, callBack) {
-            axios.get(path).then((resp) => {
-                callBack(resp.data)
-            }).catch((error) => {
-                this.action.alert = true
-                this.action.alert_message = "Ops... An error occured"
-                console.error(error);
-            })
-        },
-        post(path, data, callBack) {
-            axios.post(path, data).then((resp) => {
-                callBack(resp)
             }).catch((error) => {
                 this.action.alert = true
                 this.action.alert_message = "Ops... An error occured"
@@ -335,7 +320,7 @@ export default {
         },
         getLabels() {
             let _this = this
-            this.get(DOMAIN + "labels", function (res) {
+            ApiService.label().then((res) => {
                 let data = res.data
                 data.forEach(function (r) {
                     _this.input.tags.push(r)
@@ -344,7 +329,7 @@ export default {
         },
         getCategory() {
             let _this = this
-            this.get(DOMAIN + "categories", function (res) {
+            ApiService.categories().then((res) => {
                 let data = res.data
                 data.forEach(function (r) {
                     r.sub_category.forEach((item) => {
@@ -358,7 +343,7 @@ export default {
         },
         getAccount() {
             let _this = this
-            this.get(DOMAIN + "accounts", function (res) {
+            ApiService.account().then((res) => {
                 let data = res.data
                 data.forEach(function (r) {
                     _this.input.account.push(r)

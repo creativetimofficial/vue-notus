@@ -25,8 +25,18 @@ async function setEntry(type,data) {
   return response.data;
 }
 
+async function getEntry() {
+  const response = await instance.get('/api/entry');
+  return response.data;
+}
+
 async function getEntryDetail(type,id) {
   const response = await instance.get('/api/'+type+'/'+id);
+  return response.data;
+}
+
+async function getEntryFromAccount(id) {
+  const response = await instance.get('/api/entry/account/'+id);
   return response.data;
 }
 
@@ -70,9 +80,20 @@ async function accounts() {
   return response.data;
 }
 
+async function importData(data) {
+  const response = await instance.post('/api/import',data);
+  return response.data;
+}
+
+async function search(data) {
+  const response = await instance.post('/api/search',data);
+  return response.data;
+}
+
 
 export default {
   setEntry,
+  getEntry,
   getEntryDetail,
   debit,
   categories,
@@ -81,7 +102,10 @@ export default {
   setModel,
   labels,
   currencies,
-  accounts
+  accounts,
+  importData,
+  search,
+  getEntryFromAccount,
 }
 
 </script>

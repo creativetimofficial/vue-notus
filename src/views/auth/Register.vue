@@ -87,6 +87,7 @@
 <script>
 import facebook from "@/assets/img/github.svg";
 import google from "@/assets/img/google.svg";
+import AuthService from "../../services/AuthService.vue";
 
 export default {
   data() {
