@@ -20,13 +20,68 @@ instance.interceptors.request.use(
   }
 );
 
-async function entry(type,data) {
+async function setEntry(type,data) {
   const response = await instance.post('/api/'+type,data);
   return response.data;
 }
 
+async function getEntryDetail(type,id) {
+  const response = await instance.get('/api/'+type+'/'+id);
+  return response.data;
+}
+
+async function debit() {
+  const response = await instance.get('/api/debit');
+  return response.data;
+}
+
+async function categories() {
+  const response = await instance.get('/api/categories');
+  return response.data;
+}
+
+async function paymentstype() {
+  const response = await instance.get('/api/paymentstype');
+  return response.data;
+}
+
+async function model() {
+  const response = await instance.get('/api/model');
+  return response.data;
+}
+
+async function setModel(data) {
+  const response = await instance.post('/api/model',data);
+  return response.data;
+}
+
+async function labels() {
+  const response = await instance.get('/api/labels');
+  return response.data;
+}
+
+async function currencies() {
+  const response = await instance.get('/api/labels');
+  return response.data;
+}
+
+async function accounts() {
+  const response = await instance.get('/api/labels');
+  return response.data;
+}
+
+
 export default {
-  entry
+  setEntry,
+  getEntryDetail,
+  debit,
+  categories,
+  paymentstype,
+  model,
+  setModel,
+  labels,
+  currencies,
+  accounts
 }
 
 </script>
