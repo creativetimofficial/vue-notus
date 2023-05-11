@@ -298,20 +298,20 @@ export default {
 
             if (path == null) {
                 ApiService.getEntry().then((res) => {
-                    _this.buildEntriesTable(res.data.elements)
+                    _this.buildEntriesTable(res.data)
                 })
             }
 
             if (this.$route.params.account_id != 0) {
                 ApiService.getEntryFromAccount(this.$route.params.account_id).then((res) => {
-                    _this.buildEntriesTable(res.data.elements)
+                    _this.buildEntriesTable(res.data)
                 })
             }
 
             this.pagination.enabled = false
 
             ApiService.getEntryFromAccount(this.$route.params.account_id).then((res) => {
-                _this.buildEntriesTable(res.data.elements)
+                _this.buildEntriesTable(res.data)
             })
 
         },

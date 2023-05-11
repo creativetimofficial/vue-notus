@@ -307,7 +307,7 @@ export default {
 
             ApiService.search(data).then((res) => {
                 _this.$refs.entriestable.ENTRIES_ROUTE = "search/"
-                _this.$refs.entriestable.buildEntriesTable(res.data.elements)
+                _this.$refs.entriestable.buildEntriesTable(res.data)
                 _this.total.incoming = res.data.data.total.incoming
                 _this.total.expenses = res.data.data.total.expenses
                 _this.total.debit = res.data.data.total.debit
