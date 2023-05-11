@@ -120,12 +120,11 @@ export default {
   },
   methods: {
     async submit() {
-      let username = this.email;
+      let email = this.email;
       let password = this.password;
 
-      const response = await AuthService.login(username, password)
+      const response = await AuthService.login(email, password)
         //save token in local storage
-        console.log(response)
         localStorage.setItem("auth-token", response.token.plainTextToken);
         //redirecto to dashboard
         this.$router.push({ path: 'app' })
