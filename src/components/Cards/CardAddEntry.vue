@@ -214,6 +214,8 @@
 
 <script>
 import axios from 'axios'
+import ApiService from '../../services/ApiService.vue';
+
 // const X_API_KEY = { "X-API-KEY": "7221" };
 const DOMAIN = process.env.VUE_APP_API_PATH_V2;
 const COLORS = [
@@ -524,14 +526,14 @@ export default {
         data.amount = this.amount * -1
       }
 
-      this.set(DOMAIN + "/api/"+this.type, data, function () {
-        _this.date = null,
+      ApiService.entry(this.type,data).then(() => {
+          _this.date = null,
           _this.amount = null,
-          _this.category = null,
+          _this.category = data.category_id,
           _this.label = [],
           _this.note = null,
           _this.currency = 1,
-          _this.account = null,
+          _this.account = data.account_id,
           _this.payment_type = 1,
           _this.model = [],
           _this.newlabel = null,
@@ -540,7 +542,15 @@ export default {
         _this.action.alert_message = _this.type + " inserito correttamente"
         setTimeout(_this.action.alert = false, 3000)
         _this.$store.state.actions.updatestats = true
+
+      }).catch((reason) => {
+
+        this.action.alert = true
+        this.action.alert_message = "Ops... An error occured"
+        console.error(reason);
+        
       })
+     
     },
     getCurrency() {
       let _this = this
