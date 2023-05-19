@@ -37,6 +37,8 @@ import CardBarChart from "@/components/Cards/Char/CardBarChart.vue";
 import CardPieChart from "@/components/Cards/Char/CardPieChart.vue";
 import CardLineBarIncomingExpensesChart from "@/components/Cards/Char/CardLineBar_IncomingExpensesChart.vue";
 import CardCategoryResume from "@/components/Cards/Char/CardCategoryResume.vue";
+import AuthService from "../../services/AuthService.vue";
+
 export default {
   name: "dashboard-page",
   components: {
@@ -49,6 +51,17 @@ export default {
   data() {
     return {
       openTab: 1
+    }
+  },
+  async beforeMount() {
+    try {
+      const _this = this
+      AuthService.check().catch((response) => {
+        console.log("res", response)
+        _this.$router.push({ path: 'auth' })
+      });
+    } catch {
+      this.$router.push({ path: 'auth' })
     }
   },
   methods: {

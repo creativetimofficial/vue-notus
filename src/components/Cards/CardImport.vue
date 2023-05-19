@@ -83,14 +83,12 @@
 </template>
   
 <script>
-import axios from 'axios'
-// const X_API_hKEY = "7221"
-const DOMAIN = process.env.VUE_APP_API_PATH
+import ApiService from '../../services/ApiService.vue'
 
 export default {
     data() {
         return {
-            DOMAIN: DOMAIN,
+            DOMAIN: process.env.VUE_APP_API_PATH,
             action: {
                 alert: false,
                 alert_message: null,
@@ -117,12 +115,14 @@ export default {
         },
         getLabels() {
             let _this = this
-            this.get(DOMAIN + "/api/labels", function (res) {
+
+            ApiService.label().then((res) => {
                 let data = res.data
                 data.forEach(function (r) {
                     _this.input.tags.push(r)
                 })
             })
+
         },
         submit() {
 
@@ -136,7 +136,7 @@ export default {
             formData.append("service", data.service)
             formData.append("label", data.label)
 
-            axios.post(DOMAIN + "/api/entries/import", formData).then(() => {
+            ApiService.importData(formData).then(() => {
                 this.input = {
                     service: null,
                     file: []
@@ -148,21 +148,15 @@ export default {
             })
         },
 
-        get(path, callBack) {
-
-            // let headers = {
-            //     headers: {
-            //         "X-API-KEY": X_API_hKEY,
-            //     }
-            // }
-
-            axios.get(path).then((resp) => {
-                callBack(resp.data)
-            }).catch((error) => {
-                console.error(error);
+        getAccount() {
+            const _this = this
+            ApiService.account().then((res) => {
+                let data = res.data
+                data.forEach(function (r) {
+                    _this.accounts.push(r)
+                })
             })
         },
-
     }
 }
 </script>
