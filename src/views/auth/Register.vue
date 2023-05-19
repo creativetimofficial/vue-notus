@@ -113,6 +113,15 @@ export default {
       error: false
     };
   },
+  mounted() {
+      //retrive access token header
+      this.show = true
+      AuthService.check().then(() => [
+        this.$router.push({ path: '/app/dashboard' })
+      ]).catch(() => {
+        this.show = false
+      })
+  },
   methods: {
     async submit() {
       let email = this.email;
@@ -126,7 +135,7 @@ export default {
         //save token in local storage
         localStorage.setItem("auth-token", response.token.plainTextToken);
         //redirecto to dashboard
-        _this.$router.push({ path: 'app' })
+        _this.$router.push({ path: '/app/dashboard' })
       }).catch((err) => {
         _this.show = false
         _this.error = true

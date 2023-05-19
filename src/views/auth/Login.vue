@@ -4,9 +4,7 @@
     </loading>
     <div class="flex content-center items-center justify-center h-full">
       <div class="w-full lg:w-4/12 px-4">
-        <div
-          class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200 border-0"
-        >
+        <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200 border-0">
           <div class="rounded-t mb-0 px-6 py-6">
             <div class="text-center mb-3">
               <h6 class="text-blueGray-500 text-sm font-bold">
@@ -16,15 +14,13 @@
             <div class="btn-wrapper text-center">
               <button
                 class="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
-                type="button"
-              >
+                type="button">
                 <img alt="..." class="w-5 mr-1" :src="facebook" />
                 Facebook
               </button>
               <button
                 class="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
-                type="button"
-              >
+                type="button">
                 <img alt="..." class="w-5 mr-1" :src="google" />
                 Google
               </button>
@@ -35,43 +31,28 @@
             <div class="text-blueGray-400 text-center mb-3 font-bold">
               <small>Or sign in with credentials</small>
             </div>
-            <form>
+            <form @submit="submit()" action="javascript:void(0)">
               <div class="relative w-full mb-3">
-                <label
-                  class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                  htmlFor="grid-password"
-                >
+                <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                   Email
                 </label>
-                <input
-                  type="email"
-                  v-model="email"
+                <input type="email" v-model="email"
                   class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                  placeholder="Email"
-                />
+                  placeholder="Email" />
               </div>
 
               <div class="relative w-full mb-3">
-                <label
-                  class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                  htmlFor="grid-password"
-                >
+                <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                   Password
                 </label>
-                <input
-                  type="password"
-                  v-model="password"
+                <input type="password" v-model="password"
                   class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                  placeholder="Password"
-                />
+                  placeholder="Password" />
               </div>
               <div>
                 <label class="inline-flex items-center cursor-pointer">
-                  <input
-                    id="customCheckLogin"
-                    type="checkbox"
-                    class="form-checkbox border-0 rounded text-blueGray-700 ml-1 w-5 h-5 ease-linear transition-all duration-150"
-                  />
+                  <input id="customCheckLogin" type="checkbox"
+                    class="form-checkbox border-0 rounded text-blueGray-700 ml-1 w-5 h-5 ease-linear transition-all duration-150" />
                   <span class="ml-2 text-sm font-semibold text-blueGray-600">
                     Remember me
                   </span>
@@ -80,10 +61,8 @@
 
               <div class="text-center mt-6">
                 <button
-                  :onCLick="submit()"
                   class="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
-                  type="button"
-                >
+                  type="submit">
                   Sign In
                 </button>
               </div>
@@ -126,6 +105,15 @@ export default {
       error: false
     };
   },
+  mounted() {
+      //retrive access token header
+      this.show = true
+      AuthService.check().then(() => [
+        this.$router.push({ path: '/app/dashboard' })
+      ]).catch(() => {
+        this.show = false
+      })
+  },
   methods: {
     async submit() {
       let email = this.email;
@@ -139,7 +127,7 @@ export default {
         //save token in local storage
         localStorage.setItem("auth-token", response.token.plainTextToken);
         //redirecto to dashboard
-        this.$router.push({ path: 'app' })
+        this.$router.push({ path: '/app/dashboard' })
       }).catch((err) => {
         _this.show = false
         _this.error = true
