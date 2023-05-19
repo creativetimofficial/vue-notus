@@ -16,7 +16,7 @@
       <!-- Brand -->
       <router-link
         class="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
-        to="/admin/dashboard"
+        to="/app/dashboard"
       >
         Budget Tracker
       </router-link>
@@ -82,7 +82,7 @@
         <ul class="md:flex-col md:min-w-full flex flex-col list-none">
           <li class="items-center">
             <router-link
-              to="/admin/dashboard"
+              to="/app/dashboard"
               v-slot="{ href, navigate, isActive }"
             >
               <a
@@ -106,7 +106,7 @@
 
           <li class="items-center">
             <router-link
-              to="/admin/entries/0"
+              to="/app/entries/0"
               v-slot="{ href, navigate, isActive }"
             >
               <a
@@ -130,7 +130,7 @@
 
           <li class="items-center">
             <router-link
-              to="/admin/add_entry"
+              to="/app/add_entry"
               v-slot="{ href, navigate, isActive }"
             >
               <a
@@ -154,7 +154,7 @@
 
           <li class="items-center">
             <router-link
-              to="/admin/import"
+              to="/app/import"
               v-slot="{ href, navigate, isActive }"
             >
               <a
@@ -191,7 +191,7 @@
 
           <li class="items-center">
             <router-link
-              to="/admin/settings/generic"
+              to="/app/settings/generic"
               v-slot="{ href, navigate, isActive }"
             >
               <a
@@ -215,7 +215,7 @@
 
           <li class="items-center">
             <router-link
-              to="/admin/settings/payee"
+              to="/app/settings/payee"
               v-slot="{ href, navigate, isActive }"
             >
               <a
@@ -239,7 +239,7 @@
 
           <li class="items-center">
             <router-link
-              to="/admin/settings/planned"
+              to="/app/settings/planned"
               v-slot="{ href, navigate, isActive }"
             >
               <a

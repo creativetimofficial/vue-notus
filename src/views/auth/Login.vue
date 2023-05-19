@@ -16,8 +16,8 @@
                 class="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
                 type="button"
               >
-                <img alt="..." class="w-5 mr-1" :src="github" />
-                Github
+                <img alt="..." class="w-5 mr-1" :src="facebook" />
+                Facebook
               </button>
               <button
                 class="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
@@ -43,6 +43,7 @@
                 </label>
                 <input
                   type="email"
+                  v-model="email"
                   class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                   placeholder="Email"
                 />
@@ -57,6 +58,7 @@
                 </label>
                 <input
                   type="password"
+                  v-model="password"
                   class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                   placeholder="Password"
                 />
@@ -76,6 +78,7 @@
 
               <div class="text-center mt-6">
                 <button
+                  :onCLick="submit()"
                   class="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
                   type="button"
                 >
@@ -102,15 +105,30 @@
   </div>
 </template>
 <script>
-import github from "@/assets/img/github.svg";
+import facebook from "@/assets/img/github.svg";
 import google from "@/assets/img/google.svg";
+import AuthService from "../../services/AuthService.vue";
 
 export default {
   data() {
     return {
-      github,
+      email: '',
+      password: '',
+      facebook,
       google,
     };
   },
+  methods: {
+    async submit() {
+      let email = this.email;
+      let password = this.password;
+
+      const response = await AuthService.login(email, password)
+        //save token in local storage
+        localStorage.setItem("auth-token", response.token.plainTextToken);
+        //redirecto to dashboard
+        this.$router.push({ path: 'app' })
+    }
+  }
 };
 </script>
