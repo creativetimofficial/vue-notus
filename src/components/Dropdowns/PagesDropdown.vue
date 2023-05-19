@@ -6,7 +6,7 @@
       ref="btnDropdownRef"
       v-on:click="toggleDropdown($event)"
     >
-      Demo Pages
+    Budget Tracker
     </a>
     <div
       ref="popoverDropdownRef"
@@ -19,7 +19,7 @@
       <span
         class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-blueGray-400"
       >
-        Admin Layout
+        App
       </span>
       <router-link
         to="/app/dashboard"
@@ -49,7 +49,7 @@
       <span
         class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-blueGray-400"
       >
-        Auth Layout
+        Auth login
       </span>
       <router-link
         to="/auth/login"

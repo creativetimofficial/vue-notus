@@ -310,10 +310,6 @@ export default {
 
             this.pagination.enabled = false
 
-            ApiService.getEntryFromAccount(this.$route.params.account_id).then((res) => {
-                _this.buildEntriesTable(res.data)
-            })
-
         },
         get(path, callBack) {
             axios.get(path).then((resp) => {

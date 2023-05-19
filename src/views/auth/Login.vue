@@ -1,5 +1,7 @@
 <template>
   <div class="container mx-auto px-4 h-full">
+    <loading :show="show">
+    </loading>
     <div class="flex content-center items-center justify-center h-full">
       <div class="w-full lg:w-4/12 px-4">
         <div
@@ -108,26 +110,42 @@
 import facebook from "@/assets/img/github.svg";
 import google from "@/assets/img/google.svg";
 import AuthService from "../../services/AuthService.vue";
+import loading from 'vue-full-loading'
 
 export default {
+  components: {
+    loading
+  },
   data() {
     return {
       email: '',
       password: '',
       facebook,
       google,
+      show: false,
+      error: false
     };
   },
   methods: {
     async submit() {
       let email = this.email;
       let password = this.password;
+      const _this = this
 
-      const response = await AuthService.login(email, password)
+      this.show = true
+      this.error = false
+
+      AuthService.login(email, password).then((response) => {
         //save token in local storage
         localStorage.setItem("auth-token", response.token.plainTextToken);
         //redirecto to dashboard
         this.$router.push({ path: 'app' })
+      }).catch((err) => {
+        _this.show = false
+        _this.error = true
+        //TODO: show error
+        console.error(err)
+      })
     }
   }
 };

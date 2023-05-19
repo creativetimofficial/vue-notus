@@ -1,5 +1,7 @@
 <template>
   <div class="container mx-auto px-4 h-full">
+    <loading :show="show">
+    </loading>
     <div class="flex content-center items-center justify-center h-full">
       <div class="w-full lg:w-6/12 px-4">
         <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200 border-0">
@@ -29,12 +31,20 @@
             <div class="text-blueGray-400 text-center mb-3 font-bold">
               <small>Or sign up with credentials</small>
             </div>
-            <form>
+            <form @submit="submit" action="javascript:void(0)">
+
+              <div role="alert" v-if="error">
+                <div class="bg-red-500 text-white font-bold rounded-t px-4 py-2">
+                  Ops ... si è verificato un errore
+                </div>
+                <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                </div>
+              </div>
               <div class="relative w-full mb-3">
                 <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                   Name
                 </label>
-                <input v-model="name" type="email"
+                <input v-model="name" type="text"
                   class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                   placeholder="Name" />
               </div>
@@ -73,7 +83,7 @@
               <div class="text-center mt-6">
                 <button
                   class="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
-                  type="button">
+                  type="submit">
                   Create Account
                 </button>
               </div>
@@ -88,24 +98,44 @@
 import facebook from "@/assets/img/github.svg";
 import google from "@/assets/img/google.svg";
 import AuthService from "../../services/AuthService.vue";
+import loading from 'vue-full-loading'
+
 
 export default {
+  components: {
+    loading
+  },
   data() {
     return {
       facebook,
       google,
+      show: false,
+      error: false
     };
   },
-  async submit() {
-    let email = this.email;
-    let password = this.password;
-    let name = this.name;
+  methods: {
+    async submit() {
+      let email = this.email;
+      let password = this.password;
+      let name = this.name;
+      const _this = this
 
-    const response = await AuthService.register(name, password,email)
-    //save token in local storage
-    localStorage.setItem("auth-token", response.token.plainTextToken);
-    //redirecto to dashboard
-    this.$router.push({ path: 'app' })
+      this.show = true
+      this.error = false
+      AuthService.register(name, password, email).then((response) => {
+        //save token in local storage
+        localStorage.setItem("auth-token", response.token.plainTextToken);
+        //redirecto to dashboard
+        _this.$router.push({ path: 'app' })
+      }).catch((err) => {
+        _this.show = false
+        _this.error = true
+        //TODO: show error
+        console.error(err)
+      })
+
+
+    }
   }
 };
 </script>
