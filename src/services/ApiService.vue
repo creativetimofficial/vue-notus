@@ -71,12 +71,12 @@ async function labels() {
 }
 
 async function currencies() {
-  const response = await instance.get('/api/labels');
+  const response = await instance.get('/api/currencies');
   return response.data;
 }
 
 async function accounts() {
-  const response = await instance.get('/api/labels');
+  const response = await instance.get('/api/accounts');
   return response.data;
 }
 
