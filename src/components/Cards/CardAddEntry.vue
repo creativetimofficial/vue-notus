@@ -548,7 +548,7 @@ export default {
     },
     getCurrency() {
       let _this = this
-      ApiService.currency().then((res) => {
+      ApiService.currencies().then((res) => {
         let data = res.data
         data.forEach(function (r) {
           _this.input.currency.push(r)
