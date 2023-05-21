@@ -10,5 +10,5 @@ services:
       volumes:
           - ./:/usr/src/app
           - ./.env:/usr/src/app/.env
-      command: "npm run serve"
+      command: "npm run install:clean"
       restart: unless-stopped

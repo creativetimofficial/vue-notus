@@ -213,9 +213,9 @@
 </template>
 
 <script>
-import axios from 'axios'
+import ApiService from '../../services/ApiService.vue';
+
 // const X_API_KEY = { "X-API-KEY": "7221" };
-const DOMAIN = process.env.VUE_APP_API_PATH_V2;
 const COLORS = [
   "bg-blueGray-200 text-blueGray-600",
   "bg-red-200 text-red-600",
@@ -318,15 +318,11 @@ export default {
       if (this.action.dateUpdated == false) {
         let dateTime = new Date()
         _this.date = dateTime.toISOString().split('T')[0] + " " + dateTime.toLocaleTimeString()
-        /*setInterval(function () {
-          let dateTime = new Date()
-          _this.date = dateTime.toLocaleDateString('en-IT', { hour12: false, hour: "numeric", minute: "numeric" })
-        }, 1200)*/
       }
     },
     getDebit() {
       let _this = this
-      this.get(DOMAIN + "/api/debit", function (res) {
+      ApiService.debit().then((res) => {
         let data = res.data
         data.forEach(function (r) {
           _this.input.debit.push(r)
@@ -335,7 +331,7 @@ export default {
     },
     getCategory() {
       let _this = this
-      this.get(DOMAIN + "/api/categories", function (res) {
+      ApiService.categories().then((res) => {
         let data = res.data
         data.forEach(function (r) {
           r.sub_category.forEach((item) => {
@@ -349,7 +345,7 @@ export default {
     },
     getPaymentType() {
       let _this = this
-      this.get(DOMAIN + "/api/paymentstype", function (res) {
+      ApiService.paymentstype().then((res) => {
         let data = res.data
         data.forEach(function (r) {
           _this.input.payment_type.push(r)
@@ -358,7 +354,7 @@ export default {
     },
     getModels() {
       let _this = this
-      this.get(DOMAIN + "/api/model", function (res) {
+      ApiService.model().then((res) => {
         let data = res.data
         if (res.data.length > 0) {
           _this.action.models = true
@@ -371,14 +367,14 @@ export default {
     getEntry() {
       let _this = this
       this.action.reset = true
-      let planned = ""
-      if(this.isPlanned == 1) {
-        planned = "/planned"
+      // let planned = ""
+      if (this.isPlanned == 1) {
+        // planned = "/planned"
       }
 
       this.toggleTabs(this.typeOfEntry)
 
-      this.get(DOMAIN + "/api/"+ this.typeOfEntry + "/" + this.entryId + planned, function (res) {
+      ApiService.getEntryDetail(this.type, this.entryId).then((res) => {
         let model = res.data
 
         _this.amount = model.amount
@@ -415,8 +411,8 @@ export default {
         _this.label.forEach((item) => {
           _this.label.push(item.id)
         });
-
       })
+
     },
     retriveModel() {
       let model = this.input.model[this.model]
@@ -455,7 +451,7 @@ export default {
     },
     getLabels() {
       let _this = this
-      this.get(DOMAIN + "/api/labels", function (res) {
+      ApiService.labels().then((res) => {
         let data = res.data
         data.forEach(function (r) {
           _this.input.tags.push(r)
@@ -496,7 +492,7 @@ export default {
         data.amount = this.amount * -1
       }
 
-      this.set(DOMAIN + "/api/model", data, function () {
+      ApiService.setModel(data).then(() => {
         _this.action.alert = true
         _this.action.alert_message = "Modello salvato correttamente"
         setTimeout(_this.action.alert = false, 3000)
@@ -524,14 +520,14 @@ export default {
         data.amount = this.amount * -1
       }
 
-      this.set(DOMAIN + "/api/"+this.type, data, function () {
+      ApiService.setEntry(this.type, data).then(() => {
         _this.date = null,
           _this.amount = null,
-          _this.category = null,
+          _this.category = data.category_id,
           _this.label = [],
           _this.note = null,
           _this.currency = 1,
-          _this.account = null,
+          _this.account = data.account_id,
           _this.payment_type = 1,
           _this.model = [],
           _this.newlabel = null,
@@ -540,11 +536,19 @@ export default {
         _this.action.alert_message = _this.type + " inserito correttamente"
         setTimeout(_this.action.alert = false, 3000)
         _this.$store.state.actions.updatestats = true
+
+      }).catch((reason) => {
+
+        this.action.alert = true
+        this.action.alert_message = "Ops... An error occured"
+        console.error(reason);
+
       })
+
     },
     getCurrency() {
       let _this = this
-      this.get(DOMAIN + "/api/currencies", function (res) {
+      ApiService.currencies().then((res) => {
         let data = res.data
         data.forEach(function (r) {
           _this.input.currency.push(r)
@@ -553,32 +557,11 @@ export default {
     },
     getAccount() {
       let _this = this
-      this.get(DOMAIN + "/api/accounts", function (res) {
+      ApiService.accounts().then((res) => {
         let data = res.data
         data.forEach(function (r) {
           _this.input.account.push(r)
         })
-      })
-    },
-    get(path, callBack) {
-      axios.get(path).then((resp) => {
-        callBack(resp.data)
-      }).catch((error) => {
-        this.action.alert = true
-        this.action.alert_message = "Ops... An error occured"
-        console.error(error);
-      })
-    },
-    set(path, data, callBack) {
-      axios.post(path, data).then((resp) => {
-        callBack(resp)
-        this.resetModel()
-        this.$parent.$parent.$parent.$options.components.HeaderStats.methods.update()
-        this.time()
-      }).catch((error) => {
-        this.action.alert = true
-        this.action.alert_message = "Ops... An error occured"
-        console.error(error);
       })
     },
     closeAlert: function () {

@@ -9,6 +9,7 @@ import "@/assets/styles/tailwind.css";
 // mouting point for the whole app
 
 import App from "@/App.vue";
+import Index from "@/views/Index.vue";
 
 // layouts
 
@@ -36,62 +37,60 @@ import Landing from "@/views/Landing.vue";
 import Profile from "@/views/Profile.vue";
 // import Index from "@/views/Index.vue";
 
-//vuex store data
-import store from "./store";
-
 // routes
 
 const routes = [
   {
-    path: "/admin",
-    redirect: "/admin/dashboard",
+    path: "/app",
+    redirect: "/app/dashboard",
+    name: 'app',
     component: Admin,
     children: [
       {
-        path: "/admin/dashboard",
+        path: "/app/dashboard",
         component: Dashboard,
       },
       {
-        path: "/admin/add_entry",
+        path: "/app/add_entry",
         component: AddEntry,
       },
       {
-        path: "/admin/entries/:account_id",
+        path: "/app/entries/:account_id",
         component: MyEntries,
         children: [
           {
-            path: "/admin/entries/type/:filter_type",
+            path: "/app/entries/type/:filter_type",
             component: MyEntries,
           },
           {
-            path: "/admin/entries/:account_id/category-:category_id",
+            path: "/app/entries/:account_id/category-:category_id",
             component: MyEntries,
           },
           {
-            path: "/admin/entries/:account_id/label-:label_id",
+            path: "/app/entries/:account_id/label-:label_id",
             component: MyEntries,
           }
         ]
       },
       {
-        path: "/admin/import",
+        path: "/app/import",
         component: ImportEntries,
       },
       {
-        path: "/admin/search",
+        path: "/app/search",
         component: SearchEntries,
       },
 
       {
-        path: "/see_all/:type",
+        path: "/app/see_all/:type",
         component: EntriesResume,
       },
       {
-        path: "/admin/settings/",
+        path: "/app/settings/",
         component: Settings,
         children: [
           {
-            path: "/admin/settings/:setting_type",
+            path: "/app/settings/:setting_type",
             component: Settings,
           }
         ]
@@ -100,6 +99,7 @@ const routes = [
   },
   {
     path: "/auth",
+    name: "auth",
     redirect: "/auth/login",
     component: Auth,
     children: [
@@ -123,7 +123,7 @@ const routes = [
   },
   {
     path: "/",
-    component: Admin,
+    component: Index,
   },
   { path: "/:pathMatch(.*)*", redirect: "/" },
 ];
@@ -134,6 +134,5 @@ const router = createRouter({
 });
 
 const app = createApp(App);
-app.use(store)
 app.use(router)
 app.mount("#app")

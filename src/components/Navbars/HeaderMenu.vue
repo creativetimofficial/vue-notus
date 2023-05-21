@@ -8,7 +8,7 @@
             <ul class="flex flex-l lg:flex-row list-none ml-auto w-full justify-center">
               <li class="nav-item border border-solid border-blueGray-100 mx-2">
                 <router-link
-                  to="/admin/add_entry"
+                  to="/app/add_entry"
                   v-slot="{ href, navigate, isActive }"
                 >
                   <a
@@ -27,7 +27,7 @@
               </li>
               <li class="nav-item border border-solid border-blueGray-100 mx-2">
                 <router-link
-                  to="/admin/entries/0"
+                  to="/app/entries/0"
                   v-slot="{ href, navigate, isActive }"
                 >
                   <a
@@ -46,7 +46,7 @@
               </li>
               <li class="nav-item border border-solid border-blueGray-100 mx-2">
                 <router-link
-                  to="/admin/search"
+                  to="/app/search"
                   v-slot="{ href, navigate, isActive }"
                 >
                   <a

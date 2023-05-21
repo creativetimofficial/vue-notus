@@ -27,7 +27,7 @@
                         <span class="text-xs block rounded"
                             :class="[entry.payee ? 'text-blueGray-900' : 'text-blueGray-400']">( {{ entry.account }} )
                             {{
-                                    entry.payee
+                                entry.payee
                             }}</span>
                     </div>
                     <div class="w-full px-4 flex-1 text-right">
@@ -53,8 +53,9 @@
                         <span class="text-xs mt-2 block text-blueGray-700 rounded ">
                             <span v-on:click="getEntries('labels=' + label.id, null)" v-for="(label, i) in entry.labels"
                                 :key="i"
-                                class="text-xs font-semibold justify-center py-1 px-2 uppercase rounded text-white-600 last:mr-0 mr-1" :style="'color: #fff; background-color: '+label.color">{{
-                                        label.name
+                                class="text-xs font-semibold justify-center py-1 px-2 uppercase rounded text-white-600 last:mr-0 mr-1"
+                                :style="'color: #fff; background-color: ' + label.color">{{
+                                    label.name
                                 }}</span>
                         </span>
                     </div>
@@ -113,11 +114,9 @@ import vue from "@/assets/img/react.jpg";
 import EntryActionDropdown from "@/components/Dropdowns/EntryActionDropdown.vue";
 
 import axios from 'axios'
+import ApiService from '../../services/ApiService.vue';
 // const X_API_KEY = { "X-API-KEY": "7221" }
 const DOMAIN = process.env.VUE_APP_API_PATH
-const DOMAIN_V2 = process.env.VUE_APP_API_PATH_V2
-
-
 
 export default {
     data() {
@@ -167,21 +166,21 @@ export default {
             this.getEntries('type=' + filter_type, null)
         },
         '$route.params.category_id': function (category_id) {
-            this.getEntries('category='+category_id, null)
+            this.getEntries('category=' + category_id, null)
         },
         '$route.params.label_id': function (label_id) {
-            this.getEntries('label='+label_id, null)
+            this.getEntries('label=' + label_id, null)
         }
     },
     mounted() {
         let filter = ''
         let category_id = this.$route.params.category_id
         let label_id = this.$route.params.label_id
-        if(category_id != undefined) {
-            filter = 'category='+category_id
+        if (category_id != undefined) {
+            filter = 'category=' + category_id
         }
-        if(label_id != undefined) {
-            filter = 'label='+label_id
+        if (label_id != undefined) {
+            filter = 'label=' + label_id
         }
         this.getEntries(filter, null)
     },
@@ -192,6 +191,7 @@ export default {
                 amount: this.wallet,
                 account_id: this.selected.account
             }
+            
 
             axios.post(DOMAIN + "/api/stats/wallet", data).then((resp) => {
                 //TODO: inserire un messaggio
@@ -204,7 +204,8 @@ export default {
         },
         getAccount() {
             let _this = this
-            this.get(DOMAIN + "/api/accounts", function (res) {
+
+            ApiService.account().then((res) => {
                 let data = res.data
                 data.forEach(function (r) {
                     _this.input.account.push(r)
@@ -214,7 +215,7 @@ export default {
         buildEntriesTable(res) {
             this.entries = []
 
-            let data = res.data
+            let data = res
 
             if (this.pagination.enabled === true) {
                 this.pagination.links = []
@@ -285,7 +286,7 @@ export default {
         getEntries(filter, path) {
             let _this = this
 
-            if(filter != "") {
+            if (filter != "") {
                 _this.filter = _this.filter + "&" + filter
             }
 
@@ -295,17 +296,20 @@ export default {
                 this.action.reset = false
             }
 
-            if(path == null) {
-                path = DOMAIN_V2 + this.ENTRIES_ROUTE
+            if (path == null) {
+                ApiService.getEntry().then((res) => {
+                    _this.buildEntriesTable(res.data)
+                })
             }
-            
+
             if (this.$route.params.account_id != 0) {
-                path = DOMAIN_V2 + this.ENTRIES_ROUTE + 'account/' + this.$route.params.account_id + "/" + _this.filter
+                ApiService.getEntryFromAccount(this.$route.params.account_id).then((res) => {
+                    _this.buildEntriesTable(res.data)
+                })
             }
+
             this.pagination.enabled = false
-            this.get(path, function (res) {
-                _this.buildEntriesTable(res)
-            })
+
         },
         get(path, callBack) {
             axios.get(path).then((resp) => {

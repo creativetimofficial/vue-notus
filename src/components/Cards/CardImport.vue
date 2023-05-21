@@ -8,27 +8,16 @@
         <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
             <form>
                 <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
-                    Service to import: <br/>
-                    <span class="inline-block ml-5 text-xs"> <a :href="DOMAIN+'/download-csv-template'">Download an exaple csv file</a></span>
+                    Service to import: <br />
+                    <span class="inline-block ml-5 text-xs"> <a :href="this.DOMAIN + '/download-csv-template'">Download an exaple
+                            csv file</a></span><br/>
+                    <span class="inline-block ml-5 text-xs"> <a :href="this.DOMAIN + '/entries/export'">Download all data into
+                    csv file</a></span>
                 </h6>
                 <div class="flex flex-wrap">
                     <div class="w-full lg:w-12/12 px-4">
                         <div class="relative w-full mb-3">
-                            <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                                htmlFor="grid-password">
-                                Account
-                            </label>
-                            <select
-                                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                v-model="input.account">
-                                <option v-for="account in accounts" :key="account.id" :value="account.id">{{ account.name }}</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="w-full lg:w-12/12 px-4">
-                        <div class="relative w-full mb-3">
-                            <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                                htmlFor="grid-label">
+                            <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-label">
                                 Label
                             </label>
                             <select v-model="label" multiple id="grid-label"
@@ -51,8 +40,7 @@
                 <div class="flex flex-wrap">
                     <div class="w-full lg:w-12/12 px-4">
                         <div class="relative w-full mb-3">
-                            <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                                htmlFor="grid-password">
+                            <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                 File
                             </label>
                             <input
@@ -95,28 +83,24 @@
 </template>
   
 <script>
-import axios from 'axios'
-// const X_API_hKEY = "7221"
-const DOMAIN = process.env.VUE_APP_API_PATH
+import ApiService from '../../services/ApiService.vue'
 
 export default {
     data() {
         return {
+            DOMAIN: process.env.VUE_APP_API_PATH,
             action: {
                 alert: false,
                 alert_message: null,
             },
-            accounts: [],
             label: [],
             input: {
-                account: null,
                 tags: [],
                 file: []
             }
         }
     },
     mounted() {
-        this.getAccount()
         this.getLabels()
     },
     methods: {
@@ -131,39 +115,30 @@ export default {
         },
         getLabels() {
             let _this = this
-            this.get(DOMAIN + "/api/labels", function (res) {
+
+            ApiService.label().then((res) => {
                 let data = res.data
                 data.forEach(function (r) {
                     _this.input.tags.push(r)
                 })
             })
+
         },
         submit() {
 
             let data = {
                 file: this.input.file[0],
-                account: this.input.account,
                 label: this.label,
             }
 
             let formData = new FormData()
             formData.append("file", data.file)
-            formData.append("account", data.account)
             formData.append("service", data.service)
             formData.append("label", data.label)
 
-
-            // let headers = {
-            //     headers: {
-            //         "X-API-KEY": X_API_hKEY,
-            //         'Content-Type': 'multipart/form-data'
-            //     }
-            // }
-
-            axios.post(DOMAIN + "/api/entries/import", formData).then(() => {
+            ApiService.importData(formData).then(() => {
                 this.input = {
                     service: null,
-                    account: null,
                     file: []
                 }
             }).catch((error) => {
@@ -172,27 +147,14 @@ export default {
                 console.error(error);
             })
         },
+
         getAccount() {
-            let _this = this
-            this.get(DOMAIN + "/api/accounts", function (res) {
+            const _this = this
+            ApiService.account().then((res) => {
                 let data = res.data
                 data.forEach(function (r) {
                     _this.accounts.push(r)
                 })
-            })
-        },
-        get(path, callBack) {
-
-            // let headers = {
-            //     headers: {
-            //         "X-API-KEY": X_API_hKEY,
-            //     }
-            // }
-
-            axios.get(path).then((resp) => {
-                callBack(resp.data)
-            }).catch((error) => {
-                console.error(error);
             })
         },
     }

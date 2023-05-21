@@ -18,6 +18,8 @@ import HeaderMenu from "@/components/Navbars/HeaderMenu.vue";
 import Sidebar from "@/components/Sidebar/Sidebar.vue";
 import HeaderStats from "@/components/Headers/HeaderStats.vue";
 import FooterAdmin from "@/components/Footers/FooterAdmin.vue";
+import AuthService from "../services/AuthService.vue";
+
 export default {
   name: "admin-layout",
   components: {
@@ -27,5 +29,16 @@ export default {
     HeaderStats,
     FooterAdmin,
   },
+  async beforeMount() {
+    try {
+      const _this = this
+      AuthService.check().catch((response) => {
+        console.log("res", response)
+        _this.$router.push({ path: 'auth' })
+      });
+    } catch {
+      this.$router.push({ path: 'auth' })
+    }
+  }
 };
 </script>
