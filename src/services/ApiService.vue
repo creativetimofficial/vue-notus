@@ -81,7 +81,7 @@ async function accounts() {
 }
 
 async function importData(data) {
-  const response = await instance.post('/api/import',data);
+  const response = await instance.post('/api/entries/import',data);
   return response.data;
 }
 
