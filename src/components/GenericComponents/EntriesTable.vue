@@ -191,7 +191,7 @@ export default {
                 amount: this.wallet,
                 account_id: this.selected.account
             }
-            
+
 
             axios.post(DOMAIN + "/api/stats/wallet", data).then((resp) => {
                 //TODO: inserire un messaggio
@@ -205,7 +205,7 @@ export default {
         getAccount() {
             let _this = this
 
-            ApiService.account().then((res) => {
+            ApiService.accounts().then((res) => {
                 let data = res.data
                 data.forEach(function (r) {
                     _this.input.account.push(r)
@@ -237,51 +237,54 @@ export default {
             }
 
             let _this = this
-            data.elements.forEach(function (r) {
+            if (data.length < 0) {
+                data.elements.forEach(function (r) {
 
-                let labels = []
-                r.label.forEach((l) => {
-                    if (l.name != "") {
-                        labels.push(
-                            {
-                                id: l.id,
-                                name: l.name,
-                                color: l.color
-                            }
-                        )
+                    let labels = []
+                    r.label.forEach((l) => {
+                        if (l.name != "") {
+                            labels.push(
+                                {
+                                    id: l.id,
+                                    name: l.name,
+                                    color: l.color
+                                }
+                            )
+                        }
+                    });
+
+                    let info = {
+                        id: r.id,
+                        date: r.date_time,
+                        amount: parseFloat(r.amount).toFixed(2) + " €",
+                        color_amount: r.amount <= 0 ? "text-red-500" : "text-emerald-500",
+                        type_amount: r.amount <= 0 ? "expenses" : "incoming",
+                        account: r.account.name,
+                        note: r.note,
+                        planned: r.planned == 0 ? false : true,
+                        category: {
+                            name: r.sub_category.name,
+                            id: r.sub_category.id,
+                            icon: r.sub_category.category.icon
+                        },
+                        labels: labels,
+                        payee: null,
+                        transfer: r.transfer == 0 ? false : true,
+                        type: r.type
                     }
-                });
 
-                let info = {
-                    id: r.id,
-                    date: r.date_time,
-                    amount: parseFloat(r.amount).toFixed(2) + " €",
-                    color_amount: r.amount <= 0 ? "text-red-500" : "text-emerald-500",
-                    type_amount: r.amount <= 0 ? "expenses" : "incoming",
-                    account: r.account.name,
-                    note: r.note,
-                    planned: r.planned == 0 ? false : true,
-                    category: {
-                        name: r.sub_category.name,
-                        id: r.sub_category.id,
-                        icon: r.sub_category.category.icon
-                    },
-                    labels: labels,
-                    payee: null,
-                    transfer: r.transfer == 0 ? false : true,
-                    type: r.type
-                }
+                    if (r.transfer_to != null) {
+                        info.account = r.account.name + " <-> " + r.transfer_to.name
+                    }
 
-                if (r.transfer_to != null) {
-                    info.account = r.account.name + " <-> " + r.transfer_to.name
-                }
+                    if (r.payee != null) {
+                        info.payee = "[ debit: " + r.payee.name + "]"
+                    }
 
-                if (r.payee != null) {
-                    info.payee = "[ debit: " + r.payee.name + "]"
-                }
+                    _this.entries.push(info)
+                })
+            }
 
-                _this.entries.push(info)
-            })
         },
         getEntries(filter, path) {
             let _this = this

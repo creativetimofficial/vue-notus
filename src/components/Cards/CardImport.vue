@@ -150,7 +150,7 @@ export default {
 
         getAccount() {
             const _this = this
-            ApiService.account().then((res) => {
+            ApiService.accounts().then((res) => {
                 let data = res.data
                 data.forEach(function (r) {
                     _this.accounts.push(r)

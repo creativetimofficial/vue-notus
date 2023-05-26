@@ -535,7 +535,6 @@ export default {
           _this.action.alert = true
         _this.action.alert_message = _this.type + " inserito correttamente"
         setTimeout(_this.action.alert = false, 3000)
-        _this.$store.state.actions.updatestats = true
 
       }).catch((reason) => {
 

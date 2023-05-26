@@ -320,7 +320,7 @@ export default {
         },
         getLabels() {
             let _this = this
-            ApiService.label().then((res) => {
+            ApiService.labels().then((res) => {
                 let data = res.data
                 data.forEach(function (r) {
                     _this.input.tags.push(r)
@@ -343,7 +343,7 @@ export default {
         },
         getAccount() {
             let _this = this
-            ApiService.account().then((res) => {
+            ApiService.accounts().then((res) => {
                 let data = res.data
                 data.forEach(function (r) {
                     _this.input.account.push(r)
