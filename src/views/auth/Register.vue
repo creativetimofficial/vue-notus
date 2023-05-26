@@ -113,15 +113,6 @@ export default {
       error: false
     };
   },
-  mounted() {
-      //retrive access token header
-      this.show = true
-      AuthService.check().then(() => [
-        this.$router.push({ path: '/app/dashboard' })
-      ]).catch(() => {
-        this.show = false
-      })
-  },
   methods: {
     async submit() {
       let email = this.email;

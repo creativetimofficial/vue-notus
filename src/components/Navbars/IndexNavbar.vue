@@ -13,7 +13,7 @@
             class="text-blueGray-700 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
             href="#pablo"
           >
-            Vue Notus
+           Budget Control
           </a>
         </router-link>
         <button
@@ -43,9 +43,34 @@
           </li>
         </ul>
         <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
-          <li class="flex items-center">
+          <li class="flex items-center" v-if="token">
             <index-dropdown />
           </li>
+
+          <li class="flex items-center" v-if="!token">
+            <a
+              class="hover:text-blueGray-500 text-blueGray-700 px-3 py-2 flex items-center text-xs uppercase font-bold"
+              href="/auth/login"
+            >
+              <i
+                class="text-blueGray-400 far fa-solid fa-user text-lg leading-lg mr-2"
+              />
+              Login
+            </a>
+          </li>
+
+          <li class="flex items-center" v-if="!token">
+            <a
+              class="hover:text-blueGray-500 text-blueGray-700 px-3 py-2 flex items-center text-xs uppercase font-bold"
+              href="/auth/register"
+            >
+              <i
+                class="text-blueGray-400 far fa-solid fa-right-to-bracket text-lg leading-lg mr-2"
+              />
+              Sign up
+            </a>
+          </li>
+
           <li class="flex items-center">
             <a
               class="hover:text-blueGray-500 text-blueGray-700 px-3 py-2 flex items-center text-xs uppercase font-bold"
@@ -91,7 +116,11 @@ export default {
   data() {
     return {
       navbarOpen: false,
+      token: null
     };
+  },
+  mounted() {
+    this.token = localStorage.getItem('auth-token');
   },
   methods: {
     setNavbarOpen: function () {
