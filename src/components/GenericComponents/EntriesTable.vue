@@ -237,7 +237,7 @@ export default {
             }
 
             let _this = this
-            if (data.length < 0) {
+            if (data.elements !== undefined) {
                 data.elements.forEach(function (r) {
 
                     let labels = []
