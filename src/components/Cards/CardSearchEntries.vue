@@ -308,10 +308,10 @@ export default {
             ApiService.search(data).then((res) => {
                 _this.$refs.entriestable.ENTRIES_ROUTE = "search/"
                 _this.$refs.entriestable.buildEntriesTable(res.data)
-                _this.total.incoming = res.data.data.total.incoming
-                _this.total.expenses = res.data.data.total.expenses
-                _this.total.debit = res.data.data.total.debit
-                _this.total.transfer = res.data.data.total.transfer
+                _this.total.incoming = res.data.total.incoming
+                _this.total.expenses = res.data.total.expenses
+                _this.total.debit = res.data.total.debit
+                _this.total.transfer = res.data.total.transfer
             }).catch((error) => {
                 this.action.alert = true
                 this.action.alert_message = "Ops... An error occured"
