@@ -66,31 +66,10 @@ export default {
   components: {
     EntriesTable
   },
-  watch: {
-    '$route.params.account_id': function (account_id) {
-      this.selected.account = account_id === undefined ? this.selected.account : account_id
-      this.getWallet(account_id)
-    },
-    '$route.params.filter_type': function () {
-      this.getWallet(0)
-    }
-  },
   mounted() {
-    let categoryID = this.$route.params.account_id
-    if(categoryID == undefined) {
-      categoryID = 0
-    }
-    this.getWallet(categoryID)
+
   },
   methods: {
-    getWallet(account_id) {
-      axios.get(DOMAIN + "/api/stats/wallet/" + account_id).then((resp) => {
-        let data = resp.data.data
-        this.wallet = data.total.toFixed(2)
-      }).catch((error) => {
-        console.error(error);
-      })
-    },
     fixWallet() {
 
       let data = {

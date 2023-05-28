@@ -52,6 +52,7 @@ const routes = [
       },
       {
         path: "/app/add_entry",
+        name: 'add_entry',
         component: AddEntry,
       },
       {

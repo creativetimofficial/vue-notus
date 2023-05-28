@@ -9,7 +9,7 @@
         block: dropdownPopoverShow,
       }">
 
-      <router-link :to="'/admin/add_entry?planned='+isPlanned+'&entry_id=' + entryId+'&type='+type" v-slot="{ href, navigate, isActive }">
+      <router-link :to="'/app/add_entry?planned='+isPlanned+'&entry_id=' + entryId+'&type='+type" v-slot="{ href, navigate, isActive }">
         <a :href="href" @click="navigate"
           class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700" :class="[
             isActive
