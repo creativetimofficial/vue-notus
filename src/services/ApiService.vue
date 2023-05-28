@@ -30,6 +30,11 @@ async function getEntry() {
   return response.data;
 }
 
+async function deleteEntry(id) {
+  const response = await instance.delete('/api/entry/'+id);
+  return response.data;
+}
+
 async function getEntryDetail(type,id) {
   const response = await instance.get('/api/'+type+'/'+id);
   return response.data;
@@ -94,6 +99,7 @@ async function search(data) {
 export default {
   setEntry,
   getEntry,
+  deleteEntry,
   getEntryDetail,
   debit,
   categories,

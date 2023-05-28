@@ -29,9 +29,7 @@
 </template>
 <script>
 import { createPopper } from "@popperjs/core";
-import axios from 'axios'
-// const X_API_KEY = { "X-API-KEY": "7221" };
-const DOMAIN = process.env.VUE_APP_API_PATH_V2;
+import ApiService from "../../services/ApiService.vue";
 
 export default {
   props: {
@@ -73,7 +71,7 @@ export default {
       }
     },
     deleteEntry() {
-      axios.delete(DOMAIN + "/api/"+this.type+"/" + this.entryId).then((resp) => {
+      ApiService.deleteEntry(this.entryId).then((resp) => {
         console.log(resp)
       }).catch((error) => {
         console.error(error);
