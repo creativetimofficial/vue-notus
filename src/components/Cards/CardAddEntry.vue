@@ -503,8 +503,8 @@ export default {
       let label = this.label
       let _this = this
 
-      if (this.label.length == 0) {
-        label = this.newlabel
+      if (this.label.length == 0 && this.newlabel != null) {
+        label = [this.newlabel]
       }
       let data = {
         amount: this.amount,
