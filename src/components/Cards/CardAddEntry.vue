@@ -500,11 +500,16 @@ export default {
     },
 
     setEntry() {
+      let label = this.label
       let _this = this
+
+      if (this.label.length == 0) {
+        label = this.newlabel
+      }
       let data = {
         amount: this.amount,
         note: this.note,
-        label: this.label,
+        label: label,
         account_id: this.account,
         category_id: this.category,
         currency_id: this.currency,
@@ -513,7 +518,6 @@ export default {
         transfer_id: this.transferto,
         date_time: this.date,
         payee_id: this.debit_name,
-        newLabel: this.newlabel,
       }
 
       if (this.type == "expenses") {
