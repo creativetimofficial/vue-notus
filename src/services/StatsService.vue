@@ -45,13 +45,19 @@ async function planned() {
   return response.data;
 }
 
+async function health() {
+  const response = await instance.get('/api/stats/health');
+  return response.data;
+}
+
 
 export default {
   incoming,
   expenses,
   total,
   wallets,
-  planned
+  planned,
+  health
 }
 
 </script>

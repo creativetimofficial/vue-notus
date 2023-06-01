@@ -29,6 +29,16 @@
           </div>
 
           <div class="min-w px-2">
+            <router-link to="/app/graph/wallet" v-slot="{ href, navigate }">
+              <a :href="href" @click="navigate">
+                <card-stats statSubtitle="MY PLANNED" :statTitle="health.statTitle + ' €'"
+                  :statArrow="health.statArrow" :statPercent="health.statPercent"
+                  statIconName="fas fa-money-bill" statIconColor="bg-teal-500" />
+              </a>
+            </router-link>
+          </div>
+
+          <div class="min-w px-2">
             <router-link to="/app/entries/type/incoming" v-slot="{ href, navigate }">
               <a :href="href" @click="navigate">
                 <card-stats statSubtitle="MY INCOMING" :statTitle="incoming.statTitle + ' €'"
@@ -73,6 +83,12 @@ export default {
         statPercent: 0,
         statPercentColor: "text-emerald-500"
       },
+      health: {
+        statTitle: 0,
+        statArrow: "up",
+        statPercent: 0,
+        statPercentColor: "text-emerald-500"
+      },
       walletPlanned: {
         statTitle: 0,
         statArrow: "up",
@@ -111,12 +127,23 @@ export default {
       this.getWallet()
       this.getWallets()
       this.getWalletPlanned()
+      this.getHealth()
 
     },
     getWallet() {
       StatsService.total().then((resp) => {
         let data = resp.data
         this.wallet.statTitle = data.total.toFixed(2)
+
+      }).catch((error) => {
+        console.error(error);
+      })
+    },
+
+    getHealth() {
+      StatsService.health().then((resp) => {
+        let data = resp.data
+        this.health.statTitle = data.total.toFixed(2)
 
       }).catch((error) => {
         console.error(error);
