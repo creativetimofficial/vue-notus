@@ -148,6 +148,12 @@
             </label>
           </div>
           <div class="lg:w-4/12 px-2 mt-2">
+            <label for="installment"
+              class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
+              A rate <input v-model="installment" type="checkbox" value="0">
+            </label>
+          </div>
+          <div class="lg:w-4/12 px-2 mt-2">
             <label for="waranty"
               class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150">
               In garanzia <input v-model="waranty" type="checkbox" value="1">
@@ -277,6 +283,7 @@ export default {
       debit_name: null,
       planning: null,
       debit: null,
+      installment: 0,
       input: {
         tags: [],
         category: [],
@@ -286,7 +293,8 @@ export default {
         payment_type: [],
         model: [],
         planning: ["daily", "monthly", "yearly"],
-        debit: []
+        debit: [],
+        installment: 0
       }
     }
   },
@@ -518,6 +526,7 @@ export default {
         transfer_id: this.transferto,
         date_time: this.date,
         payee_id: this.debit_name,
+        installment: this.installment
       }
 
       if (this.type == "expenses") {
