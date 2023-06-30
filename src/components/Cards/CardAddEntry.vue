@@ -129,7 +129,7 @@
 
         <div class="flex flex-wrap py-3">
           <div class="lg:w-12/12 px-2 w-full">
-            <textarea v-model="note" type="text" placeholder="Note..."
+            <textarea v-model="note" type="text" placeholder="Note..." required
               class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" />
           </div>
         </div>
