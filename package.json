@@ -7,13 +7,13 @@
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build && gulp licenses",
+    "build": "cross-env PUBLIC_URL=/ cross-env CI=false vue-cli-service build && gulp licenses",
     "lint": "vue-cli-service lint",
     "build:tailwind": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm run serve"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "5.15.3",
+    "@fortawesome/fontawesome-free": "^6.6.0",
     "@popperjs/core": "2.9.1",
     "@tailwindcss/forms": "0.2.1",
     "@vue/compiler-sfc": "3.0.7",
@@ -34,8 +34,9 @@
     "autoprefixer": "10.2.5",
     "eslint": "7.22.0",
     "eslint-plugin-vue": "7.7.0",
-    "postcss": "8.2.8",
-    "vue-template-compiler": "2.6.12"
+    "postcss": "8.4.39",
+    "vue-template-compiler": "2.6.12",
+    "cross-env": "^7.0.3"
   },
   "eslintConfig": {
     "root": true,
