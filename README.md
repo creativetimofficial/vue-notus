@@ -84,6 +84,7 @@ We also feature the following 18 dynamic components:
 * [Versions](#versions)
 * [Documentation](#documentation)
 * [Quick Start](#quick-start)
+* [Deploy](#deploy)
 * [Files and folders](#files-and-folders)
 * [Browser Support](#browser-support)
 * [Reporting Issues](#reporting-issues)
@@ -107,6 +108,12 @@ The documentation for the Vue Notus is hosted at our <a href="https://www.creati
 
 - <a href="https://www.creative-tim.com/product/vue-notus?ref=vn-github-readme" target="_blank">Download from Creative Tim</a>.
 - <a href="https://github.com/creativetimofficial/vue-notus" target="_blank">Check it on Github</a>.
+
+## Deploy
+
+:rocket: You can deploy your own version of the template to Genezio with one click:
+
+[![Deploy to Genezio](https://raw.githubusercontent.com/Genez-io/graphics/main/svg/deploy-button.svg)](https://app.genez.io/start/deploy?repository=https://github.com/creativetimofficial/vue-notus&utm_source=github&utm_medium=referral&utm_campaign=github-creativetim&utm_term=deploy-project&utm_content=button-head)
 
 ## Files and Folder
 
